@@ -1,6 +1,8 @@
-from bs4 import BeautifulSoup
+import json
 import re
+
 import pandas as pd
+from bs4 import BeautifulSoup
 
 
 def extract_risk_section_from_report(raw_10k):
@@ -29,12 +31,11 @@ def _get_risk_section_from_soup(report_10k_soup):
     risk_section_regex = re.compile(
         r'(>Item(\s|&#160;|&nbsp;)(1A|1B)\.{0,1})|(ITEM\s(1A|1B))'
     )
-    risk_section_matches = risk_section_regex.finditer(raw_report)
-    # Create the dataframe
-    match_df = pd.DataFrame(
-        [(x.group(), x.start(), x.end()) for x in risk_section_matches]
-    )
-    match_df.columns = ['item', 'start', 'end']
+    matches = json.dumps([
+        {'item': x.group(), 'start': x.start(), 'end': x.end()}
+        for x in (risk_section_regex.finditer(raw_report))
+    ])
+    match_df = pd.read_json(matches)
     match_df['item'] = match_df.item.str.lower()
 
     return _create_matches_df(match_df)

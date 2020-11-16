@@ -2,10 +2,8 @@ import os
 
 
 class Config:
-    _default_data_path = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        'data'
-    )
+    _project_path = os.path.dirname(os.path.abspath(__file__))
+    _default_data_path = os.path.join(_project_path, 'data')
     _default_raw_report_zip_file = 'project_dataset_full.zip'
 
     @staticmethod
@@ -21,4 +19,4 @@ class Config:
 
     @staticmethod
     def risk_dir():
-        return 'risk_section'
+        return os.path.join(Config._project_path, 'risk_section')

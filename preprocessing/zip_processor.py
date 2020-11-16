@@ -1,11 +1,12 @@
+import logging
 import os
+import time
 from pathlib import Path
 from zipfile import ZipFile
-import time
-import logging
+
+from report_parser import extract_risk_section_from_report
 
 from config import Config
-from report_parser import extract_risk_section_from_report
 
 LOGGER = logging.getLogger(__name__)
 
