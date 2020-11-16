@@ -1,9 +1,12 @@
 import logging
+import os
 
+from config import Config
 
-logging_format = '%(asctime)s — %(name)s — %(levelname)s — %(funcName)s:%(' \
+logging_format = '%(asctime)s — %(levelname)s — %(funcName)s:%(' \
                  'lineno)d — %(message)s'
 logging.basicConfig(
-    filename='risk_extractor.log',
-    format=logging_format
+    filename=os.path.join(Config.log_dir(), 'risk_extractor.log'),
+    format=logging_format,
+    level=logging.DEBUG
 )

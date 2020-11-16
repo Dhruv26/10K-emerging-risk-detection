@@ -13,10 +13,15 @@ class Config:
     @staticmethod
     def raw_report_zip_file():
         return os.getenv(
-            'RAW_REPORT_ZIP_FILE',
-            Config._default_raw_report_zip_file
+            'RAW_REPORT_ZIP_FILE', Config._default_raw_report_zip_file
         )
 
     @staticmethod
     def risk_dir():
         return os.path.join(Config.data_path(), 'risk_section')
+
+    @staticmethod
+    def log_dir():
+        return os.getenv(
+            'LOG_PATH', os.path.join(Config._project_path, 'logs')
+        )

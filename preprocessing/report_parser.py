@@ -18,16 +18,16 @@ def extract_risk_section_from_report(raw_10k):
     types = soup.find(
         lambda x: x.name == 'type' and x.get_text().startswith('10-K')
     )
-    report_10k_soup = types.find('xbrl')
 
-    raw_report = str(report_10k_soup)
+    raw_report = str(types)
     pos_data = _get_risk_section_from_soup(raw_report)
     raw_risk = raw_report[
                pos_data['start'].loc['item1a']:pos_data['start'].loc['item1b']
                ]
     risk_soup = BeautifulSoup(raw_risk, 'lxml')
 
-    risk_title_tag = risk_soup.find('p', text=re.compile('Item (1A|1a)'))
+    # The first p tag contains the Risk Section title. Hence we remove it.
+    risk_title_tag = risk_soup.find('p')
     risk_title_tag.decompose()
     return risk_soup.get_text()
 
