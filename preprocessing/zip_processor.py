@@ -4,7 +4,7 @@ import time
 from pathlib import Path
 from zipfile import ZipFile
 
-from report_parser import extract_risk_section_from_report
+from report_parser import extract_risk_section_from_report, RiskSectionNotFound
 
 from config import Config
 
@@ -24,16 +24,17 @@ def write_risk_section_to_file(zipfile_path, output_dir):
             report = zip_file.read(report_file)
             try:
                 risk_section = extract_risk_section_from_report(report)
-            except:
+                output_file = os.path.join(output_dir, report_file.filename)
+                with open(output_file, 'w+') as risk_section_file:
+                    risk_section_file.write(risk_section)
+                LOGGER.info(
+                    f'Extracted risk section for {report_file.filename}'
+                )
+            except RiskSectionNotFound:
                 error_msg = f'Error occurred while trying to extract risk ' \
                             f'section for {report_file.filename} '
                 LOGGER.error(error_msg, exc_info=True)
                 continue
-
-            output_file = os.path.join(output_dir, report_file.filename)
-            with open(output_file, 'w+') as risk_section_file:
-                risk_section_file.write(risk_section)
-            LOGGER.info(f'Extracted risk section for {report_file.filename}')
 
 
 if __name__ == '__main__':

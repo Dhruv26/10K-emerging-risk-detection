@@ -19,4 +19,4 @@ class Config:
 
     @staticmethod
     def risk_dir():
-        return os.path.join(Config._project_path, 'risk_section')
+        return os.path.join(Config.data_path(), 'risk_section')
