@@ -4,6 +4,7 @@ from zipfile import ZipFile
 import time
 import logging
 
+from config import Config
 from report_parser import extract_risk_section_from_report
 
 LOGGER = logging.getLogger(__name__)
@@ -17,6 +18,8 @@ def write_risk_section_to_file(zipfile_path, output_dir):
         for report_file in zip_file.infolist():
             if report_file.is_dir():
                 continue
+
+            LOGGER.info(f'Processing {report_file.filename}')
             report = zip_file.read(report_file)
             try:
                 risk_section = extract_risk_section_from_report(report)
@@ -33,20 +36,15 @@ def write_risk_section_to_file(zipfile_path, output_dir):
 
 
 if __name__ == '__main__':
-    # TODO: Configure logging at project level
-    logging_format = '%(asctime)s — %(name)s — %(levelname)s — %(funcName)s' \
-                     ':%(lineno)d — %(message)s'
-    logging.basicConfig(
-        filename='risk_extractor.log',
-        format=logging_format
+    input_zipfile_path = os.path.join(
+        Config.data_path(),
+        Config.raw_report_zip_file()
     )
-
-    input_zipfile = 'project_dataset_full.zip'
-    output_dir = 'risk_section'
-    LOGGER.info(f'Processing {input_zipfile}')
+    output_dir = Config.risk_dir()
+    LOGGER.info(f'Processing {input_zipfile_path}')
 
     start = time.time()
-    write_risk_section_to_file(input_zipfile, output_dir)
+    write_risk_section_to_file(input_zipfile_path, output_dir)
     time_taken = time.time() - start
 
     LOGGER.info(
