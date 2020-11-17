@@ -38,6 +38,14 @@ def write_risk_section_to_file(zipfile_path, output_dir):
 
 
 if __name__ == '__main__':
+    logging_format = '%(asctime)s — %(levelname)s — %(funcName)s:%(' \
+                     'lineno)d — %(message)s'
+    logging.basicConfig(
+        filename=os.path.join(Config.log_dir(), 'risk_extractor.log'),
+        format=logging_format,
+        level=logging.DEBUG
+    )
+
     input_zipfile_path = os.path.join(
         Config.data_path(),
         Config.raw_report_zip_file()

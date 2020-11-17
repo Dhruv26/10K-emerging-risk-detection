@@ -1,8 +1,11 @@
 import json
+import os
 import re
 
 import pandas as pd
 from bs4 import BeautifulSoup
+
+from config import Config
 
 
 def extract_risk_section_from_report(raw_10k):
@@ -35,7 +38,7 @@ def extract_risk_section_from_report(raw_10k):
 def _get_risk_section_from_soup(raw_report):
     # Regex to find start of section 1A and 1B
     risk_section_regex = re.compile(
-        r'(>Item(\s|&#160;|&nbsp;)(1A|1B)\.{0,1})|(ITEM\s(1A|1B))'
+        r'(>Item(\s|&#160;|&nbsp;)+(1A|1B)\.?)|(ITEM(\s)+(1A|1B))'
     )
     risk_section_matches = [
         {
@@ -59,11 +62,28 @@ def _create_matches_df(match_df):
     match_df.replace('\.', '', regex=True, inplace=True)
     match_df.replace('>', '', regex=True, inplace=True)
 
+    _validate_match_df(match_df)
     return (match_df.sort_values('start', ascending=True)
             .drop_duplicates(subset=['item'], keep='last')
             .set_index('item'))
 
 
+def _validate_match_df(match_df):
+    unique_items = match_df['item'].unique()
+    if 'item1a' not in unique_items:
+        raise RiskSectionNotFound('Item 1A not found.')
+    if 'item1b' not in unique_items:
+        raise RiskSectionNotFound('Item 1B not found.')
+
+
 class RiskSectionNotFound(Exception):
     def __init__(self, message):
         super().__init__(message)
+
+
+if __name__ == '__main__':
+    with open(os.path.join(Config.data_path(), 'sample_report_1.txt'),
+              'r') as f:
+        doc = f.read()
+
+    ex = extract_risk_section_from_report(doc)
