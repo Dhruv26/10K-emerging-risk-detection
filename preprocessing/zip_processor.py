@@ -25,6 +25,8 @@ def write_risk_section_to_file(zipfile_path, output_dir):
             try:
                 risk_section = extract_risk_section_from_report(report)
                 output_file = os.path.join(output_dir, report_file.filename)
+                output_file_dir = os.path.dirname(output_file)
+                Path(output_file_dir).mkdir(parents=True, exist_ok=True)
                 with open(output_file, 'w+') as risk_section_file:
                     risk_section_file.write(risk_section)
                 LOGGER.info(
