@@ -34,8 +34,15 @@ def write_risk_section_to_file(zipfile_path, output_dir):
                 )
             except RiskSectionNotFound:
                 error_msg = f'Error occurred while trying to extract risk ' \
-                            f'section for {report_file.filename} '
+                            f'section for {report_file.filename}'
                 LOGGER.error(error_msg, exc_info=True)
+                continue
+            except RecursionError:
+                # Hate that python does not optimize tail recursion and bs4
+                # uses a recursive structure and algos to parse the docs.
+                # Or it's just a vv badly formatted file!
+                # 799292_2010-12-31_2011-03-01_10-K_0000799292-11-000010.txt
+                LOGGER.error(f'Check the contents of {report_file.filename}.')
                 continue
 
 

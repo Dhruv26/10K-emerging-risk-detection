@@ -1,15 +1,12 @@
 import json
 import os
 import re
-import sys
 from unicodedata import normalize
 
 import pandas as pd
 from bs4 import BeautifulSoup
 
 from config import Config
-
-sys.setrecursionlimit(10**5)
 
 
 def extract_risk_section_from_report(raw_10k):
@@ -21,10 +18,7 @@ def extract_risk_section_from_report(raw_10k):
     :raises: RiskSectionNotFound error if it cannot
              find the risk section in the report
     """
-    soup = BeautifulSoup(raw_10k, 'lxml')
-    types = soup.find(
-        lambda x: x.name == 'type' and x.get_text().startswith('10-K')
-    )
+    types = _get_risk_document(raw_10k)
 
     raw_report = str(types)
     pos_data = _get_risk_section_from_soup(raw_report)
@@ -38,6 +32,13 @@ def extract_risk_section_from_report(raw_10k):
     if risk_title_tag:
         risk_title_tag.decompose()
     return normalize("NFKC", risk_soup.get_text(strip=True))
+
+
+def _get_risk_document(raw_10k):
+    soup = BeautifulSoup(raw_10k, 'lxml')
+    return soup.find(
+        lambda x: x.name == 'type' and x.get_text().startswith('10-K')
+    )
 
 
 def _get_risk_section_from_soup(raw_report):
@@ -87,7 +88,7 @@ class RiskSectionNotFound(Exception):
 
 
 if __name__ == '__main__':
-    with open(os.path.join(Config.data_path(), 'sample_report_1.txt'),
+    with open(os.path.join(Config.data_dir(), 'sample_report.txt'),
               'r') as f:
         doc = f.read()
 
