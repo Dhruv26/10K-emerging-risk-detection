@@ -1,7 +1,8 @@
 import json
 import os
-import sys
 import re
+import sys
+from unicodedata import normalize
 
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -36,7 +37,7 @@ def extract_risk_section_from_report(raw_10k):
     risk_title_tag = risk_soup.find('p')
     if risk_title_tag:
         risk_title_tag.decompose()
-    return risk_soup.get_text()
+    return normalize("NFKC", risk_soup.get_text(strip=True))
 
 
 def _get_risk_section_from_soup(raw_report):
