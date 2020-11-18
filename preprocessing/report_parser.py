@@ -1,11 +1,14 @@
 import json
 import os
+import sys
 import re
 
 import pandas as pd
 from bs4 import BeautifulSoup
 
 from config import Config
+
+sys.setrecursionlimit(10**5)
 
 
 def extract_risk_section_from_report(raw_10k):
@@ -31,7 +34,8 @@ def extract_risk_section_from_report(raw_10k):
 
     # The first p tag contains the Risk Section title. Hence we remove it.
     risk_title_tag = risk_soup.find('p')
-    risk_title_tag.decompose()
+    if risk_title_tag:
+        risk_title_tag.decompose()
     return risk_soup.get_text()
 
 

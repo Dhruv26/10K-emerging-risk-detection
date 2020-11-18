@@ -12,9 +12,9 @@ class Config:
 
     @staticmethod
     def raw_report_zip_file():
-        return os.getenv(
-            'RAW_REPORT_ZIP_FILE', Config._default_raw_report_zip_file
-        )
+        return os.getenv('RAW_REPORT_ZIP_FILE', os.path.join(
+            Config.data_path(), Config._default_raw_report_zip_file
+        ))
 
     @staticmethod
     def risk_dir():
