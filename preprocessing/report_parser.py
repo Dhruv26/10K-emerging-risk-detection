@@ -1,12 +1,28 @@
 import json
 import os
 import re
+from io import BytesIO
 from unicodedata import normalize
 
 import pandas as pd
 from bs4 import BeautifulSoup
+from pkg_resources import resource_string
 
 from config import Config
+
+
+def _read_risk_start_end_data():
+    risk_start_end_csv = resource_string(
+        'preprocessing', os.path.join('resources', 'RiskFactors_StartEnd.csv')
+    )
+    cols = ['cik', 'documentlinktext', 'sectionstart', 'sectionend']
+    df = pd.read_csv(BytesIO(risk_start_end_csv), usecols=cols)
+    df['documentlinktext'] = df['documentlinktext'].str.split('/').str[-1]
+    return df
+
+
+# TODO: Remove if not required
+_risk_start_end_df = _read_risk_start_end_data()
 
 
 def extract_risk_section_from_report(raw_10k):
