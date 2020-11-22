@@ -25,3 +25,7 @@ class Config:
         return os.getenv(
             'LOG_PATH', os.path.join(Config._project_path, 'logs')
         )
+
+    @staticmethod
+    def bert_model_dir():
+        return os.path.join(Config._project_path, 'models')
