@@ -1,3 +1,4 @@
+import atexit
 import logging
 import multiprocessing
 import os
@@ -6,11 +7,10 @@ from concurrent.futures import ProcessPoolExecutor
 from logging.handlers import QueueHandler, QueueListener
 from pathlib import Path
 from zipfile import ZipFile
-import atexit
-
-from report_parser import extract_risk_section_from_report, RiskSectionNotFound
 
 from config import Config
+from report_parser import (extract_risk_section_from_report, ReportInfo,
+                           RiskSectionNotFound)
 
 
 def _configure_log_process():
@@ -32,7 +32,7 @@ _LOGGER.addHandler(QueueHandler(_queue))
 
 
 @atexit.register
-def on_exit():
+def _on_exit():
     _queue_listener.stop()
 
 
@@ -45,6 +45,8 @@ def list_of_files_to_extract_from_zip(zipfile_path):
 def process_zipfile(zipfile_path, report_file, output_dir):
     with ZipFile(zipfile_path) as zip_file:
         report = zip_file.read(report_file)
+
+    report_info = ReportInfo.from_zip_filename(zipfile_path.filename)
     try:
         risk_section = extract_risk_section_from_report(report)
         _write_risk_section_to_file(report_file, risk_section, output_dir)
@@ -84,7 +86,7 @@ def main():
     start = time.time()
     zip_files = list_of_files_to_extract_from_zip(input_zipfile_path)
     with ProcessPoolExecutor(max_workers=10) as executor:
-        executor.map(process_zipfile_wrapper(), zip_files)
+        executor.map(process_zipfile_wrapper, zip_files, chunksize=20)
     time_taken = time.time() - start
 
     _LOGGER.info(
@@ -93,12 +95,4 @@ def main():
 
 
 if __name__ == '__main__':
-    logging_format = '%(asctime)s|%(levelname)s|%(funcName)s:' \
-                     '%(lineno)d|%(message)s'
-    logging.basicConfig(
-        filename=os.path.join(Config.log_dir(), 'risk_extractor.log'),
-        format=logging_format,
-        level=logging.DEBUG
-    )
-
     main()

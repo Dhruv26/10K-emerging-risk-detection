@@ -27,5 +27,5 @@ class Config:
         )
 
     @staticmethod
-    def bert_model_dir():
+    def models_dir():
         return os.path.join(Config._project_path, 'models')
