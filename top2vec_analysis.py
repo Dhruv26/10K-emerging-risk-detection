@@ -14,8 +14,9 @@ if __name__ == '__main__':
     risk_files = glob.glob(risk_dir)
 
     corpus = []
-    for risk_file in tqdm(risk_files):
-        docu = risk_file.read()
+    for risk_file_name in tqdm(risk_files):
+        with open(risk_file_name, 'r') as risk_file:
+            docu = risk_file.read()
         if len(word_tokenize(docu)) > 100:
             corpus.append(docu)
     print(f'Read {len(corpus)} files.')
