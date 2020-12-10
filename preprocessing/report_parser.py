@@ -17,6 +17,10 @@ class ReportInfo:
         self.filing_type = filing_type
         self.filename = filename
 
+    def get_file_name(self):
+        return f'{self.start_date.date()}_{self.end_date.date()}_' \
+               f'{self.filename}'
+
     def _keys(self):
         return (self.cik, self.start_date, self.end_date, self.filing_type,
                 self.filename)

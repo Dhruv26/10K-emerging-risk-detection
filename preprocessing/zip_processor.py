@@ -39,36 +39,39 @@ def _on_exit():
 def list_of_files_to_extract_from_zip(zipfile_path):
     with ZipFile(zipfile_path) as zip_file:
         report_files = zip_file.infolist()
-    return filter(lambda file_in_zip: not file_in_zip.is_dir(), report_files)
+    return map(
+        lambda zip_fileinfo: zip_fileinfo.filename,
+        filter(lambda file_in_zip: not file_in_zip.is_dir(), report_files)
+    )
 
 
 def process_zipfile(zipfile_path, report_file, output_dir):
     with ZipFile(zipfile_path) as zip_file:
         report = zip_file.read(report_file)
 
-    file_dir, filename = os.path.split(zipfile_path.filename)
+    file_dir, filename = os.path.split(report_file)
     report_info = ReportInfo.from_zip_filename(filename)
     try:
         risk_section = extract_risk_section_from_report(report)
         _write_risk_section_to_file(report_info, risk_section, output_dir)
         _LOGGER.info(
-            f'Extracted risk section for {report_file.filename}'
+            f'Extracted risk section for {report_file}'
         )
     except RiskSectionNotFound:
         error_msg = f'Error occurred while trying to extract risk ' \
-                    f'section for {report_file.filename}'
+                    f'section for {report_file}'
         _LOGGER.error(error_msg, exc_info=True)
     except RecursionError:
         # Hate that python does not optimize tail recursion and bs4
         # uses a recursive structure and algos to parse the docs.
         # Or it's just a vv badly formatted file!
         # 799292_2010-12-31_2011-03-01_10-K_0000799292-11-000010.txt
-        _LOGGER.error(f'Check the contents of {report_file.filename}.')
+        _LOGGER.error(f'Check the contents of {report_file}.')
 
 
 def _write_risk_section_to_file(report_info, risk_section, output_dir):
     output_file = os.path.join(output_dir, str(report_info.cik),
-                               report_info.filename)
+                               report_info.get_file_name())
     output_file_dir = os.path.dirname(output_file)
     Path(output_file_dir).mkdir(parents=True, exist_ok=True)
 
