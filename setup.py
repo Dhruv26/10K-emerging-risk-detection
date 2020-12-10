@@ -7,6 +7,7 @@ setup(
     install_requires=[
         'beautifulsoup4==4.9.3',
         'lxml==4.6.1',
+        'html2text==2020.1.16',
         'pandas==1.1.4',
         'matplotlib==3.3.3',
         'scikit-learn==0.23.2',

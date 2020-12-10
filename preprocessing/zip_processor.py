@@ -46,10 +46,11 @@ def process_zipfile(zipfile_path, report_file, output_dir):
     with ZipFile(zipfile_path) as zip_file:
         report = zip_file.read(report_file)
 
-    report_info = ReportInfo.from_zip_filename(zipfile_path.filename)
+    file_dir, filename = os.path.split(zipfile_path.filename)
+    report_info = ReportInfo.from_zip_filename(filename)
     try:
         risk_section = extract_risk_section_from_report(report)
-        _write_risk_section_to_file(report_file, risk_section, output_dir)
+        _write_risk_section_to_file(report_info, risk_section, output_dir)
         _LOGGER.info(
             f'Extracted risk section for {report_file.filename}'
         )
@@ -65,8 +66,9 @@ def process_zipfile(zipfile_path, report_file, output_dir):
         _LOGGER.error(f'Check the contents of {report_file.filename}.')
 
 
-def _write_risk_section_to_file(report_file, risk_section, output_dir):
-    output_file = os.path.join(output_dir, report_file.filename)
+def _write_risk_section_to_file(report_info, risk_section, output_dir):
+    output_file = os.path.join(output_dir, str(report_info.cik),
+                               report_info.filename)
     output_file_dir = os.path.dirname(output_file)
     Path(output_file_dir).mkdir(parents=True, exist_ok=True)
 
