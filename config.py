@@ -31,5 +31,9 @@ class Config:
         return os.path.join(Config._project_path, 'models')
 
     @staticmethod
+    def top2vec_models_dir():
+        return os.path.join(Config.models_dir(), 'top2vec_models')
+
+    @staticmethod
     def finBERT_model_dir():
         return os.path.join(Config.models_dir(), 'finBERT_model')
