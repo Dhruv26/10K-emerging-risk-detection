@@ -79,19 +79,23 @@ def _write_risk_section_to_file(report_info, risk_section, output_dir):
         risk_section_file.write(risk_section)
 
 
+def _process_zipfile_wrapper(args):
+    process_zipfile(args[0], args[1], args[2])
+
+
 def main():
     input_zipfile_path = Config.raw_report_zip_file()
     output_dir = Config.risk_dir()
-
-    def process_zipfile_wrapper(report_file):
-        process_zipfile(input_zipfile_path, report_file, output_dir)
 
     _LOGGER.info(f'Processing {input_zipfile_path}')
 
     start = time.time()
     zip_files = list_of_files_to_extract_from_zip(input_zipfile_path)
+    args = [
+        (input_zipfile_path, zip_file, output_dir) for zip_file in zip_files
+    ]
     with ProcessPoolExecutor(max_workers=10) as executor:
-        executor.map(process_zipfile_wrapper, zip_files, chunksize=20)
+        executor.map(_process_zipfile_wrapper, args, chunksize=20)
     time_taken = time.time() - start
 
     _LOGGER.info(

@@ -29,3 +29,7 @@ class Config:
     @staticmethod
     def models_dir():
         return os.path.join(Config._project_path, 'models')
+
+    @staticmethod
+    def finBERT_model_dir():
+        return os.path.join(Config.models_dir(), 'finBERT_model')

@@ -3,7 +3,7 @@ from pytorch_pretrained_bert import BertForSequenceClassification
 
 from config import Config
 
-_model_path = Config.models_dir()
+_model_path = Config.finBERT_model_dir()
 _model = BertForSequenceClassification.from_pretrained(
     _model_path, num_labels=3, cache_dir=True
 )
