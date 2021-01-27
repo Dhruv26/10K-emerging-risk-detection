@@ -19,8 +19,9 @@ class IndustryGroup:
 
     def get_corpus(self):
         corpus = []
-        for risk_file in self.filenames:
-            docu = risk_file.read_text()
+        for risk_filename in self.filenames:
+            with open(risk_filename) as risk_file:
+                docu = risk_file.read()
             if len(word_tokenize(docu)) > 100:
                 corpus.append(docu)
         return corpus
@@ -29,12 +30,16 @@ class IndustryGroup:
         corpus = self.get_corpus()
         return Top2Vec(corpus, speed='deep-learn', workers=16)
 
+    def __repr__(self):
+        return f'SIC: {self.sic}, CIKs: {len(self.ciks)}'
+
     @staticmethod
     def _get_filenames_for_ciks(ciks):
         risk_dir = Config.risk_dir()
         filenames = list()
         for cik in ciks:
-            files = glob(os.path.join(os.path.join(risk_dir, cik), '*.txt'))
+            files = glob(os.path.join(os.path.join(risk_dir, str(cik)),
+                                      '*.txt'))
             if files:
                 filenames.extend(files)
         return filenames
@@ -83,7 +88,10 @@ if __name__ == '__main__':
     # _run_all()
     industry_groups = _get_industry_groups()
     for industry_group in industry_groups:
+        if len(industry_group.ciks) < 20:
+            continue
+
         model = industry_group.create_topic()
-        model_path = os.path.join(Config.top2vec_models_dir(), 'industry_wise'
+        model_path = os.path.join(Config.top2vec_models_dir(), 'industry_wise',
                                   f'{industry_group.sic}_model')
         model.save(model_path)
