@@ -59,6 +59,12 @@ def _get_industry_groups(sic_col='sic2'):
     return res
 
 
+def _get_file_name(risk_file: Path) -> str:
+    cik = risk_file.parent.name
+    file_name = risk_file.name
+    return cik + '_' + file_name
+
+
 def get_corpus(path=Config.risk_dir()):
     """Creates a corpus from all files in the passed path"""
     risk_dir = Path(path)
@@ -68,7 +74,7 @@ def get_corpus(path=Config.risk_dir()):
     for risk_file in tqdm(risk_files):
         docu = risk_file.read_text()
         if len(word_tokenize(docu)) > 100:
-            corpus[risk_file] = docu
+            corpus[_get_file_name(risk_file)] = docu
 
     return corpus
 
@@ -79,7 +85,7 @@ def _run_all():
     corpus = get_corpus(risk_dir)
     print(f'Read {len(corpus)} files.')
 
-    docs, doc_ids = list(zip(*corpus.items()))
+    doc_ids, docs = list(zip(*corpus.items()))
     model = Top2Vec(docs, document_ids=doc_ids, speed='deep-learn', workers=16)
 
     model_path = os.path.join(Config.top2vec_models_dir(),
@@ -105,5 +111,5 @@ def _run_industry_wise():
 
 
 if __name__ == '__main__':
-    # _run_all()
-    _run_industry_wise()
+    _run_all()
+    # _run_industry_wise()
