@@ -18,17 +18,19 @@ class IndustryGroup:
         self.filenames = IndustryGroup._get_filenames_for_ciks(self.ciks)
 
     def get_corpus(self):
-        corpus = []
+        corpus = dict()
         for risk_filename in self.filenames:
             with open(risk_filename) as risk_file:
                 docu = risk_file.read()
             if len(word_tokenize(docu)) > 100:
-                corpus.append(docu)
+                corpus[risk_filename] = docu
         return corpus
 
     def create_topic(self):
         corpus = self.get_corpus()
-        return Top2Vec(corpus, speed='deep-learn', workers=16)
+        doc_ids, docs = list(zip(*corpus.items()))
+        return Top2Vec(docs, document_ids=doc_ids,
+                       speed='deep-learn', workers=16)
 
     def __repr__(self):
         return f'SIC: {self.sic}, CIKs: {len(self.ciks)}'
@@ -62,36 +64,46 @@ def get_corpus(path=Config.risk_dir()):
     risk_dir = Path(path)
     risk_files = list(risk_dir.rglob('*.txt'))
 
-    corpus = []
+    corpus = dict()
     for risk_file in tqdm(risk_files):
         docu = risk_file.read_text()
         if len(word_tokenize(docu)) > 100:
-            corpus.append(docu)
+            corpus[risk_file] = docu
 
     return corpus
 
 
 def _run_all():
-    risk_dir = Config.risk_dir()
+    risk_dir = os.path.join(Config.risk_dir())
     print(f'Reading files from {risk_dir}')
-    corpus = get_corpus(os.path.join(risk_dir, '10k20f_5'))
+    corpus = get_corpus(risk_dir)
     print(f'Read {len(corpus)} files.')
 
-    model = Top2Vec(corpus, speed='deep-learn', workers=16)
+    docs, doc_ids = list(zip(*corpus.items()))
+    model = Top2Vec(docs, document_ids=doc_ids, speed='deep-learn', workers=16)
+
     model_path = os.path.join(Config.top2vec_models_dir(),
-                              'top2vec_model_deep')
+                              'top2vec_model_deep_with_doc_ids')
     model.save(model_path)
     print(f'Saved model to {model_path}')
 
 
-if __name__ == '__main__':
-    # _run_all()
+def _run_industry_wise():
     industry_groups = _get_industry_groups()
-    for industry_group in industry_groups:
+    for industry_group in tqdm(industry_groups):
         if len(industry_group.ciks) < 20:
             continue
 
-        model = industry_group.create_topic()
-        model_path = os.path.join(Config.top2vec_models_dir(), 'industry_wise',
-                                  f'{industry_group.sic}_model')
-        model.save(model_path)
+        try:
+            model = industry_group.create_topic()
+            model_path = os.path.join(Config.top2vec_models_dir(),
+                                      'industry_wise',
+                                      f'{industry_group.sic}_model')
+            model.save(model_path)
+        except:
+            pass
+
+
+if __name__ == '__main__':
+    # _run_all()
+    _run_industry_wise()
