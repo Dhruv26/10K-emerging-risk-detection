@@ -1,0 +1,3567 @@
+CATEGORY DESCRIPTION,SIC DIVISION,MAJOR GROUP,INDUSTRY GROUP,MOST SPECIFIC SIC CODE
+"Agriculture, Forestry, Fishing",A,A,A,A
+Agricultural Production Crops,A,01,01,01
+Cash Grains,A,01,011,011
+Wheat,A,01,011,0111
+Rice,A,01,011,0112
+Corn,A,01,011,0115
+Soybeans,A,01,011,0116
+"Cash Grains, Not Classified Elsewhere",A,01,011,0119
+"Field Crops, Except Cash Grains",A,01,013,013
+Cotton,A,01,013,0131
+Tobacco,A,01,013,0132
+Sugarcane & Sugar Beets,A,01,013,0133
+Irish Potatoes,A,01,013,0134
+"Field Crops, Except Cash Grains, Not Classified Elsewhere",A,01,013,0139
+Vegetables & Melons,A,01,016,016
+Vegetables & Melons,A,01,016,0161
+Fruits and Tree Nuts,A,01,017,017
+Berry Crops,A,01,017,0171
+Grapes,A,01,017,0172
+Tree Nuts,A,01,017,0173
+Citrus Fruits,A,01,017,0174
+Deciduous Tree Fruits,A,01,017,0175
+"Fruits and Tree Nuts, Not Classified Elsewhere",A,01,017,0171
+Horticultural Specialties,A,01,018,018
+Ornamental Floriculture & Nursery Products,A,01,018,0181
+Food Crops Grown Under Cover,A,01,018,0182
+"General Farms, Primarily Crops",A,01,019,019
+"General Farms, Primarily Crops",A,01,019,0191
+Agriculture Livestock Production & Animal Specialties ,A,02,02,02
+"Livestock, Except Dairy And Poultry",A,02,021,021
+Beef Cattle Feedlots,A,02,021,0211
+"Beef Cattle, Except Feedlots",A,02,021,0212
+Hog,A,02,021,0213
+Sheep and Goats,A,02,021,0214
+"General Livestock, Except Dairy and Poultry",A,02,021,0219
+Dairy Farms,A,02,024,024
+Dairy Farms,A,02,024,0241
+Poultry And Eggs,A,02,025,025
+"Broiler, Fryer, and Roaster Chickens",A,02,025,0251
+Chicken Eggs,A,02,025,0252
+Turkeys and Turkey Eggs,A,02,025,0253
+Poultry Hatcheries,A,02,025,0254
+"Poultry and Eggs, Not Elsewhere Classified",A,02,025,0259
+Animal Specialties,A,02,027,027
+Fur-Bearing Animals and Rabbit,A,02,027,0271
+Horses and Other Equines,A,02,027,0272
+Animal Aquaculture,A,02,027,0273
+"Animal Specialties, Not Elsewhere Classified",A,02,027,0279
+"General Farms, Primarily Livestock And Animal",A,02,029,029
+"General Farms, Primarily Livestock and Animal Specialties",A,02,029,0291
+Agricultural Services,A,07,07,07
+Soil Preparation Services,A,07,071,071
+Soil Preparation Services,A,07,071,0711
+Crop Services,A,07,072,072
+"Crop Planting, Cultivating, and Protecting",A,07,072,0721
+"Crop Harvesting, Primarily by Machine",A,07,072,0722
+"Crop Preparation Services for Market, Except Cotton Ginning",A,07,072,0723
+Cotton Ginning,A,07,072,0724
+Veterinary Services,A,07,074,074
+Veterinary Services for Livestock,A,07,074,0741
+Veterinary Services for Animal Specialties,A,07,074,0742
+"Livestock Services, Except Veterinary",A,07,075,0751
+"Animal Specialty Services, Except Veterinary",A,07,075,0752
+Farm Labor And Management Services,A,07,076,076
+Farm Labor Contractors and Crew Leaders,A,07,076,0761
+Farm Management Services,A,07,076,0762
+Landscape And Horticultural Services,A,07,078,078
+Landscape Counseling and Planning,A,07,078,0781
+Lawn and Garden Services,A,07,078,0782
+Ornamental Shrub and Tree Services,A,07,078,0783
+Forestry,A,08,08,08
+Timber Tracts,A,08,081,081
+Timber Tracts,A,08,081,0811
+Forest Nurseries And Gathering Of Forest,A,08,083,083
+Forest Nurseries and Gathering of Forest Products,A,08,083,0831
+Forestry Services,A,08,085,085
+Forestry Services,A,08,085,0851
+"Fishing, hunting, and trapping",A,09,09,09
+Commercial Fishing,A,09,091,091
+Finfish,A,09,091,0912
+Shellfish,A,09,091,0913
+Miscellaneous Marine Products,A,09,091,0919
+Fish Hatcheries And Preserves,A,09,092,092
+Fish Hatcheries and Preserves,A,09,092,0921
+"Hunting And Trapping, And Game Propagation",A,09,097,097
+"Hunting and Trapping, and Game Propagation",A,09,097,0971
+Mining,B,B,B,B
+Metal mining,B,10,10,10
+Iron ores,B,10,101,101
+Iron ores,B,10,101,1011
+Iron ore mining,B,10,101,1011
+Copper ores,B,10,102,102
+Copper ores,B,10,102,1021
+Copper ore & nickel ore mining (pt),B,10,102,1021
+Lead and zinc ores,B,10,103,103
+Lead & zinc ores,B,10,103,1031
+Lead ore & zinc ore mining,B,10,103,1031
+Gold and silver ores,B,10,104,104
+Gold ores,B,10,104,1041
+Gold ore mining,B,10,104,1041
+Silver ores,B,10,104,1044
+Silver ore mining,B,10,104,1044
+Metal mining services,B,10,108,108
+Metal mining services,B,10,108,1081
+Support activities for metal mining,B,10,108,1081
+Geophysical surveying & mapping services (pt),B,10,108,1081
+Miscellaneous metal ores,B,10,109,109
+Uranium-radium-vanadium ores,B,10,109,1094
+Uranium-radium-vanadium ore mining,B,10,109,1094
+"Misc metal ores, n.e.c., & ferroalloy ores, exc vanadium",B,10,106,1061
+Copper ore & nickel ore mining (pt),B,10,109,1099
+All other metal ore mining,B,10,109,1099
+Coal mining,B,12,12,12
+Bituminous coal and lignite mining,B,12,122,122
+Bituminous coal & lignite - surface,B,12,122,1221
+Bituminous coal & lignite surface mining,B,12,122,1221
+Bituminous coal - underground,B,12,122,1222
+Bituminous coal underground mining,B,12,122,1222
+Anthracite mining,B,12,123,123
+Anthracite mining,B,12,123,1231
+Anthracite mining,B,12,123,1231
+Coal mining services,B,12,124,124
+Coal mining services,B,12,124,1241
+Support activities for coal mining,B,12,124,1241
+Oil and gas extraction,B,13,13,13
+Crude petroleum and natural gas,B,13,131,131
+Crude petroleum & natural gas,B,13,131,1311
+Crude petroleum & natural gas extraction,B,13,131,1311
+Natural gas liquids,B,13,132,132
+Natural gas liquids,B,13,132,1321
+Natural gas liquid extraction,B,13,132,1321
+Oil and gas field services,B,13,138,138
+Drilling oil & gas wells,B,13,138,1381
+Drilling oil & gas wells,B,13,138,1381
+Oil & gas exploration services,B,13,138,1382
+Support activities for oil & gas operations (pt),B,13,138,1382
+Geophysical surveying & mapping services (pt),B,13,138,1382
+"Oil & gas field services, n.e.c.",B,13,138,1389
+Support activities for oil & gas operations (pt),B,13,138,1389
+"Nonmetallic minerals, except fuels",B,14,14,14
+Dimension stone,B,14,141,141
+Dimension stone,B,14,141,1411
+Dimension stone mining & quarrying,B,14,141,1411
+"Crushed and broken stone, including riprap",B,14,142,142
+Crushed & broken limestone,B,14,142,1422
+Crushed & broken limestone mining & quarrying,B,14,142,1422
+Crushed & broken granite,B,14,142,1423
+Crushed & broken granite mining & quarrying,B,14,142,1423
+"Crushed & broken stone, n.e.c.",B,14,142,1429
+Other crushed & broken stone mining & quarrying (pt),B,14,142,1429
+Sand and gravel,B,14,144,144
+Construction sand & gravel,B,14,144,1442
+Construction sand & gravel mining,B,14,144,1442
+Industrial sand,B,14,144,1446
+Industrial sand mining,B,14,144,1446
+"Clay, ceramic, and refractory minerals",B,14,145,145
+Kaolin & ball clay,B,14,145,1455
+Kaolin & ball clay mining,B,14,145,1455
+"Clay, ceramic, & refractory minerals, n.e.c.",B,14,145,1459
+Clay & ceramic & refractory minerals mining,B,14,145,1459
+Chemical and fertilizer mineral mining,B,14,147,147
+"Potash, soda, & borate minerals",B,14,147,1474
+"Potash, soda, & borate mineral mining",B,14,147,1474
+Phosphate rock,B,14,147,1475
+Phosphate rock mining,B,14,147,1475
+"Chemical & fertilizer mineral mining, n.e.c.",B,14,147,1479
+Other chemical & fertilizer mineral mining,B,14,147,1479
+"Nonmetallic minerals services, except fuels",B,14,148,148
+"Nonmetallic minerals services, except fuels",B,14,148,1481
+Support activities for nonmetallic minerals (except fuels),B,14,148,1481
+"Geophys srvyng serv for nonmet min (exc fuels), contract basis",B,14,148,1481
+"Miscellaneous nonmetallic minerals, except fuels",B,14,149,149
+"Miscellaneous nonmetallic minerals, except fuels",B,14,149,1499
+Other crushed & broken stone mining & quarrying (pt),B,14,149,1499
+All other nonmetallic mineral mining,B,14,149,1499
+Construction industries,C,C,C,C
+Building construction--general contractors and operative builders,C,15,15,15
+General contractors--residential buildings,C,15,152,152
+General contractors--single-family houses,C,15,152,1521
+Single-family housing construction (pt),C,15,152,1521
+"General contractors--residential bldgs, other than single-family",C,15,152,1522
+Multifamily housing construction (pt),C,15,152,1522
+Commercial & institutional building construction (pt),C,15,152,1522
+Operative builders,C,15,153,153
+Operative builders,C,15,153,1531
+Single-family housing construction (pt),C,15,153,1531
+Multifamily housing construction (pt),C,15,153,1531
+Mfg & industrial building construction (pt),C,15,153,1531
+Commercial & institutional building construction (pt),C,15,153,1531
+General building contractors--nonresidential buildings,C,15,154,154
+General contractors--industrial buildings & warehouses,C,15,154,1541
+Mfg & industrial building construction (pt),C,15,154,1541
+Commercial & institutional building construction (pt),C,15,154,1541
+"General contractors--nonresidential bldgs, exc indust bldgs/whses",C,15,154,1542
+Commercial & institutional building construction (pt),C,15,154,1542
+Heavy construction other than buildings construction--contractors,C,16,16,16
+"Highway and street construction contractors, except elevated highways",C,16,161,161
+"Highway & street construction contractors, exc elevated highways",C,16,161,1611
+Highway & street construction,C,16,161,1611
+"Heavy construction, except highway and street construction",C,16,162,162
+"Bridge, tunnel, & elevated highway construction contractors",C,16,162,1622
+Bridge & tunnel construction,C,16,162,1622
+"Water, sewer, pipeline, & communications & power line constr",C,16,162,1623
+"Water, sewer, & pipeline construction",C,16,162,1623
+Power & communication transmission line construction,C,16,162,1623
+"Heavy construction, n.e.c.",C,16,162,1629
+Industrial nonbuilding structure construction,C,16,162,1629
+All other heavy construction (pt),C,16,162,1629
+Construction--Special trade contractors,C,17,17,17
+"Plumbing, heating, and air-conditioning special trade contractors",C,17,171,171
+"Plumbing, heating, & air-conditioning special trade contractors",C,17,171,1711
+"Plumbing, heating, & air-conditioning contractors",C,17,171,1711
+Painting and paper hanging special trade contractors,C,17,172,172
+Painting & paper hanging special trade contractors,C,17,172,1721
+Painting & wall covering contractors (pt),C,17,172,1721
+Electrical work special trade contractors,C,17,173,173
+Electrical work special trade contractors,C,17,173,1731
+Electrical contractors,C,17,173,1731
+"Masonry, stone work, tile setting, and plastering special trade contractors",C,17,174,174
+"Masonry, stone setting, & oth stone work special trade contr",C,17,174,1741
+Masonry & stone contractors,C,17,174,1741
+"Plastering, drywall, acoustical, & insul work special trade contr",C,17,174,1742
+"Drywall, plastering, acoustical, & insulation contractors (pt)",C,17,174,1742
+"Terrazzo, tile, marble, & mosaic work special trade contractors",C,17,174,1743
+"Drywall, plastering, acoustical, & insulation contractors (pt)",C,17,174,1743
+"Tile, marble, terrazzo, & mosaic contractors",C,17,174,1743
+Carpentry and floor work special trade contractors,C,17,175,175
+Carpentry work special trade contractors,C,17,175,1751
+Carpentry contractors,C,17,175,1751
+"Floor laying & other floor work special trade contractors, n.e.c.",C,17,175,1752
+Floor laying & other floor contractors,C,17,175,1752
+"Roofing, siding, and sheet metal work special trade contractors",C,17,176,176
+"Roofing, siding, & sheet metal work special trade contractors",C,17,176,1761
+"Roofing, siding, & sheet metal contractors",C,17,176,1761
+Concrete work special trade contractors,C,17,177,177
+Concrete work special trade contractors,C,17,177,1771
+"Drywall, plastering, acoustical, & insulation contractors (pt)",C,17,177,1771
+Concrete contractors,C,17,177,1771
+Water well drilling special trade contractors,C,17,178,178
+Water well drilling special trade contractors,C,17,178,1781
+Water well drilling contractors,C,17,178,1781
+Miscellaneous special trade contractors,C,17,179,179
+Structural steel erection special trade contractors,C,17,179,1791
+Structural steel erection contractors,C,17,179,1791
+Glass & glazing work special trade contractors,C,17,179,1793
+Glass & glazing contractors (pt),C,17,179,1793
+Excavation work special trade contractors,C,17,179,1794
+Excavation contractors,C,17,179,1794
+Wrecking & demolition work special trade contractors,C,17,179,1795
+Wrecking & demolition contractors,C,17,179,1795
+"Install or erection of bldg equip, special trade contr, n.e.c.",C,17,179,1796
+Building equip & other machinery installation contractors,C,17,179,1796
+"Special trade contractors, n.e.c.",C,17,179,1799
+All other special trade contractors,C,17,179,1799
+Asbestos abatement & lead paint removal,C,17,179,1799
+Manufacturing,D,D,D,D
+Food and kindred products,D,20,20,20
+Meat products,D,20,201,201
+Meat packing plants,D,20,201,2011
+Animal (except poultry) slaughtering (pt),D,20,201,2011
+Sausages & other prepared meats,D,20,201,2013
+Meat processed from carcasses (pt),D,20,201,2013
+Poultry & egg processing,D,20,201,2015
+Poultry processing,D,20,201,2015
+All other miscellaneous food mfg (pt),D,20,201,2015
+Dairy products,D,20,202,202
+Creamery butter,D,20,202,2021
+Creamery butter mfg,D,20,202,2021
+"Cheese, natural & processed",D,20,202,2022
+Cheese mfg,D,20,202,2022
+Condensed & evaporated milk,D,20,202,2023
+"Dry, condensed, & evaporated dairy product mfg",D,20,202,2023
+Ice cream & frozen desserts,D,20,202,2024
+Ice cream & frozen dessert mfg,D,20,202,2024
+Fluid milk,D,20,202,2026
+Fluid milk mfg,D,20,202,2026
+Preserved fruits and vegetables,D,20,203,203
+Canned specialties,D,20,203,2032
+Specialty canning,D,20,203,2032
+All other miscellaneous food mfg (pt),D,20,203,2032
+Canned fruits & vegetables,D,20,203,2033
+Fruit & vegetable canning (pt),D,20,203,2033
+"Dehydrated fruits, vegetables, & soups",D,20,203,2034
+Flour milling (pt),D,20,203,2034
+Dried & dehydrated food mfg (pt),D,20,203,2034
+"Pickles, sauces, & salad dressings",D,20,203,2035
+Fruit & vegetable canning (pt),D,20,203,2035
+"Mayonnaise, dressing, & other prepared sauce mfg (pt)",D,20,203,2035
+Frozen fruits & vegetables,D,20,203,2037
+"Frozen fruit, juice, & vegetable mfg",D,20,203,2037
+"Frozen specialties, n.e.c.",D,20,203,2038
+Frozen specialty food mfg,D,20,203,2038
+Grain mill products,D,20,204,204
+Flour & other grain mill products,D,20,204,2041
+Flour milling (pt),D,20,204,2041
+Cereal breakfast foods,D,20,204,2043
+Breakfast cereal mfg,D,20,204,2043
+Coffee & tea mfg (pt),D,20,204,2043
+Rice milling,D,20,204,2044
+Rice milling,D,20,204,2044
+Blended & prepared flour,D,20,204,2045
+Flour mixes & dough mfg from purchased flour,D,20,204,2045
+Wet corn milling,D,20,204,2046
+Wet corn milling,D,20,204,2046
+Dog & cat food,D,20,204,2047
+Dog & cat food mfg,D,20,204,2047
+"Prepared feeds, n.e.c.",D,20,204,2048
+Other animal food mfg,D,20,204,2048
+Animal (except poultry) slaughtering (pt),D,20,204,2048
+Bakery products,D,20,205,205
+"Bread, cake, & related products",D,20,205,2051
+Commercial bakeries (pt),D,20,205,2051
+Cookies & crackers,D,20,205,2052
+Commercial bakeries (pt),D,20,205,2052
+Cookie & cracker mfg,D,20,205,2052
+Other snack food mfg (pt),D,20,205,2052
+"Frozen bakery products, except bread",D,20,205,2053
+"Frozen cakes, pies, & other pastries mfg",D,20,205,2053
+Sugar and confectionery products,D,20,206,206
+Raw cane sugar,D,20,206,2061
+Sugarcane mills,D,20,206,2061
+Cane sugar refining,D,20,206,2062
+Cane sugar refining,D,20,206,2062
+Beet sugar,D,20,206,2063
+Beet sugar mfg,D,20,206,2063
+Candy & other confectionery products & chewing gum,D,20,206,2064
+Confectionery mfg from purchased chocolate (pt),D,20,206,2064
+Nonchocolate confectionery mfg (pt),D,20,206,2064
+Chocolate & cocoa products,D,20,206,2066
+Chocolate & confectionery mfg from cacao beans,D,20,206,2066
+Salted & roasted nuts & seeds,D,20,206,2068
+Roasted nuts & peanut butter mfg (pt),D,20,206,2068
+Fats and oils,D,20,207,207
+Cottonseed oil mills,D,20,207,2074
+Other oilseed processing (pt),D,20,207,2074
+Fats & oils refining & blending (pt),D,20,207,2074
+Soybean oil mills,D,20,207,2075
+Soybean processing,D,20,207,2075
+Fats & oils refining & blending (pt),D,20,207,2075
+"Vegetable oil mills, n.e.c.",D,20,207,2076
+Other oilseed processing (pt),D,20,207,2076
+Fats & oils refining & blending (pt),D,20,207,2076
+Animal & marine fats & oils,D,20,207,2077
+Fats & oils refining & blending (pt),D,20,207,2077
+Rendering & meat byproduct processing,D,20,207,2077
+Seafood canning (pt),D,20,207,2077
+Fresh & frozen seafood processing (pt),D,20,207,2077
+Shortening & cooking oils,D,20,207,2079
+Fats & oils refining & blending (pt),D,20,207,2079
+Beverages,D,20,208,208
+Malt beverages,D,20,208,2082
+Breweries,D,20,208,2082
+Malt,D,20,208,2083
+Malt mfg,D,20,208,2083
+"Wines, brandy, & brandy spirits",D,20,208,2084
+Wineries,D,20,208,2084
+"Distilled liquor, except brandy",D,20,208,2085
+Distilleries,D,20,208,2085
+Bottled & canned soft drinks,D,20,208,2086
+Soft drink mfg,D,20,208,2086
+Bottled water mfg,D,20,208,2086
+"Flavoring extracts & syrups, n.e.c.",D,20,208,2087
+Flavoring syrup & concentrate mfg,D,20,208,2087
+Spice & extract mfg (pt),D,20,208,2087
+All other miscellaneous food mfg (pt),D,20,208,2087
+Miscellaneous food and kindred products,D,20,209,209
+Canned & cured seafood,D,20,209,2091
+Seafood canning (pt),D,20,209,2091
+Fresh or frozen seafood,D,20,209,2092
+Fresh & frozen seafood processing (pt),D,20,209,2092
+Roasted coffee,D,20,209,2095
+Coffee & tea mfg (pt),D,20,209,2095
+Spice & extract mfg (pt),D,20,209,2095
+Potato chips & similar snacks,D,20,209,2096
+Other snack food mfg (pt),D,20,209,2096
+Manufactured ice,D,20,209,2097
+Ice mfg,D,20,209,2097
+Macaroni & spaghetti,D,20,209,2098
+Dry pasta mfg,D,20,209,2098
+"Food preparations, n.e.c.",D,20,209,2099
+Nonchocolate confectionery mfg (pt),D,20,209,2099
+Dried & dehydrated food mfg (pt),D,20,209,2099
+Tortilla mfg,D,20,209,2099
+Roasted nuts & peanut butter mfg (pt),D,20,209,2099
+Coffee & tea mfg (pt),D,20,209,2099
+"Mayonnaise, dressing, & other prepared sauce mfg (pt)",D,20,209,2099
+Spice & extract mfg (pt),D,20,209,2099
+Perishable prepared food mfg,D,20,209,2099
+All other miscellaneous food mfg (pt),D,20,209,2099
+Tobacco products,D,21,21,21
+Cigarettes,D,21,211,211
+Cigarettes,D,21,211,2111
+Cigarette mfg,D,21,211,2111
+Cigars,D,21,212,212
+Cigars,D,21,212,2121
+Other tobacco product mfg (pt),D,21,212,2121
+Chewing and smoking tobacco,D,21,213,213
+Chewing & smoking tobacco,D,21,213,2131
+Other tobacco product mfg (pt),D,21,213,2131
+Tobacco stemming and redrying,D,21,214,214
+Tobacco stemming & redrying,D,21,214,2141
+Tobacco stemming & redrying,D,21,214,2141
+Other tobacco product mfg (pt),D,21,214,2141
+Textile mill products,D,22,22,22
+"Broadwoven fabric mills, cotton",D,22,221,221
+"Weaving mills, cotton",D,22,221,2211
+Broadwoven fabric mills (pt),D,22,221,2211
+"Broadwoven fabric mills, manmade fiber and silk",D,22,222,222
+"Weaving mills, synthetics",D,22,222,2221
+Broadwoven fabric mills (pt),D,22,222,2221
+"Broadwoven fabric mills, wool",D,22,223,223
+"Weaving & finishing mills, wool",D,22,223,2231
+Broadwoven fabric mills (pt),D,22,223,2231
+Broadwoven fabric finishing mills (pt),D,22,223,2231
+Textile & fabric finishing mills (pt),D,22,223,2231
+Narrow fabric mills,D,22,224,224
+Narrow fabric mills,D,22,224,2241
+Narrow fabric mills (pt),D,22,224,2241
+Knitting mills,D,22,225,225
+"Women's hosiery, except socks",D,22,225,2251
+Sheer hosiery mills (pt),D,22,225,2251
+"Hosiery, n.e.c.",D,22,225,2252
+Sheer hosiery mills (pt),D,22,225,2252
+Other hosiery & sock mills,D,22,225,2252
+Knit outerwear mills,D,22,225,2253
+Outerwear knitting mills (pt),D,22,225,2253
+Knit underwear mills,D,22,225,2254
+Underwear & nightwear knitting mills (pt),D,22,225,2254
+Circular knit fabric mills,D,22,225,2257
+Weft knit fabric mills,D,22,225,2257
+Textile & fabric finishing mills (pt),D,22,225,2257
+Lace & warp knit fabric mills,D,22,225,2258
+Other knit fabric & lace mills (pt),D,22,225,2258
+Textile & fabric finishing mills (pt),D,22,225,2258
+"Knitting mills, n.e.c.",D,22,225,2259
+Other knit fabric & lace mills (pt),D,22,225,2259
+Outerwear knitting mills (pt),D,22,225,2259
+Underwear & nightwear knitting mills (pt),D,22,225,2259
+"Textile finishing, except wool",D,22,226,226
+"Finishing plants, cotton",D,22,226,2261
+Broadwoven fabric finishing mills (pt),D,22,226,2261
+"Finishing plants, synthetics",D,22,226,2262
+Broadwoven fabric finishing mills (pt),D,22,226,2262
+"Finishing plants, n.e.c.",D,22,226,2269
+Textile & fabric finishing mills (pt),D,22,226,2269
+Carpets and rugs,D,22,227,227
+Carpets & rugs,D,22,227,2273
+Carpet & rug mills,D,22,227,2273
+Yarn and thread mills,D,22,228,228
+Yarn spinning mills,D,22,228,2281
+Yarn spinning mills (pt),D,22,228,2281
+Yarn throwing & winding mills,D,22,228,2282
+"Yarn texturing, throwing, & twisting mills",D,22,228,2282
+Textile & fabric finishing mills (pt),D,22,228,2282
+Thread mills,D,22,228,2284
+Thread mills (pt),D,22,228,2284
+Textile & fabric finishing mills (pt),D,22,228,2284
+Miscellaneous textile goods,D,22,229,229
+"Coated fabrics, not rubberized",D,22,229,2295
+Fabric coating mills (pt),D,22,229,2295
+Tire cord & fabric,D,22,229,2296
+Tire cord & tire fabric mills,D,22,229,2296
+Nonwoven fabrics,D,22,229,2297
+Nonwoven fabric mills (pt),D,22,229,2297
+Cordage & twine,D,22,229,2298
+"Rope, cordage, & twine mills",D,22,229,2298
+"Textile goods, n.e.c.",D,22,229,2299
+Yarn spinning mills (pt),D,22,229,2299
+Thread mills (pt),D,22,229,2299
+Broadwoven fabric mills (pt),D,22,229,2299
+Narrow fabric mills (pt),D,22,229,2299
+Nonwoven fabric mills (pt),D,22,229,2299
+Textile & fabric finishing mills (pt),D,22,229,2299
+All other miscellaneous textile product mills (pt),D,22,229,2299
+Apparel and other textile products,D,23,23,23
+Men's and boys' suits and coats,D,23,231,231
+Men's & boys' suits & coats,D,23,231,2311
+Men's & boys' cut & sew apparel contractors (pt),D,23,231,2311
+"Men's & boys' cut & sew suit, coat, & overcoat mfg (pt)",D,23,231,2311
+Men's and boys' furnishings,D,23,232,232
+"Shirts, men's & boys'",D,23,232,2321
+Men's & boys' cut & sew apparel contractors (pt),D,23,232,2321
+Men's & boys' cut & sew shirt (exc work shirt) mfg (pt),D,23,232,2321
+Men's & boys' underwear & nightwear,D,23,232,2322
+Men's & boys' cut & sew apparel contractors (pt),D,23,232,2322
+Men's & boys' cut & sew underwear & nightwear mfg (pt),D,23,232,2322
+Men's & boys' neckwear,D,23,232,2323
+Men's & boys' neckwear mfg,D,23,232,2323
+Men's & boys' trousers & slacks,D,23,232,2325
+Men's & boys' cut & sew apparel contractors (pt),D,23,232,2325
+"Men's & boys' cut & sew trouser, slack, & jean mfg (pt)",D,23,232,2325
+Men's & boys' work clothing,D,23,232,2326
+Men's & boys' cut & sew apparel contractors (pt),D,23,232,2326
+Men's & boys' cut & sew work clothing mfg,D,23,232,2326
+"Men's & boys' clothing, n.e.c.",D,23,232,2329
+Men's & boys' cut & sew apparel contractors (pt),D,23,232,2329
+Men's & boys' cut & sew other outerwear mfg (pt),D,23,232,2329
+All other cut & sew apparel mfg (pt),D,23,232,2329
+Women's and children's outerwear,D,23,233,233
+Women's blouses & waists,D,23,233,2331
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,233,2331
+Women's & girls' cut & sew blouse & shirt mfg (pt),D,23,233,2331
+Women's dresses,D,23,233,2335
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,233,2335
+Women's & girls' cut & sew dress mfg (pt),D,23,233,2335
+Women's suits & coats,D,23,233,2337
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,233,2337
+"Women's & girls' cut & sew suit, coat, skirt mfg (pt)",D,23,233,2337
+"Women's outerwear, n.e.c.",D,23,233,2339
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,233,2339
+Women's & girls' cut & sew other outerwear mfg (pt),D,23,233,2339
+All other cut & sew apparel mfg (pt),D,23,233,2339
+Other apparel accessories & other apparel mfg (pt),D,23,233,2339
+Women's and children's undergarments,D,23,234,234
+Women's & children's underwear,D,23,234,2341
+Men's & boys' cut & sew apparel contractors (pt),D,23,234,2341
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,234,2341
+Men's & boys' cut & sew underwear & nightwear mfg (pt),D,23,234,2341
+Women's & girls' cut/sew lingerie & nightwear mfg (pt),D,23,234,2341
+Infants' cut & sew apparel mfg (pt),D,23,234,2341
+Brassieres & allied garments,D,23,234,2342
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,234,2342
+Women's & girls' cut/sew lingerie & nightwear mfg (pt),D,23,234,2342
+"Hats, caps, and millinery",D,23,235,235
+"Hats, caps, & millinery",D,23,235,2353
+"Hat, cap, & millinery mfg",D,23,235,2353
+Girls' and children's outerwear,D,23,236,236
+Girls' & children's dresses & blouses,D,23,236,2361
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,236,2361
+Men's & boys' cut & sew shirt (exc work shirt) mfg (pt),D,23,236,2361
+Women's & girls' cut & sew blouse & shirt mfg (pt),D,23,236,2361
+Women's & girls' cut & sew dress mfg (pt),D,23,236,2361
+Infants' cut & sew apparel mfg (pt),D,23,236,2361
+"Girls' & children's outerwear, n.e.c.",D,23,236,2369
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,236,2369
+Men's & boys' cut & sew underwear & nightwear mfg (pt),D,23,236,2369
+"Men's & boys' cut & sew suit, coat, & overcoat mfg (pt)",D,23,236,2369
+"Men's & boys' cut & sew trouser, slack, & jean mfg (pt)",D,23,236,2369
+Men's & boys' cut & sew other outerwear mfg (pt),D,23,236,2369
+Women's & girls' cut/sew lingerie & nightwear mfg (pt),D,23,236,2369
+"Women's & girls' cut & sew suit, coat, skirt mfg (pt)",D,23,236,2369
+Women's & girls' cut & sew other outerwear mfg (pt),D,23,236,2369
+Infants' cut & sew apparel mfg (pt),D,23,236,2369
+Fur goods,D,23,237,237
+Fur goods,D,23,237,2371
+Fur & leather apparel mfg (pt),D,23,237,2371
+Miscellaneous apparel and accessories,D,23,238,238
+Fabric gloves & mittens,D,23,238,2381
+Glove & mitten mfg (pt),D,23,238,2381
+Robes & dressing gowns,D,23,238,2384
+Men's & boys' cut & sew apparel contractors (pt),D,23,238,2384
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,238,2384
+Men's & boys' cut & sew underwear & nightwear mfg (pt),D,23,238,2384
+Women's & girls' cut/sew lingerie & nightwear mfg (pt),D,23,238,2384
+Waterproof outer garments,D,23,238,2385
+Men's & boys' cut & sew apparel contractors (pt),D,23,238,2385
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,238,2385
+"Men's & boys' cut & sew suit, coat, & overcoat mfg (pt)",D,23,238,2385
+Men's & boys' cut & sew other outerwear mfg (pt),D,23,238,2385
+"Women's & girls' cut & sew suit, coat, skirt mfg (pt)",D,23,238,2385
+Women's & girls' cut & sew other outerwear mfg (pt),D,23,238,2385
+Infants' cut & sew apparel mfg (pt),D,23,238,2385
+Other apparel accessories & other apparel mfg (pt),D,23,238,2385
+Leather & sheep-lined clothing,D,23,238,2386
+Fur & leather apparel mfg (pt),D,23,238,2386
+Apparel belts,D,23,238,2387
+Other apparel accessories & other apparel mfg (pt),D,23,238,2387
+"Apparel & accessories, n.e.c.",D,23,238,2389
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,238,2389
+Women's & girls' cut/sew lingerie & nightwear mfg (pt),D,23,238,2389
+All other cut & sew apparel mfg (pt),D,23,238,2389
+Other apparel accessories & other apparel mfg (pt),D,23,238,2389
+Miscellaneous fabricated textile products,D,23,239,239
+Curtains & draperies,D,23,239,2391
+Curtain & drapery mills (pt),D,23,239,2391
+"Housefurnishings, n.e.c.",D,23,239,2392
+Other household textile product mills,D,23,239,2392
+Textile bag mills (pt),D,23,239,2392
+"Broom, brush, & mop mfg (pt)",D,23,239,2392
+Textile bags,D,23,239,2393
+Textile bag mills (pt),D,23,239,2393
+Canvas & related products,D,23,239,2394
+Canvas & related product mills,D,23,239,2394
+Pleating & stitching,D,23,239,2395
+All other miscellaneous textile product mills (pt),D,23,239,2395
+Men's & boys' cut & sew apparel contractors (pt),D,23,239,2395
+"Women's, girls', & infants' cut & sew apparel contractors (pt)",D,23,239,2395
+Automotive & apparel trimmings,D,23,239,2396
+All other miscellaneous textile product mills (pt),D,23,239,2396
+Other apparel accessories & other apparel mfg (pt),D,23,239,2396
+Commercial screen printing (pt),D,23,239,2396
+Motor vehicle seating & interior trim mfg (pt),D,23,239,2396
+Schiffli machine embroideries,D,23,239,2397
+Schiffli machine embroidery,D,23,239,2397
+"Fabricated textile products, n.e.c.",D,23,239,2399
+All other miscellaneous textile product mills (pt),D,23,239,2399
+Other apparel accessories & other apparel mfg (pt),D,23,239,2399
+Motor vehicle seating & interior trim mfg (pt),D,23,239,2399
+Lumber and wood products,D,24,24,24
+Logging,D,24,241,241
+Logging,D,24,241,2411
+Logging,D,24,241,2411
+Sawmills and planing mills,D,24,242,242
+"Sawmills & planing mills, general",D,24,242,2421
+Sawmills (pt),D,24,242,2421
+"Cut stock, resawing lumber, & planing (pt)",D,24,242,2421
+Other millwork (including flooring) (pt),D,24,242,2421
+All other miscellaneous wood product mfg (pt),D,24,242,2421
+Hardwood dimension & flooring mills,D,24,242,2426
+"Cut stock, resawing lumber, & planing (pt)",D,24,242,2426
+Other millwork (including flooring) (pt),D,24,242,2426
+"Showcase, partition, shelving, & locker mfg (pt)",D,24,242,2426
+"Special product sawmills, n.e.c.",D,24,242,2429
+Sawmills (pt),D,24,242,2429
+Wood container & pallet mfg (pt),D,24,242,2429
+All other miscellaneous wood product mfg (pt),D,24,242,2429
+"Millwork, plywood, and structural members",D,24,243,243
+Millwork,D,24,243,2431
+Wood window & door mfg,D,24,243,2431
+Other millwork (including flooring) (pt),D,24,243,2431
+Wood kitchen cabinets,D,24,243,2434
+Wood kitchen cabinet & counter top mfg (pt),D,24,243,2434
+Hardwood veneer & plywood,D,24,243,2435
+Hardwood veneer & plywood mfg,D,24,243,2435
+Softwood veneer & plywood,D,24,243,2436
+Softwood veneer & plywood mfg,D,24,243,2436
+"Structural wood members, n.e.c.",D,24,243,2439
+Sawmills (pt),D,24,243,2439
+Engineered wood member (except truss) mfg,D,24,243,2439
+Truss mfg,D,24,243,2439
+"Cut stock, resawing lumber, & planing (pt)",D,24,243,2439
+Wood containers,D,24,244,244
+Nailed wood boxes & shook,D,24,244,2441
+Wood container & pallet mfg (pt),D,24,244,2441
+Wood pallets & skids,D,24,244,2448
+Wood container & pallet mfg (pt),D,24,244,2448
+"Wood containers, n.e.c.",D,24,244,2449
+Wood container & pallet mfg (pt),D,24,244,2449
+Wood buildings and mobile homes,D,24,245,245
+Mobile homes,D,24,245,2451
+Manufactured home (mobile home) mfg,D,24,245,2451
+Prefabricated wood buildings,D,24,245,2452
+Prefabricated wood building mfg,D,24,245,2452
+Miscellaneous wood products,D,24,249,249
+Wood preserving,D,24,249,2491
+Wood preservation,D,24,249,2491
+Reconstituted wood products,D,24,249,2493
+Reconstituted wood product mfg,D,24,249,2493
+"Wood products, n.e.c.",D,24,249,2499
+"Cut stock, resawing lumber, & planing (pt)",D,24,249,2499
+Wood container & pallet mfg (pt),D,24,249,2499
+All other miscellaneous wood product mfg (pt),D,24,249,2499
+Metal window & door mfg (pt),D,24,249,2499
+All other miscellaneous mfg (pt),D,24,249,2499
+Furniture and fixtures,D,25,25,25
+Household furniture,D,25,251,251
+Wood household furniture,D,25,251,2511
+Nonupholstered wood household furniture mfg (pt),D,25,251,2511
+Upholstered household furniture,D,25,251,2512
+Upholstered household furniture mfg (pt),D,25,251,2512
+Metal household furniture,D,25,251,2514
+Metal household furniture mfg,D,25,251,2514
+Mattresses & bedsprings,D,25,251,2515
+Upholstered household furniture mfg (pt),D,25,251,2515
+Mattress mfg,D,25,251,2515
+Wood TV & radio cabinets,D,25,251,2517
+"Wood television, radio, & sewing machine cabinet mfg",D,25,251,2517
+"Household furniture, n.e.c.",D,25,251,2519
+Household furniture (except wood & metal) mfg,D,25,251,2519
+Office furniture,D,25,252,252
+Wood office furniture,D,25,252,2521
+Wood office furniture mfg,D,25,252,2521
+"Office furniture, except wood",D,25,252,2522
+Office furniture (except wood) mfg,D,25,252,2522
+Public building and related furniture,D,25,253,253
+Public building & related furniture,D,25,253,2531
+Motor vehicle seating & interior trim mfg (pt),D,25,253,2531
+Institutional furniture mfg (pt),D,25,253,2531
+Lead pencil & art good mfg (pt),D,25,253,2531
+Partitions and fixtures,D,25,254,254
+Wood partitions & fixtures,D,25,254,2541
+Wood kitchen cabinet & counter top mfg (pt),D,25,254,2541
+Custom architectural woodwork & millwork mfg,D,25,254,2541
+"Showcase, partition, shelving, & locker mfg (pt)",D,25,254,2541
+"Partitions & fixtures, except wood",D,25,254,2542
+"Showcase, partition, shelving, & locker mfg (pt)",D,25,254,2542
+Miscellaneous furniture and fixtures,D,25,259,259
+"Drapery hardware, blinds, & shades",D,25,259,2591
+Blind & shade mfg,D,25,259,2591
+"Furniture & fixtures, n.e.c.",D,25,259,2599
+Institutional furniture mfg (pt),D,25,259,2599
+Surgical appliance & supplies mfg (pt),D,25,259,2599
+Paper and allied products,D,26,26,26
+Pulp mills,D,26,261,261
+Pulp mills,D,26,261,2611
+Pulp mills,D,26,261,2611
+Paper mills,D,26,262,262
+Paper mills,D,26,262,2621
+Paper (except newsprint) mills (pt),D,26,262,2621
+Newsprint mills,D,26,262,2621
+Paperboard mills,D,26,263,263
+Paperboard mills,D,26,263,2631
+Paperboard mills,D,26,263,2631
+Paperboard containers and boxes,D,26,265,265
+Setup paperboard boxes,D,26,265,2652
+Setup paperboard box mfg,D,26,265,2652
+Corrugated & solid fiber boxes,D,26,265,2653
+Corrugated & solid fiber box mfg,D,26,265,2653
+"Fiber cans, drums, & similar products",D,26,265,2655
+"Fiber can, tube, drum, & similar products mfg",D,26,265,2655
+Sanitary food containers,D,26,265,2656
+Nonfolding sanitary food container mfg,D,26,265,2656
+Folding paperboard boxes,D,26,265,2657
+Folding paperboard box mfg,D,26,265,2657
+Miscellaneous converted paper products,D,26,267,267
+"Paper - coated & laminated, packaging",D,26,267,2671
+Coated & laminated packaging paper & plastics film mfg,D,26,267,2671
+Unsupported plastics packaging film & sheet mfg,D,26,267,2671
+"Paper - coated & laminated, n.e.c.",D,26,267,2672
+Coated & laminated paper mfg (pt),D,26,267,2672
+"Bags - plastics, laminated, & coated",D,26,267,2673
+"Plastics, foil, & coated paper bag mfg",D,26,267,2673
+Unsupported plastics bag mfg,D,26,267,2673
+Bags - uncoated paper & multiwall,D,26,267,2674
+Uncoated paper & multiwall bag mfg,D,26,267,2674
+Die-cut paper & board,D,26,267,2675
+Surface-coated paperboard mfg,D,26,267,2675
+Die-cut paper & paperboard office supplies mfg (pt),D,26,267,2675
+All other converted paper product mfg (pt),D,26,267,2675
+Sanitary paper products,D,26,267,2676
+Paper (except newsprint) mills (pt),D,26,267,2676
+Sanitary paper product mfg (pt),D,26,267,2676
+Envelopes,D,26,267,2677
+Envelope mfg,D,26,267,2677
+Stationery products,D,26,267,2678
+"Stationery, tablet, & related product mfg",D,26,267,2678
+"Converted paper products, n.e.c.",D,26,267,2679
+Coated & laminated paper mfg (pt),D,26,267,2679
+Die-cut paper & paperboard office supplies mfg (pt),D,26,267,2679
+All other converted paper product mfg (pt),D,26,267,2679
+Printing and publishing,D,27,27,27
+Newspapers,D,27,271,271
+Newspapers,D,27,271,2711
+Newspaper publishers,D,27,271,2711
+Periodicals,D,27,272,272
+Periodicals,D,27,272,2721
+Periodical publishers,D,27,272,2721
+Books,D,27,273,273
+Book publishing,D,27,273,2731
+Book publishers,D,27,273,2731
+Music publishers (pt),D,27,273,2731
+Book printing,D,27,273,2732
+Book printing,D,27,273,2732
+Miscellaneous publishing,D,27,274,274
+Miscellaneous publishing,D,27,274,2741
+Database & directory publishers (pt),D,27,274,2741
+All other publishers,D,27,274,2741
+Music publishers (pt),D,27,274,2741
+Commercial printing,D,27,275,275
+"Commercial printing, lithographic",D,27,275,2752
+Commercial lithographic printing (pt),D,27,275,2752
+Quick printing (pt),D,27,275,2752
+"Commercial printing, gravure",D,27,275,2754
+Commercial gravure printing (pt),D,27,275,2754
+"Commercial printing, n.e.c.",D,27,275,2759
+Commercial flexographic printing (pt),D,27,275,2759
+Commercial screen printing (pt),D,27,275,2759
+Quick printing (pt),D,27,275,2759
+Digital printing,D,27,275,2759
+Other commercial printing (pt),D,27,275,2759
+Manifold business forms,D,27,276,276
+Manifold business forms,D,27,276,2761
+Manifold business form printing (pt),D,27,276,2761
+Greeting cards,D,27,277,277
+Greeting cards,D,27,277,2771
+Commercial lithographic printing (pt),D,27,277,2771
+Commercial gravure printing (pt),D,27,277,2771
+Commercial flexographic printing (pt),D,27,277,2771
+Commercial screen printing (pt),D,27,277,2771
+Other commercial printing (pt),D,27,277,2771
+Greeting card publishers,D,27,277,2771
+Blankbooks and bookbinding,D,27,278,278
+Blankbooks & looseleaf binders,D,27,278,2782
+Manifold business form printing (pt),D,27,278,2782
+"Blankbook, looseleaf binder, & device mfg",D,27,278,2782
+Bookbinding & related work,D,27,278,2789
+Tradebinding & related work,D,27,278,2789
+Printing trade services,D,27,279,279
+Typesetting,D,27,279,2791
+Prepress services (pt),D,27,279,2791
+Platemaking services,D,27,279,2796
+Prepress services (pt),D,27,279,2796
+Chemicals and allied products,D,28,28,28
+Industrial inorganic chemicals,D,28,281,281
+Alkalies & chlorine,D,28,281,2812
+Alkalies & chlorine mfg,D,28,281,2812
+Industrial gases,D,28,281,2813
+Industrial gas mfg (pt),D,28,281,2813
+Inorganic pigments,D,28,281,2816
+Inorganic dye & pigment mfg (pt),D,28,281,2816
+Carbon black mfg (pt),D,28,281,2816
+"Industrial inorganic chemicals, n.e.c.",D,28,281,2819
+Inorganic dye & pigment mfg (pt),D,28,281,2819
+All other basic inorganic chemical mfg (pt),D,28,281,2819
+All other miscellaneous chemical product & preparation mfg (pt),D,28,281,2819
+Alumina refining,D,28,281,2819
+Plastics materials and synthetics,D,28,282,282
+Plastics materials & resins,D,28,282,2821
+Plastics material & resin mfg,D,28,282,2821
+Synthetic rubber,D,28,282,2822
+Synthetic rubber mfg,D,28,282,2822
+Cellulosic manmade fibers,D,28,282,2823
+Cellulosic organic fiber mfg,D,28,282,2823
+"Organic fibers, noncellulosic",D,28,282,2824
+Noncellulosic organic fiber mfg,D,28,282,2824
+Drugs,D,28,283,283
+Medicinals & botanicals,D,28,283,2833
+Medicinal & botanical mfg,D,28,283,2833
+Pharmaceutical preparations,D,28,283,2834
+Pharmaceutical preparation mfg (pt),D,28,283,2834
+Diagnostic substances,D,28,283,2835
+Pharmaceutical preparation mfg (pt),D,28,283,2835
+In-vitro diagnostic substance mfg,D,28,283,2835
+"Biological products, except diagnostic",D,28,283,2836
+Biological product (except diagnostic) mfg,D,28,283,2836
+"Soaps, cleaners, and toilet goods",D,28,284,284
+Soap & other detergents,D,28,284,2841
+Soap & other detergent mfg (pt),D,28,284,2841
+Polishes & sanitation goods,D,28,284,2842
+Polish & other sanitation good mfg,D,28,284,2842
+Surface active agents,D,28,284,2843
+Surface active agent mfg,D,28,284,2843
+Toilet preparations,D,28,284,2844
+Soap & other detergent mfg (pt),D,28,284,2844
+Toilet preparation mfg,D,28,284,2844
+Paints and allied products,D,28,285,285
+Paints & allied products,D,28,285,2851
+Paint & coating mfg (pt),D,28,285,2851
+Industrial organic chemicals,D,28,286,286
+Gum & wood chemicals,D,28,286,2861
+Gum & wood chemical mfg,D,28,286,2861
+Cyclic crudes & intermediates,D,28,286,2865
+Petrochemical mfg (pt),D,28,286,2865
+Synthetic organic dye & pigment mfg,D,28,286,2865
+Cyclic crude & intermediate mfg,D,28,286,2865
+"Industrial organic chemicals, n.e.c.",D,28,286,2869
+Petrochemical mfg (pt),D,28,286,2869
+Industrial gas mfg (pt),D,28,286,2869
+All other basic inorganic chemical mfg (pt),D,28,286,2869
+Ethyl alcohol mfg,D,28,286,2869
+All other basic organic chemical mfg (pt),D,28,286,2869
+Agricultural chemicals,D,28,287,287
+Nitrogenous fertilizers,D,28,287,2873
+Nitrogenous fertilizer mfg,D,28,287,2873
+Phosphatic fertilizers,D,28,287,2874
+Phosphatic fertilizer mfg,D,28,287,2874
+"Fertilizers, mixing only",D,28,287,2875
+Fertilizer (mixing only) mfg,D,28,287,2875
+"Agricultural chemicals, n.e.c.",D,28,287,2879
+Pesticide & other agricultural chemical mfg,D,28,287,2879
+Miscellaneous chemical products,D,28,289,289
+Adhesives & sealants,D,28,289,2891
+Adhesive mfg,D,28,289,2891
+Explosives,D,28,289,2892
+Explosives mfg,D,28,289,2892
+Printing ink,D,28,289,2893
+Printing ink mfg,D,28,289,2893
+Carbon black,D,28,289,2895
+Carbon black mfg (pt),D,28,289,2895
+"Chemical preparations, n.e.c.",D,28,289,2899
+Spice & extract mfg (pt),D,28,289,2899
+All other basic organic chemical mfg (pt),D,28,289,2899
+Paint & coating mfg (pt),D,28,289,2899
+All other miscellaneous chemical product & preparation mfg (pt),D,28,289,2899
+Petroleum and coal products,D,29,29,29
+Petroleum refining,D,29,291,291
+Petroleum refining,D,29,291,2911
+Petroleum refineries,D,29,291,2911
+Asphalt paving and roofing materials,D,29,295,295
+Asphalt paving mixtures & blocks,D,29,295,2951
+Asphalt paving mixture & block mfg,D,29,295,2951
+Asphalt felts & coatings,D,29,295,2952
+Asphalt shingle & coating materials mfg,D,29,295,2952
+Miscellaneous petroleum and coal products,D,29,299,299
+Lubricating oils & greases,D,29,299,2992
+Petroleum lubricating oil & grease mfg,D,29,299,2992
+"Petroleum & coal products, n.e.c.",D,29,299,2999
+All other petroleum & coal products mfg (pt),D,29,299,2999
+Rubber and miscellaneous plastics products,D,30,30,30
+Tires and inner tubes,D,30,301,301
+Tires & inner tubes,D,30,301,3011
+Tire mfg (except retreading),D,30,301,3011
+Rubber and plastics footwear,D,30,302,302
+Rubber & plastics footwear,D,30,302,3021
+Rubber & plastics footwear mfg,D,30,302,3021
+Hose and belting and gaskets and packing,D,30,305,305
+Rubber & plastics hose & belting,D,30,305,3052
+Rubber & plastics hoses & belting mfg,D,30,305,3052
+"Gaskets, packing & sealing devices",D,30,305,3053
+"Gasket, packing, & sealing device mfg",D,30,305,3053
+"Fabricated rubber products, n.e.c.",D,30,306,306
+Mechanical rubber goods,D,30,306,3061
+Rubber product mfg for mechanical use,D,30,306,3061
+"Fabricated rubber products, n.e.c.",D,30,306,3069
+Fabric coating mills (pt),D,30,306,3069
+Resilient floor covering mfg (pt),D,30,306,3069
+All other rubber product mfg,D,30,306,3069
+"Miscellaneous plastics products, n.e.c.",D,30,308,308
+Unsupported plastics film & sheet,D,30,308,3081
+Unsupported plastics film & sheet (except packaging) mfg,D,30,308,3081
+Unsupported plastics profile shapes,D,30,308,3082
+Unsupported plastics profile shape mfg,D,30,308,3082
+Laminated plastics plate & sheet,D,30,308,3083
+"Laminated plastics plate, sheet, & shape mfg",D,30,308,3083
+Plastics pipe,D,30,308,3084
+Plastics pipe & pipe fitting mfg (pt),D,30,308,3084
+Plastics bottles,D,30,308,3085
+Plastics bottle mfg,D,30,308,3085
+Plastics foam products,D,30,308,3086
+Polystyrene foam product mfg,D,30,308,3086
+Urethane & other foam product (except polystyrene) mfg,D,30,308,3086
+Custom compound purchased resins,D,30,308,3087
+Custom compounding of purchased resin,D,30,308,3087
+Plastics plumbing fixtures,D,30,308,3088
+Plastics plumbing fixture mfg,D,30,308,3088
+"Plastics products, n.e.c.",D,30,308,3089
+Plastics pipe & pipe fitting mfg (pt),D,30,308,3089
+All other plastics product mfg (pt),D,30,308,3089
+Residential electric lighting fixture mfg (pt),D,30,308,3089
+Leather and leather products,D,31,31,31
+Leather tanning and finishing,D,31,311,311
+Leather tanning & finishing,D,31,311,3111
+Leather & hide tanning & finishing (pt),D,31,311,3111
+Footwear cut stock,D,31,313,313
+Footwear cut stock & findings,D,31,313,3131
+All other leather good mfg (pt),D,31,313,3131
+All other miscellaneous wood product mfg (pt),D,31,313,3131
+"Fastener, button, needle, & pin mfg (pt)",D,31,313,3131
+"Footwear, except rubber",D,31,314,314
+House slippers,D,31,314,3142
+House slipper mfg,D,31,314,3142
+"Men's footwear, except athletic",D,31,314,3143
+Men's footwear (except athletic) mfg,D,31,314,3143
+"Women's footwear, except athletic",D,31,314,3144
+Women's footwear (except athletic) mfg,D,31,314,3144
+"Footwear, except rubber, n.e.c.",D,31,314,3149
+Other footwear mfg,D,31,314,3149
+Leather gloves and mittens,D,31,315,315
+Leather gloves & mittens,D,31,315,3151
+Glove & mitten mfg (pt),D,31,315,3151
+Luggage,D,31,316,316
+Luggage,D,31,316,3161
+Luggage mfg,D,31,316,3161
+Handbags and personal leather goods,D,31,317,317
+Women's handbags & purses,D,31,317,3171
+Women's handbag & purse mfg,D,31,317,3171
+"Personal leather goods, n.e.c.",D,31,317,3172
+Personal leather good (except women's handbag & purse) mfg,D,31,317,3172
+"Leather goods, n.e.c.",D,31,319,319
+"Leather goods, n.e.c.",D,31,319,3199
+All other leather good mfg (pt),D,31,319,3199
+"Stone, clay, and glass products",D,32,32,32
+Flat glass,D,32,321,321
+Flat glass,D,32,321,3211
+Flat glass mfg,D,32,321,3211
+"Glass and glassware, pressed or blown",D,32,322,322
+Glass containers,D,32,322,3221
+Glass container mfg,D,32,322,3221
+"Pressed & blown glass, n.e.c.",D,32,322,3229
+Other pressed & blown glass & glassware mfg,D,32,322,3229
+Products of purchased glass,D,32,323,323
+Products of purchased glass,D,32,323,3231
+Glass product mfg made of purchased glass,D,32,323,3231
+"Cement, hydraulic",D,32,324,324
+"Cement, hydraulic",D,32,324,3241
+Cement mfg,D,32,324,3241
+Structural clay products,D,32,325,325
+Brick & structural clay tile,D,32,325,3251
+Brick & structural clay tile mfg,D,32,325,3251
+Ceramic wall & floor tile,D,32,325,3253
+Ceramic wall & floor tile mfg,D,32,325,3253
+Clay refractories,D,32,325,3255
+Clay refractory mfg,D,32,325,3255
+"Structural clay products, n.e.c.",D,32,325,3259
+Other structural clay product mfg,D,32,325,3259
+Pottery and related products,D,32,326,326
+Vitreous plumbing fixtures,D,32,326,3261
+Vitreous china plumbing fixture & bathroom accessories mfg,D,32,326,3261
+Vitreous china food utensils,D,32,326,3262
+"Vitreous china, fine earthenware, & other pottery product mfg (pt",D,32,326,3262
+Fine earthenware food utensils,D,32,326,3263
+"Vitreous china, fine earthenware, & other pottery product mfg (pt",D,32,326,3263
+Porcelain electrical supplies,D,32,326,3264
+Porcelain electrical supply mfg,D,32,326,3264
+"Pottery products, n.e.c.",D,32,326,3269
+"Vitreous china, fine earthenware, & other pottery product mfg (pt",D,32,326,3269
+"Concrete, gypsum, and plaster products",D,32,327,327
+Concrete brick & block,D,32,327,3271
+Concrete block & brick mfg,D,32,327,3271
+"Concrete products, n.e.c.",D,32,327,3272
+Concrete pipe mfg,D,32,327,3272
+Other concrete product mfg,D,32,327,3272
+All other miscellaneous nonmetallic mineral product mfg (pt),D,32,327,3272
+Ready-mixed concrete,D,32,327,3273
+Ready-mix concrete mfg,D,32,327,3273
+Lime,D,32,327,3274
+Lime mfg,D,32,327,3274
+Gypsum products,D,32,327,3275
+Gypsum product mfg (pt),D,32,327,3275
+Cut stone and stone products,D,32,328,328
+Cut stone & stone products,D,32,328,3281
+Cut stone & stone product mfg,D,32,328,3281
+Miscellaneous nonmetallic mineral products,D,32,329,329
+Abrasive products,D,32,329,3291
+Abrasive product mfg,D,32,329,3291
+All other miscellaneous fabricated metal product mfg (pt),D,32,329,3291
+Asbestos products,D,32,329,3292
+All other miscellaneous nonmetallic mineral product mfg (pt),D,32,329,3292
+Motor vehicle brake system mfg (pt),D,32,329,3292
+"Minerals, ground or treated",D,32,329,3295
+Ground or treated mineral & earth mfg,D,32,329,3295
+Mineral wool,D,32,329,3296
+Mineral wool mfg,D,32,329,3296
+Nonclay refractories,D,32,329,3297
+Nonclay refractory mfg,D,32,329,3297
+"Nonmetallic mineral products, n.e.c.",D,32,329,3299
+"Vitreous china, fine earthenware, & other pottery product mfg (pt",D,32,329,3299
+Gypsum product mfg (pt),D,32,329,3299
+All other miscellaneous nonmetallic mineral product mfg (pt),D,32,329,3299
+Primary metal industries,D,33,33,33
+Blast furnace and basic steel products,D,33,331,331
+Blast furnaces & steel mills,D,33,331,3312
+All other petroleum & coal products mfg (pt),D,33,331,3312
+Iron & steel mills (pt),D,33,331,3312
+Electrometallurgical products,D,33,331,3313
+Electrometallurgical ferroalloy product mfg,D,33,331,3313
+"Other nonferrous metal secondary smelting, refining, & alloying (",D,33,331,3313
+Steel wire & related products,D,33,331,3315
+Steel wire drawing,D,33,331,3315
+Other fabricated wire product mfg (pt),D,33,331,3315
+Cold finishing of steel shapes,D,33,331,3316
+Cold-rolled steel shape mfg,D,33,331,3316
+Steel pipe & tubes,D,33,331,3317
+Iron & steel pipes & tubes mfg from purchased steel,D,33,331,3317
+Iron and steel foundries,D,33,332,332
+Gray iron foundries,D,33,332,3321
+Iron foundries (pt),D,33,332,3321
+Malleable iron foundries,D,33,332,3322
+Iron foundries (pt),D,33,332,3322
+Steel investment foundries,D,33,332,3324
+Steel investment foundries,D,33,332,3324
+"Steel foundries, n.e.c.",D,33,332,3325
+Steel foundries (except investment),D,33,332,3325
+Primary nonferrous metals,D,33,333,333
+Primary copper,D,33,333,3331
+Primary smelting & refining of copper,D,33,333,3331
+Primary aluminum,D,33,333,3334
+Primary aluminum production,D,33,333,3334
+"Primary nonferrous metals, n.e.c.",D,33,333,3339
+Other nonferrous metal primary smelting & refining,D,33,333,3339
+Secondary nonferrous metals,D,33,334,334
+Secondary nonferrous metals,D,33,334,3341
+Secondary smelting & alloying of aluminum (pt),D,33,334,3341
+"Secondary smelting, refining, & alloying of copper (pt)",D,33,334,3341
+"Other nonferrous metal secondary smelting, refining, & alloying (",D,33,334,3341
+Nonferrous rolling and drawing,D,33,335,335
+Copper rolling & drawing,D,33,335,3351
+"Copper rolling, drawing, & extruding",D,33,335,3351
+"Aluminum sheet, plate, & foil",D,33,335,3353
+"Aluminum sheet, plate, & foil mfg",D,33,335,3353
+Fabricated pipe & pipe fitting mfg (pt),D,33,335,3353
+Aluminum extruded products,D,33,335,3354
+Aluminum extruded product mfg,D,33,335,3354
+"Aluminum rolling & drawing, n.e.c.",D,33,335,3355
+Other aluminum rolling & drawing (pt),D,33,335,3355
+"Nonferrous rolling & drawing, n.e.c.",D,33,335,3356
+"Other nonferrous metal rolling, drawing, & extruding (pt)",D,33,335,3356
+Nonferrous wire drawing & insulating,D,33,335,3357
+Other aluminum rolling & drawing (pt),D,33,335,3357
+Copper wire (except mechanical) drawing,D,33,335,3357
+"Other nonferrous metal rolling, drawing, & extruding (pt)",D,33,335,3357
+Fiber optic cable mfg,D,33,335,3357
+Other communication & energy wire mfg,D,33,335,3357
+Nonferrous foundries (castings),D,33,336,336
+Aluminum die-castings,D,33,336,3363
+Aluminum die-casting foundries,D,33,336,3363
+"Nonferrous die-casting, except aluminum",D,33,336,3364
+Nonferrous (except aluminum) die-casting foundries,D,33,336,3364
+Aluminum foundries,D,33,336,3365
+Aluminum foundries (except die-casting),D,33,336,3365
+Copper foundries,D,33,336,3366
+Copper foundries (except die-casting),D,33,336,3366
+"Nonferrous foundries, n.e.c.",D,33,336,3369
+Other nonferrous foundries (except die-casting),D,33,336,3369
+Miscellaneous primary metal products,D,33,339,339
+Metal heat treating,D,33,339,3398
+Metal heat treating,D,33,339,3398
+"Primary metal products, n.e.c.",D,33,339,3399
+Iron & steel mills (pt),D,33,339,3399
+Secondary smelting & alloying of aluminum (pt),D,33,339,3399
+"Secondary smelting, refining, & alloying of copper (pt)",D,33,339,3399
+"Other nonferrous metal secondary smelting, refining, & alloying (",D,33,339,3399
+Other fabricated wire product mfg (pt),D,33,339,3399
+Fabricated metal products,D,34,34,34
+Metal cans and shipping containers,D,34,341,341
+Metal cans,D,34,341,3411
+Metal can mfg,D,34,341,3411
+"Metal barrels, drums, & pails",D,34,341,3412
+Other metal container mfg (pt),D,34,341,3412
+"Cutlery, handtools, and hardware",D,34,342,342
+Cutlery,D,34,342,3421
+Cutlery & flatware (except precious) mfg (pt),D,34,342,3421
+"Hand & edge tools, n.e.c.",D,34,342,3423
+Hand & edge tool mfg (pt),D,34,342,3423
+Hand saws & saw blades,D,34,342,3425
+Saw blade & handsaw mfg,D,34,342,3425
+"Hardware, n.e.c.",D,34,342,3429
+Other metal container mfg (pt),D,34,342,3429
+Hardware mfg (pt),D,34,342,3429
+Other metal valve & pipe fitting mfg (pt),D,34,342,3429
+"Plumbing and heating, except electric",D,34,343,343
+Metal sanitary ware,D,34,343,3431
+Enameled iron & metal sanitary ware mfg,D,34,343,3431
+Plumbing fittings & brass goods,D,34,343,3432
+Plumbing fixture fitting & trim mfg,D,34,343,3432
+All other miscellaneous fabricated metal product mfg (pt),D,34,343,3432
+"Heating equipment, except electric",D,34,343,3433
+Heating equipment (except warm air furnaces) mfg (pt),D,34,343,3433
+Fabricated structural metal products,D,34,344,344
+Fabricated structural metal,D,34,344,3441
+Fabricated structural metal mfg (pt),D,34,344,3441
+"Metal doors, sash, & trim",D,34,344,3442
+Metal window & door mfg (pt),D,34,344,3442
+"Fabricated plate work, boiler shops",D,34,344,3443
+Plate work mfg,D,34,344,3443
+Power boiler & heat exchanger mfg,D,34,344,3443
+Metal tank (heavy gauge) mfg,D,34,344,3443
+AC & warm air heating & commercial/industrial refrig equip mfg (p,D,34,344,3443
+Sheet metal work,D,34,344,3444
+Sheet metal work mfg,D,34,344,3444
+Other metal container mfg (pt),D,34,344,3444
+Architectural metal work,D,34,344,3446
+Ornamental & architectural metal work mfg (pt),D,34,344,3446
+Prefabricated metal buildings,D,34,344,3448
+Prefabricated metal building & component mfg,D,34,344,3448
+Miscellaneous metal work,D,34,344,3449
+Custom roll forming,D,34,344,3449
+Fabricated structural metal mfg (pt),D,34,344,3449
+Metal window & door mfg (pt),D,34,344,3449
+Ornamental & architectural metal work mfg (pt),D,34,344,3449
+"Screw machine products, bolts, etc.",D,34,345,345
+Screw machine products,D,34,345,3451
+Precision turned product mfg,D,34,345,3451
+"Bolts, nuts, rivets, & washers",D,34,345,3452
+"Bolt, nut, screw, rivet, & washer mfg",D,34,345,3452
+Metal forgings and stampings,D,34,346,346
+Iron & steel forgings,D,34,346,3462
+Iron & steel forging,D,34,346,3462
+Nonferrous forgings,D,34,346,3463
+Nonferrous forging,D,34,346,3463
+Automotive stampings,D,34,346,3465
+Motor vehicle metal stamping,D,34,346,3465
+Crowns & closures,D,34,346,3466
+Crown & closure mfg,D,34,346,3466
+"Metal stampings, n.e.c.",D,34,346,3469
+Metal stamping,D,34,346,3469
+"Kitchen utensil, pot, & pan mfg",D,34,346,3469
+"Metal services, n.e.c.",D,34,347,347
+Plating & polishing,D,34,347,3471
+"Electroplating, plating, polishing, anodizing, & coloring",D,34,347,3471
+Metal coating & allied services,D,34,347,3479
+Metal coating/engraving (exc jewelry/silverware)/allied services,D,34,347,3479
+Jewelry (except costume) mfg (pt),D,34,347,3479
+Silverware & plated ware mfg (pt),D,34,347,3479
+Costume jewelry & novelty mfg (pt),D,34,347,3479
+"Ordnance and accessories, n.e.c.",D,34,348,348
+Small arms ammunition,D,34,348,3482
+Small arms ammunition mfg,D,34,348,3482
+"Ammunition, except small arms, n.e.c.",D,34,348,3483
+Ammunition (except small arms) mfg,D,34,348,3483
+Small arms,D,34,348,3484
+Small arms mfg,D,34,348,3484
+"Ordnance & accessories, n.e.c.",D,34,348,3489
+Other ordnance & accessories mfg,D,34,348,3489
+Miscellaneous fabricated metal products,D,34,349,349
+Industrial valves,D,34,349,3491
+Industrial valve mfg,D,34,349,3491
+Fluid power valves & hose fittings,D,34,349,3492
+Fluid power valve & hose fitting mfg (pt),D,34,349,3492
+"Steel springs, except wire",D,34,349,3493
+Spring (heavy gauge) mfg,D,34,349,3493
+"Valves & pipe fittings, n.e.c.",D,34,349,3494
+Other metal valve & pipe fitting mfg (pt),D,34,349,3494
+All other miscellaneous fabricated metal product mfg (pt),D,34,349,3494
+Wire springs,D,34,349,3495
+Spring (light gauge) mfg,D,34,349,3495
+"Watch, clock, & part mfg (pt)",D,34,349,3495
+Miscellaneous fabricated wire products,D,34,349,3496
+Other fabricated wire product mfg (pt),D,34,349,3496
+Metal foil & leaf,D,34,349,3497
+Laminated aluminum foil mfg for flexible packaging uses,D,34,349,3497
+All other miscellaneous fabricated metal product mfg (pt),D,34,349,3497
+Fabricated pipe & fittings,D,34,349,3498
+Fabricated pipe & pipe fitting mfg (pt),D,34,349,3498
+"Fabricated metal products, n.e.c.",D,34,349,3499
+Powder metallurgy part mfg,D,34,349,3499
+Other metal container mfg (pt),D,34,349,3499
+Hardware mfg (pt),D,34,349,3499
+Other metal valve & pipe fitting mfg (pt),D,34,349,3499
+All other miscellaneous fabricated metal product mfg (pt),D,34,349,3499
+"Showcase, partition, shelving, & locker mfg (pt)",D,34,349,3499
+Costume jewelry & novelty mfg (pt),D,34,349,3499
+Industrial machinery and equipment,D,35,35,35
+Engines and turbines,D,35,351,351
+Turbines & turbine generator sets,D,35,351,3511
+Turbine & turbine generator set unit mfg,D,35,351,3511
+"Internal combustion engines, n.e.c.",D,35,351,3519
+Other engine equipment mfg (pt),D,35,351,3519
+All other motor vehicle parts mfg (pt),D,35,351,3519
+Farm and garden machinery,D,35,352,352
+Farm machinery & equipment,D,35,352,3523
+Hand & edge tool mfg (pt),D,35,352,3523
+Ornamental & architectural metal work mfg (pt),D,35,352,3523
+Farm machinery & equipment mfg,D,35,352,3523
+Conveyor & conveying equipment mfg (pt),D,35,352,3523
+Lawn & garden equipment,D,35,352,3524
+Hand & edge tool mfg (pt),D,35,352,3524
+Lawn & garden tractor & home lawn & garden equipment mfg,D,35,352,3524
+Construction and related machinery,D,35,353,353
+Construction machinery,D,35,353,3531
+Construction machinery mfg,D,35,353,3531
+"Overhead traveling crane, hoist, & monorail system mfg (pt)",D,35,353,3531
+Railroad rolling stock mfg (pt),D,35,353,3531
+Mining machinery,D,35,353,3532
+Mining machinery & equipment mfg,D,35,353,3532
+Oil field machinery,D,35,353,3533
+Oil & gas field machinery & equipment mfg,D,35,353,3533
+Elevators & moving stairways,D,35,353,3534
+Elevator & moving stairway mfg,D,35,353,3534
+Conveyors & conveying equipment,D,35,353,3535
+Conveyor & conveying equipment mfg (pt),D,35,353,3535
+"Hoists, cranes, & monorails",D,35,353,3536
+"Overhead traveling crane, hoist, & monorail system mfg (pt)",D,35,353,3536
+Industrial trucks & tractors,D,35,353,3537
+Other metal container mfg (pt),D,35,353,3537
+All other miscellaneous fabricated metal product mfg (pt),D,35,353,3537
+"Industrial truck, tractor, trailer, & stacker machinery mfg",D,35,353,3537
+Metalworking machinery,D,35,354,354
+"Machine tools, metal cutting types",D,35,354,3541
+Machine tool (metal cutting types) mfg (pt),D,35,354,3541
+"Machine tools, metal forming types",D,35,354,3542
+Machine tool (metal forming types) mfg,D,35,354,3542
+Industrial patterns,D,35,354,3543
+Industrial pattern mfg,D,35,354,3543
+"Special dies, tools, jigs, & fixtures",D,35,354,3544
+Industrial mold mfg,D,35,354,3544
+"Special die & tool, die set, jig, & fixture mfg",D,35,354,3544
+Machine tool accessories,D,35,354,3545
+Hand & edge tool mfg (pt),D,35,354,3545
+Cutting tool & machine tool accessory mfg,D,35,354,3545
+Power-driven handtools,D,35,354,3546
+Power-driven handtool mfg,D,35,354,3546
+Rolling mill machinery,D,35,354,3547
+Rolling mill machinery & equipment mfg,D,35,354,3547
+Welding apparatus,D,35,354,3548
+Welding & soldering equipment mfg (pt),D,35,354,3548
+"Power, distribution, & specialty transformer mfg (pt)",D,35,354,3548
+"Metalworking machinery, n.e.c.",D,35,354,3549
+Other metalworking machinery mfg,D,35,354,3549
+Special industry machinery,D,35,355,355
+Textile machinery,D,35,355,3552
+Textile machinery mfg (pt),D,35,355,3552
+Woodworking machinery,D,35,355,3553
+Sawmill & woodworking machinery mfg,D,35,355,3553
+Paper industries machinery,D,35,355,3554
+Paper industry machinery mfg,D,35,355,3554
+Printing trades machinery,D,35,355,3555
+Printing machinery & equipment mfg (pt),D,35,355,3555
+Food products machinery,D,35,355,3556
+Food product machinery mfg,D,35,355,3556
+"Special industry machinery, n.e.c.",D,35,355,3559
+Plastics & rubber industry machinery mfg,D,35,355,3559
+Semiconductor machinery mfg,D,35,355,3559
+All other industrial machinery mfg (pt),D,35,355,3559
+Other commercial & service industry machinery mfg (pt),D,35,355,3559
+General industrial machinery,D,35,356,356
+Pumps & pumping equipment,D,35,356,3561
+Pump & pumping equipment mfg (pt),D,35,356,3561
+Ball & roller bearings,D,35,356,3562
+Ball & roller bearing mfg,D,35,356,3562
+Air & gas compressors,D,35,356,3563
+Air & gas compressor mfg,D,35,356,3563
+Blowers & fans,D,35,356,3564
+Air purification equipment mfg,D,35,356,3564
+Industrial & commercial fan & blower mfg,D,35,356,3564
+Packaging machinery,D,35,356,3565
+Packaging machinery mfg,D,35,356,3565
+"Speed changers, drives, & gears",D,35,356,3566
+"Speed changer, industrial high-speed drive, & gear mfg",D,35,356,3566
+Industrial furnaces & ovens,D,35,356,3567
+Industrial process furnace & oven mfg,D,35,356,3567
+"Power transmission equipment, n.e.c.",D,35,356,3568
+Mechanical power transmission equipment mfg,D,35,356,3568
+"General industrial machinery, n.e.c.",D,35,356,3569
+All other miscellaneous general-purpose machinery mfg (pt),D,35,356,3569
+Computer and office equipment,D,35,357,357
+Electronic computers,D,35,357,3571
+Electronic computer mfg,D,35,357,3571
+Computer storage devices,D,35,357,3572
+Computer storage device mfg,D,35,357,3572
+Computer terminals,D,35,357,3575
+Computer terminal mfg,D,35,357,3575
+"Computer peripheral equipment, n.e.c.",D,35,357,3577
+Other computer peripheral equipment mfg (pt),D,35,357,3577
+Calculating & accounting equipment,D,35,357,3578
+Office machinery mfg (pt),D,35,357,3578
+Other computer peripheral equipment mfg (pt),D,35,357,3578
+"Office machines, n.e.c.",D,35,357,3579
+Office machinery mfg (pt),D,35,357,3579
+"Watch, clock, & part mfg (pt)",D,35,357,3579
+Lead pencil & art good mfg (pt),D,35,357,3579
+Refrigeration and service machinery,D,35,358,358
+Automatic merchandising machines,D,35,358,3581
+Automatic vending machine mfg,D,35,358,3581
+Commercial laundry equipment,D,35,358,3582
+"Commercial laundry, drycleaning, & pressing machine mfg",D,35,358,3582
+Refrigeration & heating equipment,D,35,358,3585
+AC & warm air heating & commercial/industrial refrig equip mfg (p,D,35,358,3585
+Motor vehicle air-conditioning mfg,D,35,358,3585
+Measuring & dispensing pumps,D,35,358,3586
+Measuring & dispensing pump mfg,D,35,358,3586
+"Service industry machinery, n.e.c.",D,35,358,3589
+Other commercial & service industry machinery mfg (pt),D,35,358,3589
+"Industrial machinery, n.e.c.",D,35,359,359
+"Carburetors, pistons, rings, & valves",D,35,359,3592
+"Carburetor, piston, piston ring, & valve mfg",D,35,359,3592
+Fluid power cylinders & actuators,D,35,359,3593
+Fluid power cylinder & actuator mfg (pt),D,35,359,3593
+Fluid power pumps & motors,D,35,359,3594
+Fluid power pump & motor mfg (pt),D,35,359,3594
+"Scales & balances, except laboratory",D,35,359,3596
+Scale & balance (except laboratory) mfg,D,35,359,3596
+"Industrial machinery, n.e.c.",D,35,359,3599
+Machine shops,D,35,359,3599
+All other miscellaneous fabricated metal product mfg (pt),D,35,359,3599
+Other commercial & service industry machinery mfg (pt),D,35,359,3599
+All other miscellaneous general-purpose machinery mfg (pt),D,35,359,3599
+Electronic and other electric equipment,D,36,36,36
+Electric distribution equipment,D,36,361,361
+Transformers,D,36,361,3612
+"Power, distribution, & specialty transformer mfg (pt)",D,36,361,3612
+Switchgear & switchboard apparatus,D,36,361,3613
+Switchgear & switchboard apparatus mfg,D,36,361,3613
+Electrical industrial apparatus,D,36,362,362
+Motors & generators,D,36,362,3621
+Motor & generator mfg (pt),D,36,362,3621
+Carbon & graphite products,D,36,362,3624
+Carbon & graphite product mfg,D,36,362,3624
+Relays & industrial controls,D,36,362,3625
+Relay & industrial control mfg,D,36,362,3625
+"Electrical industrial apparatus, n.e.c.",D,36,362,3629
+All other miscellaneous electrical equipment & component mfg (pt),D,36,362,3629
+Household appliances,D,36,363,363
+Household cooking equipment,D,36,363,3631
+Household cooking appliance mfg,D,36,363,3631
+Household refrigerators & freezers,D,36,363,3632
+Household refrigerator & home freezer mfg,D,36,363,3632
+Household laundry equipment,D,36,363,3633
+Household laundry equipment mfg,D,36,363,3633
+Electric housewares & fans,D,36,363,3634
+Heating equipment (except warm air furnaces) mfg (pt),D,36,363,3634
+Electric housewares & household fan mfg,D,36,363,3634
+Household vacuum cleaners,D,36,363,3635
+Household vacuum cleaner mfg (pt),D,36,363,3635
+"Household appliances, n.e.c.",D,36,363,3639
+All other industrial machinery mfg (pt),D,36,363,3639
+Household vacuum cleaner mfg (pt),D,36,363,3639
+Other major household appliance mfg,D,36,363,3639
+Electric lighting and wiring equipment,D,36,364,364
+Electric lamps,D,36,364,3641
+Electric lamp bulb & part mfg,D,36,364,3641
+Current-carrying wiring devices,D,36,364,3643
+Current-carrying wiring device mfg,D,36,364,3643
+Noncurrent-carrying wiring devices,D,36,364,3644
+Noncurrent-carrying wiring device mfg,D,36,364,3644
+Residential lighting fixtures,D,36,364,3645
+Residential electric lighting fixture mfg (pt),D,36,364,3645
+Commercial lighting fixtures,D,36,364,3646
+Commercial/industrial/institutional electric lighting fixture mfg,D,36,364,3646
+Vehicular lighting equipment,D,36,364,3647
+Vehicular lighting equipment mfg,D,36,364,3647
+"Lighting equipment, n.e.c.",D,36,364,3648
+Other lighting equipment mfg (pt),D,36,364,3648
+Household audio and video equipment,D,36,365,365
+Household audio & video equipment,D,36,365,3651
+Audio & video equipment mfg,D,36,365,3651
+Prerecorded records & tapes,D,36,365,3652
+"Prerecorded CD (except software), tape, & record reproducing (pt)",D,36,365,3652
+Communications equipment,D,36,366,366
+Telephone & telegraph apparatus,D,36,366,3661
+Telephone apparatus mfg,D,36,366,3661
+"Electronic coil, transformer, & other inductor mfg (pt)",D,36,366,3661
+Printed circuit assembly (electronic assembly) mfg (pt),D,36,366,3661
+Radio & TV communications equipment,D,36,366,3663
+Radio & TV broadcasting & wireless communications equipment mfg (,D,36,366,3663
+"Communications equipment, n.e.c.",D,36,366,3669
+Other communications equipment mfg,D,36,366,3669
+Electronic components and accessories,D,36,367,367
+Electron tubes,D,36,367,3671
+Electron tube mfg,D,36,367,3671
+Printed circuit boards,D,36,367,3672
+Bare printed circuit board mfg,D,36,367,3672
+Semiconductors & related devices,D,36,367,3674
+Semiconductor & related device mfg,D,36,367,3674
+Electronic capacitors,D,36,367,3675
+Electronic capacitor mfg,D,36,367,3675
+Electronic resistors,D,36,367,3676
+Electronic resistor mfg,D,36,367,3676
+Electronic coils & transformers,D,36,367,3677
+"Electronic coil, transformer, & other inductor mfg (pt)",D,36,367,3677
+Electronic connectors,D,36,367,3678
+Electronic connector mfg,D,36,367,3678
+"Electronic components, n.e.c.",D,36,367,3679
+Radio & TV broadcasting & wireless communications equipment mfg (,D,36,367,3679
+Printed circuit assembly (electronic assembly) mfg (pt),D,36,367,3679
+Other electronic component mfg,D,36,367,3679
+Other motor vehicle electrical & electronic equipment mfg (pt),D,36,367,3679
+Miscellaneous electrical equipment and supplies,D,36,369,369
+Storage batteries,D,36,369,3691
+Storage battery mfg,D,36,369,3691
+"Primary batteries, dry & wet",D,36,369,3692
+Primary battery mfg,D,36,369,3692
+Engine electrical equipment,D,36,369,3694
+Other motor vehicle electrical & electronic equipment mfg (pt),D,36,369,3694
+Magnetic & optical recording media,D,36,369,3695
+Magnetic & optical recording media mfg,D,36,369,3695
+"Electrical equipment & supplies, n.e.c.",D,36,369,3699
+Hand & edge tool mfg (pt),D,36,369,3699
+Textile machinery mfg (pt),D,36,369,3699
+Printing machinery & equipment mfg (pt),D,36,369,3699
+Optical instrument & lens mfg (pt),D,36,369,3699
+Photographic & photocopying equipment mfg (pt),D,36,369,3699
+Other commercial & service industry machinery mfg (pt),D,36,369,3699
+Machine tool (metal cutting types) mfg (pt),D,36,369,3699
+Other engine equipment mfg (pt),D,36,369,3699
+Welding & soldering equipment mfg (pt),D,36,369,3699
+Other computer peripheral equipment mfg (pt),D,36,369,3699
+Electromedical & electrotherapeutic apparatus mfg (pt),D,36,369,3699
+"Search, detection, navigation, & guidance instrument mfg (pt)",D,36,369,3699
+Analytical laboratory instrument mfg (pt),D,36,369,3699
+Other measuring & controlling device mfg (pt),D,36,369,3699
+Other lighting equipment mfg (pt),D,36,369,3699
+All other miscellaneous electrical equipment & component mfg (pt),D,36,369,3699
+Dental equipment & supplies mfg (pt),D,36,369,3699
+Transportation equipment,D,37,37,37
+Motor vehicles and equipment,D,37,371,371
+Motor vehicles & car bodies,D,37,371,3711
+Automobile mfg,D,37,371,3711
+Light truck & utility vehicle mfg,D,37,371,3711
+Heavy duty truck mfg,D,37,371,3711
+Motor vehicle body mfg (pt),D,37,371,3711
+"Military armored vehicle, tank, & tank component mfg (pt)",D,37,371,3711
+Truck & bus bodies,D,37,371,3713
+Motor vehicle body mfg (pt),D,37,371,3713
+Motor vehicle parts & accessories,D,37,371,3714
+Motor vehicle body mfg (pt),D,37,371,3714
+Gasoline engine & engine parts mfg,D,37,371,3714
+Other motor vehicle electrical & electronic equipment mfg (pt),D,37,371,3714
+Motor vehicle steering & suspension component (except spring) mfg,D,37,371,3714
+Motor vehicle brake system mfg (pt),D,37,371,3714
+Motor vehicle transmission & power train parts mfg,D,37,371,3714
+All other motor vehicle parts mfg (pt),D,37,371,3714
+Truck trailers,D,37,371,3715
+Truck trailer mfg,D,37,371,3715
+Motor homes,D,37,371,3716
+Motor home mfg,D,37,371,3716
+Aircraft and parts,D,37,372,372
+Aircraft,D,37,372,3721
+Aircraft mfg,D,37,372,3721
+Aircraft engines & engine parts,D,37,372,3724
+Aircraft engine & engine parts mfg,D,37,372,3724
+"Aircraft parts & equipment, n.e.c.",D,37,372,3728
+Fluid power valve & hose fitting mfg (pt),D,37,372,3728
+Fluid power cylinder & actuator mfg (pt),D,37,372,3728
+Fluid power pump & motor mfg (pt),D,37,372,3728
+Other aircraft part & auxiliary equipment mfg,D,37,372,3728
+Ship and boat building and repairing,D,37,373,373
+Ship building & repairing,D,37,373,3731
+Ship building & repairing,D,37,373,3731
+Boat building & repairing,D,37,373,3732
+Boat building,D,37,373,3732
+Boat repair,D,37,373,3732
+Railroad equipment,D,37,374,374
+Railroad equipment,D,37,374,3743
+Pump & pumping equipment mfg (pt),D,37,374,3743
+Railroad rolling stock mfg (pt),D,37,374,3743
+"Motorcycles, bicycles, and parts",D,37,375,375
+"Motorcycles, bicycles, & parts",D,37,375,3751
+"Motorcycle, bicycle, & parts mfg (pt)",D,37,375,3751
+"Guided missiles, space vehicles, parts",D,37,376,376
+Guided missiles & space vehicles,D,37,376,3761
+Guided missile & space vehicle mfg,D,37,376,3761
+Space propulsion units & parts,D,37,376,3764
+Guided missile & space vehicle propulsion unit & parts mfg,D,37,376,3764
+"Space vehicle equipment, n.e.c.",D,37,376,3769
+Other guided missile & space vehicle parts & auxiliary equip mfg,D,37,376,3769
+Miscellaneous transportation equipment,D,37,379,379
+Travel trailer & campers,D,37,379,3792
+Travel trailer & camper mfg (pt),D,37,379,3792
+Tanks & tank components,D,37,379,3795
+"Military armored vehicle, tank, & tank component mfg (pt)",D,37,379,3795
+"Transportation equipment, n.e.c.",D,37,379,3799
+Hand & edge tool mfg (pt),D,37,379,3799
+Travel trailer & camper mfg (pt),D,37,379,3799
+All other transportation equipment mfg,D,37,379,3799
+Instruments and related products,D,38,38,38
+Search and navigation equipment,D,38,381,381
+Search & navigation equipment,D,38,381,3812
+"Search, detection, navigation, & guidance instrument mfg (pt)",D,38,381,3812
+Measuring and controlling devices,D,38,382,382
+Laboratory apparatus & furniture,D,38,382,3821
+Laboratory apparatus & furniture mfg,D,38,382,3821
+Environmental controls,D,38,382,3822
+Automatic environmental control mfg,D,38,382,3822
+Process control instruments,D,38,382,3823
+Industrial process control instrument mfg,D,38,382,3823
+Fluid meters & counting devices,D,38,382,3824
+Totalizing fluid meter & counting device mfg,D,38,382,3824
+Instruments to measure electricity,D,38,382,3825
+"Electronic coil, transformer, & other inductor mfg (pt)",D,38,382,3825
+Electricity measuring & testing instrument mfg,D,38,382,3825
+Analytical instruments,D,38,382,3826
+Analytical laboratory instrument mfg (pt),D,38,382,3826
+Optical instruments & lenses,D,38,382,3827
+Optical instrument & lens mfg (pt),D,38,382,3827
+"Measuring & controlling devices, n.e.c.",D,38,382,3829
+Other measuring & controlling device mfg (pt),D,38,382,3829
+Surgical & medical instrument mfg (pt),D,38,382,3829
+Medical instruments and supplies,D,38,384,384
+Surgical & medical instruments,D,38,384,3841
+Surgical & medical instrument mfg (pt),D,38,384,3841
+Surgical appliances & supplies,D,38,384,3842
+Paper (except newsprint) mills (pt),D,38,384,3842
+Sanitary paper product mfg (pt),D,38,384,3842
+Electromedical & electrotherapeutic apparatus mfg (pt),D,38,384,3842
+Surgical appliance & supplies mfg (pt),D,38,384,3842
+Dental equipment & supplies,D,38,384,3843
+Dental equipment & supplies mfg (pt),D,38,384,3843
+X-ray apparatus & tubes,D,38,384,3844
+Irradiation apparatus mfg,D,38,384,3844
+Electromedical equipment,D,38,384,3845
+Electromedical & electrotherapeutic apparatus mfg (pt),D,38,384,3845
+Ophthalmic goods,D,38,385,385
+Ophthalmic goods,D,38,385,3851
+Ophthalmic goods mfg,D,38,385,3851
+Photographic equipment and supplies,D,38,386,386
+Photographic equipment & supplies,D,38,386,3861
+"Photographic film, paper, plate, & chemical mfg",D,38,386,3861
+Photographic & photocopying equipment mfg (pt),D,38,386,3861
+"Watches, clocks, watchcases, and parts",D,38,387,387
+"Watches, clocks, & watchcases",D,38,387,3873
+"Watch, clock, & part mfg (pt)",D,38,387,3873
+Miscellaneous manufacturing industries,D,39,39,39
+"Jewelry, silverware, and plated ware",D,39,391,391
+"Jewelry, precious metal",D,39,391,3911
+Jewelry (except costume) mfg (pt),D,39,391,3911
+Silverware & plated ware,D,39,391,3914
+Cutlery & flatware (except precious) mfg (pt),D,39,391,3914
+Silverware & plated ware mfg (pt),D,39,391,3914
+Jewelers' materials & lapidary work,D,39,391,3915
+Jewelers' material & lapidary work mfg,D,39,391,3915
+Musical instruments,D,39,393,393
+Musical instruments,D,39,393,3931
+Musical instrument mfg,D,39,393,3931
+Toys and sporting goods,D,39,394,394
+Dolls,D,39,394,3942
+Doll & stuffed toy mfg,D,39,394,3942
+"Games, toys, & children's vehicles",D,39,394,3944
+"Motorcycle, bicycle, & parts mfg (pt)",D,39,394,3944
+"Game, toy, & children's vehicle mfg",D,39,394,3944
+"Sporting & athletic goods, n.e.c.",D,39,394,3949
+Sporting & athletic goods mfg,D,39,394,3949
+"Pens, pencils, office, and art supplies",D,39,395,395
+Pens & mechanical pencils,D,39,395,3951
+Pen & mechanical pencil mfg,D,39,395,3951
+Lead pencils & art goods,D,39,395,3952
+All other miscellaneous chemical product & preparation mfg (pt),D,39,395,3952
+Institutional furniture mfg (pt),D,39,395,3952
+Lead pencil & art good mfg (pt),D,39,395,3952
+Marking devices,D,39,395,3953
+Marking device mfg,D,39,395,3953
+Carbon paper & inked ribbons,D,39,395,3955
+Carbon paper & inked ribbon mfg,D,39,395,3955
+Costume jewelry and notions,D,39,396,396
+Costume jewelry,D,39,396,3961
+Costume jewelry & novelty mfg (pt),D,39,396,3961
+"Fasteners, buttons, needles, & pins",D,39,396,3965
+"Fastener, button, needle, & pin mfg (pt)",D,39,396,3965
+Miscellaneous manufactures,D,39,399,399
+Brooms & brushes,D,39,399,3991
+"Broom, brush, & mop mfg (pt)",D,39,399,3991
+Signs & advertising displays,D,39,399,3993
+Sign mfg,D,39,399,3993
+Burial caskets,D,39,399,3995
+Burial casket mfg,D,39,399,3995
+Hard surface floor coverings,D,39,399,3996
+Resilient floor covering mfg (pt),D,39,399,3996
+"Mfg industries, n.e.c.",D,39,399,3999
+All other miscellaneous textile product mills (pt),D,39,399,3999
+Leather & hide tanning & finishing (pt),D,39,399,3999
+All other miscellaneous wood product mfg (pt),D,39,399,3999
+All other converted paper product mfg (pt),D,39,399,3999
+Commercial lithographic printing (pt),D,39,399,3999
+Commercial gravure printing (pt),D,39,399,3999
+Commercial flexographic printing (pt),D,39,399,3999
+Commercial screen printing (pt),D,39,399,3999
+Other commercial printing (pt),D,39,399,3999
+All other miscellaneous chemical product & preparation mfg (pt),D,39,399,3999
+All other plastics product mfg (pt),D,39,399,3999
+Hand & edge tool mfg (pt),D,39,399,3999
+All other miscellaneous fabricated metal product mfg (pt),D,39,399,3999
+Residential electric lighting fixture mfg (pt),D,39,399,3999
+Institutional furniture mfg (pt),D,39,399,3999
+All other miscellaneous mfg (pt),D,39,399,3999
+"Transportation, communications, and utilities ",E,E,E,E
+Railroad Transportation,E,40,40,40
+Railroad Transportation,E,40,401,401
+"Railroads, Line-Haul Operating",E,40,401,4011
+Railroad Switching and Terminal Establishments,E,40,401,4013
+Local and interurban passenger transportation,E,41,41,41
+Local and suburban passenger transportation,E,41,411,411
+Local & suburban transit,E,41,411,4111
+Mixed mode transit systems,E,41,411,4111
+Commuter rail systems,E,41,411,4111
+Bus & motor vehicle transit systems,E,41,411,4111
+Other urban transit systems,E,41,411,4111
+Scheduled airport shuttle service,E,41,411,4111
+Other local passenger transportation,E,41,411,4119
+Limousine service,E,41,411,4119
+Employee bus service,E,41,411,4119
+Special needs transportation,E,41,411,4119
+All other passenger transportation,E,41,411,4119
+Sightseeing buses,E,41,411,4119
+Ambulance or rescue service (except by air),E,41,411,4119
+Taxi service,E,41,412,412
+Taxi service,E,41,412,4121
+Taxi service,E,41,412,4121
+Interurban and rural bus transportation,E,41,413,413
+Interurban & rural bus transportation,E,41,413,4131
+Interurban & rural bus transportation,E,41,413,4131
+Charter bus service,E,41,414,414
+"Charter bus service, local",E,41,414,4141
+"Charter bus service, local",E,41,414,4141
+"Charter bus service, interstate/interurban",E,41,414,4142
+"Charter bus service, interstate/interurban",E,41,414,4142
+School bus service,E,41,415,415
+School bus service,E,41,415,4151
+School bus service,E,41,415,4151
+Bus terminal and service facilities,E,41,417,417
+Bus terminal & service facilities,E,41,417,4173
+Terminal or maintenance facilities for motor vehicle pass trans,E,41,417,4173
+Motor freight transportation and warehousing,E,42,42,42
+"Trucking and courier services, except air",E,42,421,421
+Local trucking without storage,E,42,421,4212
+"General freight trucking, local",E,42,421,4212
+"General freight trucking without storage, local, truckload",E,42,421,4212
+"General freight trucking w/o storage, local, less than truckload",E,42,421,4212
+"Used household & office goods moving, local, without storage",E,42,421,4212
+"Specialized freight (except used goods) trucking, local",E,42,421,4212
+"Hazardous materials trucking (except waste), local",E,42,421,4212
+"Agricultural products trucking without storage, local",E,42,421,4212
+Dump trucking,E,42,421,4212
+"Specialized trucking without storage, local",E,42,421,4212
+Solid waste collection,E,42,421,4212
+Hazardous waste collection,E,42,421,4212
+Other waste collection,E,42,421,4212
+"Trucking, except local",E,42,421,4213
+"General freight trucking, long-distance, truckload",E,42,421,4213
+"General freight trucking, long-distance, less than truckload",E,42,421,4213
+"Used household & office goods moving, long-distance",E,42,421,4213
+"Specialized freight (except used goods) trucking, long-distance",E,42,421,4213
+"Hazardous materials trucking (except waste), long-distance",E,42,421,4213
+"Agricultural products trucking, long-distance",E,42,421,4213
+"Other specialized trucking, long-distance",E,42,421,4213
+Local trucking with storage,E,42,421,4214
+"General freight trucking, local",E,42,421,4214
+"General freight trucking with storage, local, truckload",E,42,421,4214
+"General freight trucking with storage, local, less than truckload",E,42,421,4214
+"Used household & office goods moving, local, with storage",E,42,421,4214
+"Specialized trucking with storage, local",E,42,421,4214
+"Courier services, except by air",E,42,421,4215
+Courier services (except by air),E,42,421,4215
+Local messengers & local delivery,E,42,421,4215
+Public warehousing and storage,E,42,422,422
+Farm product warehousing & storage facilities,E,42,422,4221
+Farm product warehousing & storage,E,42,422,4221
+Refrigerated products warehousing,E,42,422,4222
+Refrigerated products warehousing,E,42,422,4222
+General warehousing & storage,E,42,422,4225
+General warehousing & storage (except in foreign trade zones),E,42,422,4225
+Lessors of miniwarehouses & self storage units,E,42,422,4225
+Other special warehousing & storage,E,42,422,4226
+General warehousing & storage in foreign trade zones,E,42,422,4226
+Fur storage,E,42,422,4226
+Other warehousing & storage,E,42,422,4226
+Household goods warehousing & storage,E,42,422,4226
+Specialized goods warehousing & storage,E,42,422,4226
+Trucking terminal facilities,E,42,423,423
+Trucking terminal facilities,E,42,423,4231
+Motor freight terminal & joint terminal maint facility trans,E,42,423,4231
+Water transportation,E,44,44,44
+Deep sea freight transportation,E,44,441,441
+Deep sea freight transportation,E,44,441,4412
+Deep sea freight transportation,E,44,441,4412
+Coastal and intercoastal freight transportation,E,44,442,442
+Coastal & intercoastal freight transportation,E,44,442,4424
+Coastal & intercoastal freight transportation,E,44,442,4424
+Great Lakes - St. Lawrence Seaway freight transportation,E,44,443,443
+Great Lakes - St. Lawrence Seaway freight transportation,E,44,443,4432
+Great Lakes - St. Lawrence Seaway freight transportation,E,44,443,4432
+Inland waterways freight transportation,E,44,444,444
+Inland waterways freight transportation,E,44,444,4449
+Inland waterways freight transportation (except towing),E,44,444,4449
+Water transportation of passengers,E,44,448,448
+"Deep sea passenger transportation, except by ferry",E,44,448,4481
+Deep sea passenger transportation,E,44,448,4481
+Coastal & Great Lakes - St. Lawrence Seaway passenger trans,E,44,448,4481
+Ferry transportation,E,44,448,4482
+Coastal & Great Lakes - St. Lawrence Seaway ferry transportation,E,44,448,4482
+Inland waterways ferry transportation,E,44,448,4482
+"Water transportation of passengers, n.e.c.",E,44,448,4489
+Other water passenger transportation (including water taxi),E,44,448,4489
+Excursion & sightseeing boats (including dinner cruises),E,44,448,4489
+Services incidental to water transportation,E,44,449,449
+Marine cargo handling & operation of port & waterfront terminals,E,44,449,4491
+Operation of port & waterfront terminals,E,44,449,4491
+Marine cargo handling,E,44,449,4491
+Towing & tugboat services,E,44,449,4492
+Coastal & intercoastal towing service,E,44,449,4492
+Inland waterways towing transportation,E,44,449,4492
+Tugboat service (including fleeting & harbor service),E,44,449,4492
+Marinas,E,44,449,4493
+Marinas,E,44,449,4493
+Other water transportation services,E,44,449,4499
+Seaway & lighthouse operations,E,44,449,4499
+Navigational services to shipping,E,44,449,4499
+Navigational services,E,44,449,4499
+Marine salvaging & wrecking (including dismantling of ships),E,44,449,4499
+Other services incidental to water transportation,E,44,449,4499
+Commercial vessel rental & leasing,E,44,449,4499
+Transportation by air ,E,45,45,45
+Scheduled air transportation and air courier services ,E,45,451,451
+Scheduled air transportation  ,E,45,451,4512
+Scheduled passenger air transportation ,E,45,451,4512
+Scheduled freight air transportation,E,45,451,4512
+Air courier services,E,45,451,4513
+Air courier services,E,45,451,4513
+Nonscheduled air transportation,E,45,452,452
+Nonscheduled air transportation,E,45,452,4522
+Nonscheduled chartered passenger air transportation,E,45,452,4522
+Nonscheduled chartered freight air transportation,E,45,452,4522
+Other nonscheduled air transportation,E,45,452,4522
+Sightseeing airplanes and helicopters,E,45,452,4522
+Air ambulance,E,45,452,4522
+Airport terminal services,E,45,458,458
+Airport terminal services,E,45,458,4581
+Nongovernment air traffic control,E,45,458,4581
+Airport operation & terminal services,E,45,458,4581
+Other support activities for air transportation,E,45,458,4581
+Airplane cleaning & janitorial services,E,45,458,4581
+"Pipelines, except natural gas",E,46,46,46
+"Pipelines, except natural gas",E,46,461,461
+Pipeline transportation of crude oil,E,46,461,4612
+Pipeline transportation of crude oil,E,46,461,4612
+Pipeline transportation of refined petroleum products,E,46,461,4613
+Pipeline transportation of refined petroleum products,E,46,461,4613
+All other pipeline transportation,E,46,461,4619
+All other pipeline transportation,E,46,461,4619
+Transportation services,E,47,47,47
+Arrangement of passenger transportation,E,47,472,472
+Travel agencies,E,47,472,4724
+Travel agencies,E,47,472,4724
+Tour operators,E,47,472,4725
+Tour operators,E,47,472,4725
+"Arrangement of passenger transportation, n.e.c.",E,47,472,4729
+Arrangement of carpools & vanpools,E,47,472,4729
+"Arrangement of passenger transportation, nec",E,47,472,4729
+Freight shipping services,E,47,473,473
+Freight shipping services,E,47,473,4731
+Freight transportation arrangement,E,47,473,4731
+Freight forwarding,E,47,473,4731
+Arrangement of transportation of freight & cargo,E,47,473,4731
+Tariff consulting,E,47,473,4731
+Railroad car rental,E,47,474,474
+Railroad car rental,E,47,474,4741
+Railroad car rental,E,47,474,4741
+Miscellaneous services incidental to transportation,E,47,478,478
+Packing & crating,E,47,478,4783
+Packing & crating,E,47,478,4783
+"Fixed facilities, inspection, & weighing services",E,47,478,4785
+Marine cargo inspectors & surveyors,E,47,478,4785
+Fixed facilities & inspection & weighing serv for motor trans veh,E,47,478,4785
+"Transportation services, n.e.c.",E,47,478,4789
+Horse drawn cabs & carriages,E,47,478,4789
+Support activities incidental to rail transportation,E,47,478,4789
+Support activities incidental to road transportation,E,47,478,4789
+Other support activities for transportation,E,47,478,4789
+Communications,E,48,48,48
+Telephone,E,48,481,481
+Radiotelephone,E,48,481,4812
+Paging,E,48,481,4812
+Cellular & other wireless telecommunications,E,48,481,4812
+Cellular telephone service,E,48,481,4812
+Specialized (smr) & other mobile radio services,E,48,481,4812
+Resellers - cellular or other wireless service,E,48,481,4812
+Other telephone,E,48,481,4813
+Wired telecommunications carriers - local & long-distance,E,48,481,4813
+Resellers - wired telephone service,E,48,481,4813
+Voice mailbox,E,48,481,4813
+Telegraph communications,E,48,482,482
+Telegraph communications,E,48,482,4822
+Wired telecommunications carriers - telegraph service,E,48,482,4822
+Radio and television broadcasting,E,48,483,483
+Radio broadcasting,E,48,483,4832
+Radio networks,E,48,483,4832
+Radio stations,E,48,483,4832
+Television broadcasting,E,48,483,4833
+Television broadcasting,E,48,483,4833
+Cable and other pay television broadcasting,E,48,484,484
+Cable & other pay television broadcasting,E,48,484,4841
+Cable networks,E,48,484,4841
+Cable & other program distribution,E,48,484,4841
+"Communication services, not elsewhere classified",E,48,489,489
+"Communication services, n.e.c.",E,48,489,4899
+Radio dispatch service,E,48,489,4899
+Satellite telecommunications,E,48,489,4899
+Other telecommunications,E,48,489,4899
+Pay telephone operators,E,48,489,4899
+"Electric, gas, and sanitary services",E,49,49,49
+Electric services,E,49,491,491
+Electric services,E,49,491,4911
+Electric services (hydroelectric power generation),E,49,491,4911
+Electric services (fossil fuel power generation),E,49,491,4911
+Electric services (nuclear power generation),E,49,491,4911
+Electric services (other electric power generation),E,49,491,4911
+Electric services (electric power transmission & control),E,49,491,4911
+Electric services (electric power distribution),E,49,491,4911
+Gas production and distribution,E,49,492,492
+Combination utility services,E,49,493,493
+Water supply,E,49,494,494
+Water supply,E,49,494,4941
+Water supply,E,49,494,4941
+Sanitary services,E,49,495,495
+Steam and air-conditioning supply,E,49,496,496
+Steam and air-conditioning supply,E,49,496,4961
+Steam & air-conditioning supply,E,49,496,4961
+Irrigation systems,E,49,497,497
+Irrigation systems,E,49,497,4971
+Irrigation systems,E,49,497,4971
+Wholesale trade,F,F,F,F
+Wholesale trade - durable goods,F,50,50,50
+Motor vehicles and motor vehicle parts and supplies,F,50,501,501
+Automobiles & other motor vehicles,F,50,501,5012
+Automobiles & other motor vehicles,F,50,501,5012
+Automobile & other motor vehicle whsle,F,50,501,5012
+Automobile & motorcycle whsle,F,50,501,5012
+Automobile & motorcycle whsle,F,50,501,5012
+Bus & recreational vehicle whsle,F,50,501,5012
+Bus & recreational vehicle whsle,F,50,501,5012
+"Light truck & van (14,000 lb or less) whsle",F,50,501,5012
+"Light truck & van (14,000 lb or less) whsle",F,50,501,5012
+"Medium truck & tractor (14,001 lb to 26,000 lb) whsle",F,50,501,5012
+"Medium truck & tractor (14,001 lb to 26,000 lb) whsle",F,50,501,5012
+"Heavy truck & tractor (over 26,000 lb) whsle",F,50,501,5012
+"Heavy truck & tractor (over 26,000 lb) whsle",F,50,501,5012
+Motor vehicle supplies & new parts,F,50,501,5013
+Motor vehicle supplies & new parts,F,50,501,5013
+Motor vehicle supplies & new parts whsle,F,50,501,5013
+Motor vehicle supplies & new parts - warehouse distributors,F,50,501,5013
+Motor vehicle supplies & new parts - warehouse distributors,F,50,501,5013
+Motor vehicle supplies & new parts - jobbers,F,50,501,5013
+Motor vehicle supplies & new parts - jobbers,F,50,501,5013
+Petroleum products marketing equipment whsle,F,50,501,5013
+Petroleum products marketing equipment whsle,F,50,501,5013
+Motor vehicle supplies & new parts jobbers (retail),F,50,501,5013
+Motor vehicle supplies & new parts jobbers (retail),F,50,501,5013
+Tires & tubes,F,50,501,5014
+Tires & tubes,F,50,501,5014
+Tire & tube whsle,F,50,501,5014
+Tire & tube whsle,F,50,501,5014
+Tire & tube merchants (retail),F,50,501,5014
+Tire & tube merchants (retail),F,50,501,5014
+"Motor vehicle parts, used",F,50,501,5015
+"Motor vehicle parts, used",F,50,501,5015
+"Motor vehicle parts, (used) whsle",F,50,501,5015
+"Motor vehicle parts, (used) whsle",F,50,501,5015
+Furniture and home furnishings,F,50,502,502
+Furniture,F,50,502,5021
+Furniture,F,50,502,5021
+Furniture whsle,F,50,502,5021
+Household & lawn furniture whsle,F,50,502,5021
+Household & lawn furniture whsle,F,50,502,5021
+Office & business furniture whsle,F,50,502,5021
+Office & business furniture whsle,F,50,502,5021
+Office & business furniture merchants (retail),F,50,502,5021
+Office & business furniture merchants (retail),F,50,502,5021
+Home furnishings,F,50,502,5023
+Home furnishings,F,50,502,5023
+Home furnishings whsle,F,50,502,5023
+"Household china, glassware, & crockery whsle",F,50,502,5023
+"Household china, glassware, & crockery whsle",F,50,502,5023
+"Linens, domestics, draperies, & curtains whsle",F,50,502,5023
+"Linens, domestics, draperies, & curtains whsle",F,50,502,5023
+Floor coverings whsle,F,50,502,5023
+Floor coverings whsle,F,50,502,5023
+Other home furnishings whsle,F,50,502,5023
+Other home furnishings whsle,F,50,502,5023
+Floor covering merchants (retail),F,50,502,5023
+Floor covering merchants (retail),F,50,502,5023
+Lumber and other construction materials,F,50,503,503
+"Lumber, plywood, millwork, & wood panels",F,50,503,5031
+"Lumber, plywood, millwork, & wood panels",F,50,503,5031
+"Lumber, plywood, millwork, & wood panel whsle",F,50,503,5031
+Lumber without yard whsle,F,50,503,5031
+Lumber without yard whsle,F,50,503,5031
+Lumber with yard whsle,F,50,503,5031
+Lumber with yard whsle,F,50,503,5031
+"Plywood, veneer, millwork, & wood panel whsle",F,50,503,5031
+"Plywood, veneer, millwork, & wood panel whsle",F,50,503,5031
+Other building material dealers,F,50,503,5031
+Lumber merchants with yard (retail),F,50,503,5031
+Lumber merchants with yard (retail),F,50,503,5031
+"Plywood, veneer, & millwork merchants (retail)",F,50,503,5031
+"Plywood, veneer, & millwork merchants (retail)",F,50,503,5031
+"Brick, stone, & related construction materials",F,50,503,5032
+"Brick, stone, & related construction materials",F,50,503,5032
+"Brick, stone, & related construction materials whsle",F,50,503,5032
+"Brick, block, tile, clay/cement sewer pipe whsle",F,50,503,5032
+"Brick, block, tile, clay/cement sewer pipe whsle",F,50,503,5032
+"Sand, gravel, & stone whsle",F,50,503,5032
+"Sand, gravel, & stone whsle",F,50,503,5032
+"Cement, lime, & related products whsle",F,50,503,5032
+"Cement, lime, & related products whsle",F,50,503,5032
+Other building material dealers,F,50,503,5032
+"Brick, block, tile, clay/cement sewer pipe merchants (retail)",F,50,503,5032
+"Brick, block, tile, clay/cement sewer pipe merchants (retail)",F,50,503,5032
+"Sand, gravel, & stone merchants (retail)",F,50,503,5032
+"Sand, gravel, & stone merchants (retail)",F,50,503,5032
+"Cement, lime, & related products merchants (retail)",F,50,503,5032
+"Cement, lime, & related products merchants (retail)",F,50,503,5032
+"Roofing, siding, & insulation materials",F,50,503,5033
+"Roofing, siding, & insulation materials",F,50,503,5033
+"Roofing, siding, & insulation material whsle",F,50,503,5033
+"Roofing, siding, & insulation material whsle",F,50,503,5033
+"Roofing, siding, & insulation merchants (retail)",F,50,503,5033
+"Roofing, siding, & insulation merchants (retail)",F,50,503,5033
+Other construction materials,F,50,503,5039
+Other construction materials,F,50,503,5039
+Other construction materials whsle,F,50,503,5039
+Flat glass & other construction glass whsle,F,50,503,5039
+Flat glass & other construction glass whsle,F,50,503,5039
+Other construction materials whsle,F,50,503,5039
+Other construction materials whsle,F,50,503,5039
+Other building material dealers,F,50,503,5039
+Flat glass & other construction glass merchants (retail),F,50,503,5039
+Flat glass & other construction glass merchants (retail),F,50,503,5039
+Other building material merchants (retail),F,50,503,5039
+Other building material merchants (retail),F,50,503,5039
+Professional and commercial equipment and supplies,F,50,504,504
+Photographic equipment & supplies,F,50,504,5043
+Photographic equipment & supplies,F,50,504,5043
+Photographic equipment & supplies whsle,F,50,504,5043
+Photographic equipment & supplies whsle,F,50,504,5043
+Office equipment,F,50,504,5044
+Office equipment,F,50,504,5044
+Office equipment whsle,F,50,504,5044
+Office equipment whsle,F,50,504,5044
+Computers & computer peripheral equipment & supplies,F,50,504,5045
+Computers & computer peripheral equipment & supplies,F,50,504,5045
+Computer & computer peripheral equipment & software whsle,F,50,504,5045
+Computers & peripheral equipment for resale,F,50,504,5045
+Computers & peripheral equipment for resale,F,50,504,5045
+Computers & peripheral equipment for end use,F,50,504,5045
+Computers & peripheral equipment for end use,F,50,504,5045
+Computer software whsle,F,50,504,5045
+Computer software whsle,F,50,504,5045
+Computer & software stores,F,50,504,5045
+Computer & peripheral equipment merchants (retail),F,50,504,5045
+Computer & peripheral equipment merchants (retail),F,50,504,5045
+Computer software merchants (retail),F,50,504,5045
+Computer software merchants (retail),F,50,504,5045
+Nonstore computer & peripheral equipment merchants,F,50,504,5045
+Nonstore computer & peripheral equipment merchants,F,50,504,5045
+Other commercial equipment,F,50,504,5046
+Other commercial equipment,F,50,504,5046
+Other commercial equipment whsle,F,50,504,5046
+Restaurant & hotel equipment & supplies whsle,F,50,504,5046
+Restaurant & hotel equipment & supplies whsle,F,50,504,5046
+Store machines & equipment whsle,F,50,504,5046
+Store machines & equipment whsle,F,50,504,5046
+"Medical, dental, & hospital equipment & supplies",F,50,504,5047
+"Medical, dental, & hospital equipment & supplies",F,50,504,5047
+"Medical, dental, & hospital equipment & supplies whsle",F,50,504,5047
+"Surgical, medical, & hospital supplies whsle",F,50,504,5047
+"Surgical, medical, & hospital supplies whsle",F,50,504,5047
+Dental equipment & supplies whsle,F,50,504,5047
+Dental equipment & supplies whsle,F,50,504,5047
+"Surgical, medical, & hospital supplies stores (retail)",F,50,504,5047
+"Surgical, medical, & hospital supplies stores (retail)",F,50,504,5047
+Ophthalmic goods,F,50,504,5048
+Ophthalmic goods,F,50,504,5048
+Ophthalmic goods whsle,F,50,504,5048
+Ophthalmic goods whsle,F,50,504,5048
+Other professional equipment & supplies,F,50,504,5049
+Other professional equipment & supplies,F,50,504,5049
+Other professional equipment & supplies whsle,F,50,504,5049
+Religious & school supplies whsle,F,50,504,5049
+Religious & school supplies whsle,F,50,504,5049
+Other professional equipment & supplies whsle,F,50,504,5049
+Other professional equipment & supplies whsle,F,50,504,5049
+School supplies stores (retail),F,50,504,5049
+School supplies stores (retail),F,50,504,5049
+"Metals and minerals, except petroleum",F,50,505,505
+Metals service centers & offices,F,50,505,5051
+Metals service centers & offices,F,50,505,5051
+Metal service centers & offices,F,50,505,5051
+Ferrous metal service centers,F,50,505,5051
+Ferrous metal service centers,F,50,505,5051
+Ferrous metal sales offices,F,50,505,5051
+Ferrous metal sales offices,F,50,505,5051
+Nonferrous metal service centers,F,50,505,5051
+Nonferrous metal service centers,F,50,505,5051
+Nonferrous metal sales offices,F,50,505,5051
+Nonferrous metal sales offices,F,50,505,5051
+Coal & other minerals & ores,F,50,505,5052
+Coal & other minerals & ores,F,50,505,5052
+Coal & other mineral & ore whsle,F,50,505,5052
+Coal whsle,F,50,505,5052
+Coal whsle,F,50,505,5052
+Other mineral & ore whsle,F,50,505,5052
+Other mineral & ore whsle,F,50,505,5052
+Electrical goods,F,50,506,506
+"Electrical apparatus & equip, wiring supplies, & construction mat",F,50,506,5063
+"Electrical apparatus & equip, wiring supplies, & construction mat",F,50,506,5063
+"Electrical apparatus & equip, wiring supp, & const material whsle",F,50,506,5063
+"Electrical apparatus & equip, wiring supp, & const material whsle",F,50,506,5063
+Electrical supplies stores (retail),F,50,506,5063
+Electrical supplies stores (retail),F,50,506,5063
+"Electrical appliances, television & radio sets",F,50,506,5064
+"Electrical appliances, television & radio sets",F,50,506,5064
+"Electrical appliance, television & radio set whsle",F,50,506,5064
+"Electrical appliance, television & radio set whsle",F,50,506,5064
+Other electronic parts & equipment,F,50,506,5065
+Other electronic parts & equipment,F,50,506,5065
+Other electronic parts & equipment whsle,F,50,506,5065
+Communications equipment & supplies whsle,F,50,506,5065
+Communications equipment & supplies whsle,F,50,506,5065
+Electronic parts (excluding communications equipment) whsle,F,50,506,5065
+Electronic parts (excluding communications equipment) whsle,F,50,506,5065
+Hardware and plumbing and heating equipment and supplies,F,50,507,507
+Hardware,F,50,507,5072
+Hardware,F,50,507,5072
+Hardware whsle,F,50,507,5072
+Hardware whsle,F,50,507,5072
+Plumbing & heating equipment & supplies,F,50,507,5074
+Plumbing & heating equipment & supplies,F,50,507,5074
+Plumbing & heating equipment & supplies (hydronics) whsle,F,50,507,5074
+Plumbing & heating equipment & supplies (hydronics) whsle,F,50,507,5074
+Plumbing & heating equipment & supplies merchants (retail),F,50,507,5074
+Plumbing & heating equipment & supplies merchants (retail),F,50,507,5074
+Warm air heating & air-conditioning equipment & supplies,F,50,507,5075
+Warm air heating & air-conditioning equipment & supplies,F,50,507,5075
+Warm air heating & air-conditioning equipment & supplies whsle,F,50,507,5075
+Warm air heating & air-conditioning equipment & supplies whsle,F,50,507,5075
+Refrigeration equipment & supplies,F,50,507,5078
+Refrigeration equipment & supplies,F,50,507,5078
+Refrigeration equipment & supplies whsle,F,50,507,5078
+Refrigeration equipment & supplies whsle,F,50,507,5078
+"Machinery, equipment, and supplies",F,50,508,508
+Construction & mining (except petroleum) machinery & equipment,F,50,508,5082
+Construction & mining (except petroleum) machinery & equipment,F,50,508,5082
+Construction & mining (except petroleum) machinery & equip whsle,F,50,508,5082
+Construction & mining (except petroleum) machinery & equip whsle,F,50,508,5082
+Farm & garden machinery & equipment,F,50,508,5083
+Farm & garden machinery & equipment,F,50,508,5083
+Farm & garden machinery & equipment whsle,F,50,508,5083
+Farm machinery & equipment - farm dealers,F,50,508,5083
+Farm machinery & equipment - farm dealers,F,50,508,5083
+Farm machinery & equipment - whsle distributors,F,50,508,5083
+Farm machinery & equipment - whsle distributors,F,50,508,5083
+Lawn & garden machinery & equipment whsle,F,50,508,5083
+Lawn & garden machinery & equipment whsle,F,50,508,5083
+Lawn & garden machinery & equipment dealers (retail),F,50,508,5083
+Lawn & garden machinery & equipment dealers (retail),F,50,508,5083
+Industrial machinery & equipment,F,50,508,5084
+Industrial machinery & equipment,F,50,508,5084
+Industrial machinery & equipment whsle,F,50,508,5084
+Food-processing machinery & equipment whsle,F,50,508,5084
+Food-processing machinery & equipment whsle,F,50,508,5084
+Hydraulic & pneumatic pumps & motors whsle,F,50,508,5084
+Hydraulic & pneumatic pumps & motors whsle,F,50,508,5084
+General-purpose industrial machinery & equipment whsle,F,50,508,5084
+General-purpose industrial machinery & equipment whsle,F,50,508,5084
+Metalworking machinery & equipment whsle,F,50,508,5084
+Metalworking machinery & equipment whsle,F,50,508,5084
+Materials handling equipment whsle,F,50,508,5084
+Materials handling equipment whsle,F,50,508,5084
+"Oilwell, oil refinery, & pipeline mach, equip, & supplies whsle",F,50,508,5084
+"Oilwell, oil refinery, & pipeline mach, equip, & supplies whsle",F,50,508,5084
+Other industrial machinery & equipment whsle,F,50,508,5084
+Other industrial machinery & equipment whsle,F,50,508,5084
+Industrial supplies,F,50,508,5085
+Industrial supplies,F,50,508,5085
+"Hydraulic & pneumatic parts, accessories, & supplies whsle",F,50,508,5085
+"Hydraulic & pneumatic parts, accessories, & supplies whsle",F,50,508,5085
+Industrial supplies whsle,F,50,508,5085
+General-line industrial supplies whsle,F,50,508,5085
+General-line industrial supplies whsle,F,50,508,5085
+Mechanical power transmission supplies whsle,F,50,508,5085
+Mechanical power transmission supplies whsle,F,50,508,5085
+Welding supplies whsle,F,50,508,5085
+Welding supplies whsle,F,50,508,5085
+Industrial containers & supplies whsle,F,50,508,5085
+Industrial containers & supplies whsle,F,50,508,5085
+Industrial valves & fittings (except fluid-power) whsle,F,50,508,5085
+Industrial valves & fittings (except fluid-power) whsle,F,50,508,5085
+Other industrial supplies whsle,F,50,508,5085
+Other industrial supplies whsle,F,50,508,5085
+Service establishment equipment & supplies,F,50,508,5087
+Service establishment equipment & supplies,F,50,508,5087
+Service establishment equipment & supplies whsle,F,50,508,5087
+Beauty & barber shop equipment & supplies whsle,F,50,508,5087
+Beauty & barber shop equipment & supplies whsle,F,50,508,5087
+"Custodial, janitors' equipment & supplies whsle",F,50,508,5087
+"Custodial, janitors' equipment & supplies whsle",F,50,508,5087
+Laundry & dry-cleaning equipment & supplies whsle,F,50,508,5087
+Laundry & dry-cleaning equipment & supplies whsle,F,50,508,5087
+Other service establishment equipment & supplies whsle,F,50,508,5087
+Other service establishment equipment & supplies whsle,F,50,508,5087
+Beauty & barber shop equipment & supplies stores (retail),F,50,508,5087
+Beauty & barber shop equipment & supplies stores (retail),F,50,508,5087
+"Transportation equipment & supplies, except motor vehicles",F,50,508,5088
+"Transportation equipment & supplies, except motor vehicles",F,50,508,5088
+Transportation equipment & supplies (exc motor vehicle) whsle,F,50,508,5088
+Aircraft & aeronautical equipment & supplies whsle,F,50,508,5088
+Aircraft & aeronautical equipment & supplies whsle,F,50,508,5088
+"Marine machinery, equipment, & supplies whsle",F,50,508,5088
+"Marine machinery, equipment, & supplies whsle",F,50,508,5088
+Other transportation equipment & supplies whsle,F,50,508,5088
+Other transportation equipment & supplies whsle,F,50,508,5088
+Miscellaneous durable goods,F,50,509,509
+Sporting & recreational goods & supplies,F,50,509,5091
+Sporting & recreational goods & supplies,F,50,509,5091
+Sporting & recreational goods & supplies whsle,F,50,509,5091
+Sporting & recreational goods & supplies whsle,F,50,509,5091
+Toys & hobby goods & supplies,F,50,509,5092
+Toys & hobby goods & supplies,F,50,509,5092
+Toy & hobby goods & supplies whsle,F,50,509,5092
+Toy & hobby goods & supplies whsle,F,50,509,5092
+Recyclable materials,F,50,509,5093
+Recyclable materials,F,50,509,5093
+Recyclable material whsle,F,50,509,5093
+Iron & steel scrap processors (using power processing equipment),F,50,509,5093
+Iron & steel scrap processors (using power processing equipment),F,50,509,5093
+Iron & steel scrap processors (not using power processing equip),F,50,509,5093
+Iron & steel scrap processors (not using power processing equip),F,50,509,5093
+Recyclable paper & paperboard whsle,F,50,509,5093
+Recyclable paper & paperboard whsle,F,50,509,5093
+Other recyclable material whsle,F,50,509,5093
+Other recyclable material whsle,F,50,509,5093
+"Jewelry, watches, silverware, precious stones, & precious metals",F,50,509,5094
+"Jewelry, watches, silverware, precious stones, & precious metals",F,50,509,5094
+"Jewelry/watch/silverware/precious stone, & precious metal whsle",F,50,509,5094
+"Jewelry, watch, diamonds, precious stone, & silverware whsle",F,50,509,5094
+"Jewelry, watch, diamonds, precious stone, & silverware whsle",F,50,509,5094
+Precious metal (excluding ores) whsle,F,50,509,5094
+Precious metal (excluding ores) whsle,F,50,509,5094
+"Durable goods, n.e.c.",F,50,509,5099
+"Durable goods, n.e.c.",F,50,509,5099
+Other miscellaneous durable goods whsle,F,50,509,5099
+Musical instruments & supplies whsle,F,50,509,5099
+Musical instruments & supplies whsle,F,50,509,5099
+Forest products (except lumber) whsle,F,50,509,5099
+Forest products (except lumber) whsle,F,50,509,5099
+General merchandise (durable goods) whsle,F,50,509,5099
+General merchandise (durable goods) whsle,F,50,509,5099
+"Compact discs/prerecorded audio tapes, & phonograph records whsle",F,50,509,5099
+"Compact discs/prerecorded audio tapes, & phonograph records whsle",F,50,509,5099
+Fire extinguishers & fire safety equipment whsle,F,50,509,5099
+Fire extinguishers & fire safety equipment whsle,F,50,509,5099
+Other durable goods whsle,F,50,509,5099
+Other durable goods whsle,F,50,509,5099
+Wholesale trade - nondurable goods,F,51,51,51
+Paper and paper products,F,51,511,511
+Printing & writing paper,F,51,511,5111
+Printing & writing paper,F,51,511,5111
+Printing & writing paper whsle,F,51,511,5111
+Printing & writing paper whsle,F,51,511,5111
+Stationery & office supplies,F,51,511,5112
+Stationery & office supplies,F,51,511,5112
+Stationery & office supplies whsle,F,51,511,5112
+Stationery & office supplies whsle,F,51,511,5112
+Other office supplies stores (retail),F,51,511,5112
+Other office supplies stores (retail),F,51,511,5112
+Nonstore office supply merchants,F,51,511,5112
+Nonstore office supply merchants,F,51,511,5112
+Industrial & personal service paper,F,51,511,5113
+Industrial & personal service paper,F,51,511,5113
+Industrial & personal service paper whsle,F,51,511,5113
+Industrial & personal service paper whsle,F,51,511,5113
+"Drugs, drug proprietaries, and druggists' sundries",F,51,512,512
+"Drugs, drug proprietaries, & druggists' sundries",F,51,512,5122
+"Drugs, drug proprietaries, & druggists' sundries",F,51,512,5122
+"Drugs, & druggists' sundries whsle",F,51,512,5122
+General-line drugs whsle,F,51,512,5122
+General-line drugs whsle,F,51,512,5122
+"Specialty-line drug, pharmaceutical, cosmetic, & toiletries whsle",F,51,512,5122
+"Specialty-line drug, pharmaceutical, cosmetic, & toiletries whsle",F,51,512,5122
+"Apparel, piece goods, and notions",F,51,513,513
+"Piece goods, notions, & other dry goods",F,51,513,5131
+"Piece goods, notions, & other dry goods",F,51,513,5131
+Broadwoven fabric finishing mills (pt),F,51,513,5131
+Broadwoven fabric finishing mills (pt),F,51,513,5131
+"Piece goods, notions, & other dry goods whsle",F,51,513,5131
+Piece goods - jobbers,F,51,513,5131
+Piece goods - jobbers,F,51,513,5131
+Notions & other dry goods whsle,F,51,513,5131
+Notions & other dry goods whsle,F,51,513,5131
+Men's & boys' clothing & furnishings,F,51,513,5136
+Men's & boys' clothing & furnishings,F,51,513,5136
+Men's & boys' clothing & furnishings whsle,F,51,513,5136
+Men's & boys' clothing & furnishings whsle,F,51,513,5136
+Women's & children's & infants' clothing & accessories,F,51,513,5137
+Women's & children's & infants' clothing & accessories,F,51,513,5137
+"Women's, children's, & infants' clothing & accessories whsle",F,51,513,5137
+"Women's, children's, & infants' clothing & accessories whsle",F,51,513,5137
+Footwear,F,51,513,5139
+Footwear,F,51,513,5139
+Footwear whsle,F,51,513,5139
+Footwear whsle,F,51,513,5139
+Groceries and related products,F,51,514,514
+"Groceries, general-line",F,51,514,5141
+"Groceries, general-line",F,51,514,5141
+General-line grocery whsle,F,51,514,5141
+"General-line grocery whsle, voluntary group",F,51,514,5141
+"General-line grocery whsle, voluntary group",F,51,514,5141
+"General-line grocery whsle, retail cooperative",F,51,514,5141
+"General-line grocery whsle, retail cooperative",F,51,514,5141
+Other general-line grocery whsle,F,51,514,5141
+Other general-line grocery whsle,F,51,514,5141
+Packaged frozen foods,F,51,514,5142
+Packaged frozen foods,F,51,514,5142
+Packaged frozen food whsle,F,51,514,5142
+Packaged frozen food whsle,F,51,514,5142
+"Dairy products, except dried or canned",F,51,514,5143
+"Dairy products, except dried or canned",F,51,514,5143
+"Dairy products, (except dried or canned) whsle",F,51,514,5143
+Raw milk whsle,F,51,514,5143
+Raw milk whsle,F,51,514,5143
+Dairy product (except raw milk) whsle,F,51,514,5143
+Dairy product (except raw milk) whsle,F,51,514,5143
+Poultry & poultry products,F,51,514,5144
+Poultry & poultry products,F,51,514,5144
+Poultry & poultry product whsle,F,51,514,5144
+Live poultry whsle,F,51,514,5144
+Live poultry whsle,F,51,514,5144
+Poultry & poultry product (except live) whsle,F,51,514,5144
+Poultry & poultry product (except live) whsle,F,51,514,5144
+Confectionery,F,51,514,5145
+Confectionery,F,51,514,5145
+Confectionery whsle,F,51,514,5145
+Confectionery whsle,F,51,514,5145
+Fish & seafoods,F,51,514,5146
+Fish & seafoods,F,51,514,5146
+Fish & seafood whsle,F,51,514,5146
+Fish & seafood whsle,F,51,514,5146
+Meats & meat products,F,51,514,5147
+Meats & meat products,F,51,514,5147
+Meat processed from carcasses (pt),F,51,514,5147
+Meat processed from carcasses (pt),F,51,514,5147
+Meat & meat product whsle,F,51,514,5147
+Meat & meat product whsle,F,51,514,5147
+Fresh fruits & vegetables,F,51,514,5148
+Fresh fruits & vegetables,F,51,514,5148
+Fresh fruit & vegetable whsle,F,51,514,5148
+Fresh fruit & vegetable whsle,F,51,514,5148
+Other groceries & related products,F,51,514,5149
+Other groceries & related products,F,51,514,5149
+Other grocery & related products whsle,F,51,514,5149
+"Coffee, tea, & spice whsle",F,51,514,5149
+"Coffee, tea, & spice whsle",F,51,514,5149
+Bread & baked goods whsle,F,51,514,5149
+Bread & baked goods whsle,F,51,514,5149
+Soft drinks whsle,F,51,514,5149
+Soft drinks whsle,F,51,514,5149
+Canned goods whsle,F,51,514,5149
+Canned goods whsle,F,51,514,5149
+Food & beverage basic materials whsle,F,51,514,5149
+Food & beverage basic materials whsle,F,51,514,5149
+Other grocery specialties whsle,F,51,514,5149
+Other grocery specialties whsle,F,51,514,5149
+Farm-product raw materials,F,51,515,515
+Grain & field beans,F,51,515,5153
+Grain & field beans,F,51,515,5153
+Grain & field bean whsle,F,51,515,5153
+Grain & field bean whsle,F,51,515,5153
+Livestock,F,51,515,5154
+Livestock,F,51,515,5154
+Livestock whsle,F,51,515,5154
+Livestock whsle,F,51,515,5154
+Other farm-product raw materials,F,51,515,5159
+Other farm-product raw materials,F,51,515,5159
+Other farm product raw material whsle,F,51,515,5159
+"Hides, skins, & pelts whsle",F,51,515,5159
+"Hides, skins, & pelts whsle",F,51,515,5159
+Leaf tobacco whsle,F,51,515,5159
+Leaf tobacco whsle,F,51,515,5159
+"Wool, wool tops, & mohair whsle",F,51,515,5159
+"Wool, wool tops, & mohair whsle",F,51,515,5159
+Cotton whsle,F,51,515,5159
+Cotton whsle,F,51,515,5159
+Other farm-product raw material whsle,F,51,515,5159
+Other farm-product raw material whsle,F,51,515,5159
+Chemicals and allied products,F,51,516,516
+Plastics materials & basic forms & shapes,F,51,516,5162
+Plastics materials & basic forms & shapes,F,51,516,5162
+Plastics materials & basic forms & shapes whsle,F,51,516,5162
+Plastics materials & basic forms & shapes whsle,F,51,516,5162
+"Chemicals & allied products, n.e.c.",F,51,516,5169
+"Chemicals & allied products, n.e.c.",F,51,516,5169
+Other chemical & allied products whsle,F,51,516,5169
+Industrial gases (except LP) whsle,F,51,516,5169
+Industrial gases (except LP) whsle,F,51,516,5169
+Other chemical & allied products whsle,F,51,516,5169
+Other chemical & allied products whsle,F,51,516,5169
+Petroleum and petroleum products,F,51,517,517
+Petroleum bulk stations & terminals,F,51,517,5171
+Petroleum bulk stations & terminals,F,51,517,5171
+Petroleum bulk stations & terminals,F,51,517,5171
+Petroleum bulk stations (except LP),F,51,517,5171
+Petroleum bulk stations (except LP),F,51,517,5171
+Petroleum bulk terminals (except LP),F,51,517,5171
+Petroleum bulk terminals (except LP),F,51,517,5171
+Liquefied petroleum bulk stations & terminals,F,51,517,5171
+Liquefied petroleum bulk stations & terminals,F,51,517,5171
+Heating oil dealers (selling for consumption - retail),F,51,517,5171
+Heating oil dealers (selling for consumption - retail),F,51,517,5171
+Liquefied petroleum dealers (selling for consumption - retail),F,51,517,5171
+Liquefied petroleum dealers (selling for consumption - retail),F,51,517,5171
+"Petroleum & petroleum products, except bulk stations & terminals",F,51,517,5172
+"Petroleum & petroleum products, except bulk stations & terminals",F,51,517,5172
+Petroleum & petroleum prod whsle (exc bulk stations & terminals),F,51,517,5172
+Petroleum & petroleum prod whsle (exc bulk stations & terminals),F,51,517,5172
+"Beer, wine, and distilled alcoholic beverages",F,51,518,518
+Beer & ale,F,51,518,5181
+Beer & ale,F,51,518,5181
+Beer & ale whsle,F,51,518,5181
+Beer & ale whsle,F,51,518,5181
+Wine & distilled alcoholic beverages,F,51,518,5182
+Wine & distilled alcoholic beverages,F,51,518,5182
+Wine & distilled alcoholic beverage whsle,F,51,518,5182
+Wine & distilled alcoholic bev (licensed operation) whsle,F,51,518,5182
+Wine & distilled alcoholic bev (licensed operation) whsle,F,51,518,5182
+Wine & distilled alcoholic beverage (State operated) whsle,F,51,518,5182
+Wine & distilled alcoholic beverage (State operated) whsle,F,51,518,5182
+Miscellaneous nondurable goods,F,51,519,519
+Farm supplies,F,51,519,5191
+Farm supplies,F,51,519,5191
+Farm supplies whsle,F,51,519,5191
+Farm supplies - farm dealers,F,51,519,5191
+Farm supplies - farm dealers,F,51,519,5191
+Farm supplies - whsle distributors,F,51,519,5191
+Farm supplies - whsle distributors,F,51,519,5191
+Farm supplies dealers (retail),F,51,519,5191
+Farm supplies dealers (retail),F,51,519,5191
+"Books, periodicals, & newspapers",F,51,519,5192
+"Books, periodicals, & newspapers",F,51,519,5192
+"Book, periodical, & newspaper whsle",F,51,519,5192
+"Book, periodical, & newspaper whsle",F,51,519,5192
+"Flowers, nursery stock, & florists' supplies",F,51,519,5193
+"Flowers, nursery stock, & florists' supplies",F,51,519,5193
+"Flower, nursery stock, & florists' supplies whsle",F,51,519,5193
+"Flower, nursery stock, & florists' supplies whsle",F,51,519,5193
+"Flower, nursery stock, & florists' supplies merchants (retail)",F,51,519,5193
+"Flower, nursery stock, & florists' supplies merchants (retail)",F,51,519,5193
+Tobacco & tobacco products,F,51,519,5194
+Tobacco & tobacco products,F,51,519,5194
+Tobacco & tobacco product whsle,F,51,519,5194
+Tobacco & tobacco product whsle,F,51,519,5194
+"Paints, varnishes, & supplies",F,51,519,5198
+"Paints, varnishes, & supplies",F,51,519,5198
+"Paint, varnish, & supplies whsle",F,51,519,5198
+"Paint, varnish, & supplies whsle",F,51,519,5198
+"Paint, varnish, & supplies merchants (retail)",F,51,519,5198
+"Paint, varnish, & supplies merchants (retail)",F,51,519,5198
+Other miscellaneous nondurable goods,F,51,519,5199
+Other miscellaneous nondurable goods,F,51,519,5199
+Other miscellaneous nondurable goods whsle,F,51,519,5199
+Art goods whsle,F,51,519,5199
+Art goods whsle,F,51,519,5199
+General merchandise (nondurable goods) whsle,F,51,519,5199
+General merchandise (nondurable goods) whsle,F,51,519,5199
+"Textile bags, bagging, & burlap whsle",F,51,519,5199
+"Textile bags, bagging, & burlap whsle",F,51,519,5199
+Other nondurable goods whsle,F,51,519,5199
+Other nondurable goods whsle,F,51,519,5199
+Advertising specialties goods distributor,F,51,519,5199
+Advertising specialties goods distributor,F,51,519,5199
+Retail trade,G,G,G,G
+"Building materials, hardware, garden supply, and mobile home dealers",G,52,52,52
+Lumber and other building materials dealers,G,52,521,521
+Lumber & other building materials dealers,G,52,521,5211
+Home centers,G,52,521,5211
+Other building material dealers,G,52,521,5211
+Retail lumber yards,G,52,521,5211
+Retail building material dealers,G,52,521,5211
+"Paint, glass, and wallpaper stores",G,52,523,523
+"Paint, glass, & wallpaper stores",G,52,523,5231
+Retail paint & wallpaper stores,G,52,523,5231
+Retail glass dealers,G,52,523,5231
+Hardware stores,G,52,525,525
+Hardware stores,G,52,525,5251
+Hardware stores,G,52,525,5251
+"Retail nurseries, lawn and garden supply stores",G,52,526,526
+"Retail nurseries, lawn & garden supply stores",G,52,526,5261
+Outdoor power equipment stores,G,52,526,5261
+Nursery & garden centers,G,52,526,5261
+Mobile home dealers,G,52,527,527
+Mobile home dealers,G,52,527,5271
+Manufactured (mobile) home dealers,G,52,527,5271
+General merchandise stores,G,53,53,53
+Department stores (excluding leased departments) ,G,53,531,531
+Department stores (excl leased depts),G,53,531,5311
+Department stores (excl leased depts),G,53,531,5311
+Conventional department stores (excl leased depts),G,53,531,5311
+Discount or mass merchandising dept stores (excl leased depts),G,53,531,5311
+National chain department stores (excl leased depts),G,53,531,5311
+Supercenters,G,53,531,5311
+Variety stores,G,53,533,533
+Variety stores,G,53,533,5331
+Variety stores,G,53,533,5331
+Miscellaneous general merchandise stores,G,53,539,539
+Miscellaneous general merchandise stores,G,53,539,5399
+Warehouse clubs,G,53,539,5399
+All other general merchandise stores,G,53,539,5399
+Catalog showrooms,G,53,539,5399
+"Misc gen merch stores, exc catalog showrooms & warehse clubs",G,53,539,5399
+Food stores,G,54,54,54
+Grocery stores,G,54,541,541
+Grocery stores,G,54,541,5411
+Supermarkets & other grocery (except convenience) stores,G,54,541,5411
+Supermarkets & grocery stores,G,54,541,5411
+"Delicatessens, primarily selling meats & a range of grocery items",G,54,541,5411
+Convenience stores,G,54,541,5411
+"Delicatessens, primarily selling fresh & prepared meats",G,54,541,5411
+Convenience stores selling gasoline,G,54,541,5411
+Supermarket/general merchandise combination stores,G,54,541,5411
+"Meat and fish (seafood) markets, including freezer provisioners",G,54,542,542
+"Meat & fish (seafood) markets, including freezer provisioners",G,54,542,5421
+Meat markets,G,54,542,5421
+Fish & seafood markets,G,54,542,5421
+Freezer & locker meat provisioners,G,54,542,5421
+Fruit and vegetable markets,G,54,543,543
+Fruit & vegetable markets,G,54,543,5431
+Fruit & vegetable markets,G,54,543,5431
+"Candy, nut, and confectionery stores",G,54,544,544
+"Candy, nut, & confectionery stores",G,54,544,5441
+Confectionery mfg from purchased chocolate (pt),G,54,544,5441
+Nonchocolate confectionery mfg (pt),G,54,544,5441
+Confectionery & nut stores,G,54,544,5441
+Dairy products stores,G,54,545,545
+Dairy products stores,G,54,545,5451
+Dairy products stores,G,54,545,5451
+Retail bakeries,G,54,546,546
+Retail bakeries,G,54,546,5461
+Retail bakeries,G,54,546,5461
+Baked goods stores,G,54,546,5461
+Snack & nonalcoholic beverage bars,G,54,546,5461
+"Donut shops, baking on premises",G,54,546,5461
+"Donut shops, no baking on premises",G,54,546,5461
+Cookie shops,G,54,546,5461
+Miscellaneous food stores,G,54,549,549
+Miscellaneous food stores,G,54,549,5499
+Miscellaneous food stores,G,54,549,5499
+Food (health) supplement stores,G,54,549,5499
+Automotive dealers and gasoline service stations,G,55,55,55
+Motor vehicle dealers (new and used),G,55,551,551
+Motor vehicle dealers (new & used),G,55,551,5511
+New car dealers,G,55,551,5511
+Motor vehicle dealers (used only),G,55,552,552
+Motor vehicle dealers (used only),G,55,552,5521
+Used car dealers,G,55,552,5521
+Auto and home supply stores,G,55,553,553
+Auto & home supply stores,G,55,553,5531
+Auto supplies stores,G,55,553,5531
+New tire dealers,G,55,553,5531
+Other auto & home supplies stores,G,55,553,5531
+Gasoline service stations,G,55,554,554
+Gasoline service stations,G,55,554,5541
+Gasoline stations with convenience stores,G,55,554,5541
+Other gasoline stations,G,55,554,5541
+Gasoline stations with no convenience stores,G,55,554,5541
+Truck stops,G,55,554,5541
+Boat dealers,G,55,555,555
+Boat dealers,G,55,555,5551
+Boat dealers,G,55,555,5551
+Recreational vehicle dealers,G,55,556,556
+Recreational vehicle dealers,G,55,556,5561
+Recreational vehicle dealers,G,55,556,5561
+Motorcycle dealers,G,55,557,557
+Motorcycle dealers,G,55,557,5571
+Motorcycle dealers,G,55,557,5571
+"Automotive dealers, not elsewhere classified",G,55,559,559
+"Automotive dealers, not elsewhere classified",G,55,559,5599
+All other motor vehicle dealers,G,55,559,5599
+Apparel and accessory stores,G,56,56,56
+Men's and boys' clothing and accessory stores,G,56,561,561
+Men's & boys' clothing & accessory stores,G,56,561,5611
+Men's clothing stores,G,56,561,5611
+Women's clothing stores,G,56,562,562
+Women's clothing stores,G,56,562,5621
+Women's clothing stores,G,56,562,5621
+Women's accessory and specialty stores,G,56,563,563
+Women's accessory & specialty stores,G,56,563,5632
+Women's accessory stores,G,56,563,5632
+Other clothing stores,G,56,563,5632
+Women's specialty stores,G,56,563,5632
+Furriers & fur shops,G,56,563,5632
+Children's and infants' wear stores,G,56,564,564
+Children's & infants' wear stores,G,56,564,5641
+Children's & infants' clothing stores,G,56,564,5641
+Family clothing stores,G,56,565,565
+Family clothing stores,G,56,565,5651
+Family clothing stores,G,56,565,5651
+Shoe stores,G,56,566,566
+Shoe stores,G,56,566,5661
+Shoe stores,G,56,566,5661
+Men's shoe stores,G,56,566,5661
+Women's shoe stores,G,56,566,5661
+Children's & juveniles' shoe stores,G,56,566,5661
+Family shoe stores,G,56,566,5661
+Athletic footwear stores,G,56,566,5661
+Miscellaneous apparel and accessory stores,G,56,569,569
+Miscellaneous apparel & accessory stores,G,56,569,5699
+Miscellaneous apparel and accessory stores (pt),G,56,569,5699
+Miscellaneous accessory stores,G,56,569,5699
+Other clothing stores,G,56,569,5699
+Sports apparel stores,G,56,569,5699
+Miscellaneous apparel stores,G,56,569,5699
+"Home furniture, furnishings, and equipment stores",G,57,57,57
+Home furniture and furnishings stores,G,57,571,571
+Furniture stores,G,57,571,5712
+Wood kitchen cabinet & counter top mfg (pt),G,57,571,5712
+Upholstered household furniture mfg (pt),G,57,571,5712
+Nonupholstered wood household furniture mfg (pt),G,57,571,5712
+Furniture stores,G,57,571,5712
+"Furniture stores, except custom",G,57,571,5712
+Furniture warehouse showrooms,G,57,571,5712
+Sleep shop & waterbed stores,G,57,571,5712
+"Specialty furniture stores, except custom",G,57,571,5712
+Floor covering stores,G,57,571,5713
+Floor covering stores,G,57,571,5713
+"Drapery, curtain, & upholstery stores",G,57,571,5714
+Curtain & drapery mills (pt),G,57,571,5714
+"Drapery & curtain stores, except custom",G,57,571,5714
+Upholstery stores,G,57,571,5714
+Miscellaneous homefurnishings stores,G,57,571,5719
+Blind & shade stores,G,57,571,5719
+All other home furnishings stores,G,57,571,5719
+Household appliance stores,G,57,572,572
+Household appliance stores,G,57,572,5722
+Household appliance stores,G,57,572,5722
+"Radio, television, consumer electronics, and music stores",G,57,573,573
+"Radio, television, & consumer electronics stores",G,57,573,5731
+Automotive radio stores,G,57,573,5731
+"Other radio, television, & electronics stores",G,57,573,5731
+Computer & computer software stores,G,57,573,5734
+Computer & software stores,G,57,573,5734
+Computer stores (custom assembly),G,57,573,5734
+Computer stores,G,57,573,5734
+Computer software stores,G,57,573,5734
+Record & prerecorded tape stores,G,57,573,5735
+"Prerecorded tape, compact disc, & record stores",G,57,573,5735
+"Prerecorded tape, compact disc, & record stores",G,57,573,5735
+"Video tape stores, retail",G,57,573,5735
+Musical instrument stores,G,57,573,5736
+Musical instrument & supplies stores,G,57,573,5736
+Eating and drinking places,G,58,58,58
+Eating and drinking places,G,58,581,581
+Eating places,G,58,581,5812
+Dinner theaters,G,58,581,5812
+Full-service restaurants,G,58,581,5812
+Limited-service restaurants,G,58,581,5812
+Cafeterias,G,58,581,5812
+Snack & nonalcoholic beverage bars,G,58,581,5812
+Ice cream & soft serve shops,G,58,581,5812
+Frozen yogurt shops,G,58,581,5812
+Bagel shops,G,58,581,5812
+Coffee shops,G,58,581,5812
+Other snack & nonalcoholic beverage bars,G,58,581,5812
+Foodservice contractors,G,58,581,5812
+Caterers,G,58,581,5812
+Drinking places (alcoholic beverages),G,58,581,5813
+Drinking places (alcoholic beverages),G,58,581,5813
+Miscellaneous retail,G,59,59,59
+Drug stores and proprietary stores,G,59,591,591
+Drug stores & proprietary stores,G,59,591,5912
+Pharmacies & drug stores,G,59,591,5912
+Pharmacies & drug stores,G,59,591,5912
+Proprietary stores,G,59,591,5912
+Liquor stores,G,59,592,592
+Liquor stores,G,59,592,5921
+"Beer, wine, & liquor stores",G,59,592,5921
+Used merchandise stores,G,59,593,593
+Used merchandise stores,G,59,593,5932
+Used merchandise stores,G,59,593,5932
+Antique stores,G,59,593,5932
+"Second-hand stores, except pawn shops",G,59,593,5932
+Pawn shops,G,59,593,5932
+Miscellaneous shopping goods stores,G,59,594,594
+Sporting goods stores & bicycle shops,G,59,594,5941
+Sporting goods stores,G,59,594,5941
+General-line sporting goods stores,G,59,594,5941
+Bicycle shops,G,59,594,5941
+Golf shops,G,59,594,5941
+Gun shops,G,59,594,5941
+Ski shops,G,59,594,5941
+Tackle shops,G,59,594,5941
+Other specialty-line sporting goods stores,G,59,594,5941
+Book stores,G,59,594,5942
+Book stores,G,59,594,5942
+"Book stores, general",G,59,594,5942
+Specialty book stores,G,59,594,5942
+College book stores,G,59,594,5942
+Stationery stores,G,59,594,5943
+Office supplies & stationery stores,G,59,594,5943
+Stationery stores,G,59,594,5943
+Office supplies stores,G,59,594,5943
+Jewelry stores,G,59,594,5944
+Jewelry stores,G,59,594,5944
+"Hobby, toy, & game shops",G,59,594,5945
+"Hobby, toy, & game stores",G,59,594,5945
+"Hobby, toy, & game stores",G,59,594,5945
+Craft supplies stores,G,59,594,5945
+Camera & photographic supply stores,G,59,594,5946
+Camera & photographic supplies stores,G,59,594,5946
+"Gift, novelty, & souvenir shops",G,59,594,5947
+"Gift, novelty, & souvenir stores",G,59,594,5947
+Luggage & leather goods stores,G,59,594,5948
+Luggage & leather goods stores,G,59,594,5948
+"Sewing, needlework, & piece goods stores",G,59,594,5949
+"Sewing, needlework, & piece goods stores",G,59,594,5949
+"Sewing, fabric, & piece goods stores",G,59,594,5949
+Needlework & knitting stores,G,59,594,5949
+Nonstore retailers,G,59,596,596
+Catalog & mail-order houses,G,59,596,5961
+Electronic shopping & mail-order houses,G,59,596,5961
+"Mail-order houses, department store merchandise",G,59,596,5961
+"Mail-order houses, other general merchandise",G,59,596,5961
+"Mail-order houses, specialized merchandise",G,59,596,5961
+"Television order, home shopping",G,59,596,5961
+Automatic merchandising machine operators,G,59,596,5962
+Vending machine operators,G,59,596,5962
+Direct selling establishments,G,59,596,5963
+Other direct selling establishments,G,59,596,5963
+"Direct selling, furniture, home furnishings, electronics, & appl",G,59,596,5963
+"Direct selling, cameras & photographic equipment",G,59,596,5963
+"Direct selling, videos, tapes, compact discs, & records",G,59,596,5963
+"Direct selling, books & magazines",G,59,596,5963
+"Direct selling, newspapers",G,59,596,5963
+"Direct selling, stationery",G,59,596,5963
+"Direct selling, all other merchandise",G,59,596,5963
+Mobile foodservices,G,59,596,5963
+Fuel dealers,G,59,598,598
+Fuel oil dealers,G,59,598,5983
+Heating oil dealers,G,59,598,5983
+Liquefied petroleum gas (bottled gas) dealers,G,59,598,5984
+Liquefied petroleum gas (bottled gas) dealers,G,59,598,5984
+"Fuel dealers, not elsewhere classified",G,59,598,5989
+Other fuel dealers,G,59,598,5989
+"Retail stores, not elsewhere classified",G,59,599,599
+Florists,G,59,599,5992
+Florists,G,59,599,5992
+Tobacco stores & stands,G,59,599,5993
+Tobacco stores,G,59,599,5993
+News dealers & newsstands,G,59,599,5994
+News dealers & newsstands,G,59,599,5994
+Optical goods stores,G,59,599,5995
+Optical goods stores,G,59,599,5995
+"Miscellaneous retail stores, not elsewhere classified",G,59,599,5999
+"Radio, television, & other electronics stores",G,59,599,5999
+Typewriter shops,G,59,599,5999
+Telephone stores,G,59,599,5999
+"Cosmetics, beauty supplies, & perfume stores",G,59,599,5999
+Health care stores,G,59,599,5999
+Pet & pet supplies stores,G,59,599,5999
+Art dealers,G,59,599,5999
+All other miscellaneous store retailers (except tobacco stores),G,59,599,5999
+Collectors' items & supplies stores,G,59,599,5999
+Trophy shops,G,59,599,5999
+"Other miscellaneous store retailers, nec",G,59,599,5999
+"Financial, insurance, and real estate industries",H,H,H,H
+Depository institutions,H,60,60,60
+Central reserve depository institutions,H,60,601,601
+Federal reserve banks,H,60,601,6011
+Monetary authorities - central bank,H,60,601,6011
+"Central reserve depository institutions, nec",H,60,601,6019
+Other central reserve depository institutions,H,60,601,6019
+Commercial banks,H,60,602,602
+National commercial banks,H,60,602,6021
+National commercial banks (banking),H,60,602,6021
+National commercial banks (credit card issuing),H,60,602,6021
+State commercial banks,H,60,602,6022
+State commercial banks (banking),H,60,602,6022
+Other depository credit intermediation,H,60,602,6022
+State commercial banks (credit card issuing),H,60,602,6022
+Savings institutions,H,60,603,603
+"Savings institutions, federally chartered",H,60,603,6035
+Savings institutions (federally chartered),H,60,603,6035
+"Savings institutions, not federally chartered",H,60,603,6036
+Savings institutions (not federally chartered),H,60,603,6036
+Credit unions,H,60,606,606
+"Credit unions, federally chartered",H,60,606,6061
+Credit unions (federally chartered),H,60,606,6061
+"Credit unions, not federally chartered",H,60,606,6062
+Credit unions (not federally chartered),H,60,606,6062
+Foreign banking and branches and agencies of foreign banks,H,60,608,608
+Branches & agencies of foreign banks,H,60,608,6081
+Branches of foreign banks,H,60,608,6081
+"Agencies of foreign banks, primarily trade finance",H,60,608,6081
+"Agencies of foreign banks, primarily commercial finance",H,60,608,6081
+Foreign trade & international banking institutions,H,60,608,6082
+"Agreement & Edge Act Corporations, primarily trade finance",H,60,608,6082
+"Agreement & Edge Act Corporations, primarily holding investments",H,60,608,6082
+Functions related to depository banking,H,60,609,609
+Nondeposit trust facilities,H,60,609,6091
+Nondeposit trust companies,H,60,609,6091
+"Functions related to depository banking, nec",H,60,609,6099
+Representative offices of foreign banks,H,60,609,6099
+Electr funds trans & automated clearinghouses for banks & checks,H,60,609,6099
+Other activities related to credit intermediation,H,60,609,6099
+Foreign currency exchange,H,60,609,6099
+Escrow & fiduciary agencies,H,60,609,6099
+Deposit brokers,H,60,609,6099
+Nondepository credit institutions,H,61,61,61
+Federal & federally-sponsored credit agencies,H,61,611,611
+Federal & federally-sponsored credit agencies,H,61,611,6111
+"Federally-sponsored credit agencies, primarily real estate",H,61,611,6111
+"Federally-sponsored credit agencies, primarily trade finance",H,61,611,6111
+"Federally-sponsored credit agencies, primarily secondary market",H,61,611,6111
+Other federally-sponsored credit agencies,H,61,611,6111
+Personal credit institutions,H,61,614,614
+Personal credit institutions,H,61,614,6141
+Remedial loan societies and mutual benefit associations (deposit),H,61,614,6141
+Credit card issuing by personal credit institutions,H,61,614,6141
+Sales financing,H,61,614,6141
+Automotive sales finance companies,H,61,614,6141
+Sales finance companies (except automotive),H,61,614,6141
+Consumer lending,H,61,614,6141
+Consumer & personal finance companies,H,61,614,6141
+Other personal credit institutions,H,61,614,6141
+Business credit institutions,H,61,615,615
+"Short-term business credit institutions, except agricultural",H,61,615,6153
+Other short-term business credit institutions,H,61,615,6153
+Commercial finance companies,H,61,615,6153
+Factors,H,61,615,6153
+Credit card service by business credit institutions,H,61,615,6153
+Miscellaneous business credit institutions,H,61,615,6159
+Financing leases,H,61,615,6159
+Farm mortgage companies,H,61,615,6159
+International trade credit,H,61,615,6159
+Secondary market financing,H,61,615,6159
+All other nondepository credit intermediation,H,61,615,6159
+Agricultural credit (except federally-sponsored),H,61,615,6159
+Other miscellaneous business credit institutions,H,61,615,6159
+Mortgage bankers and brokers,H,61,616,616
+Mortgage bankers & loan correspondents,H,61,616,6162
+Mortgage bankers & loan correspondents,H,61,616,6162
+Loan servicing,H,61,616,6162
+Loan brokers,H,61,616,6163
+Mortgage & nonmortgage loan brokers,H,61,616,6163
+"Security and commodity brokers, dealers, exchanges, and services",H,62,62,62
+"Security brokers, dealers, and flotation companies",H,62,621,621
+"Security brokers, dealers, & flotation companies",H,62,621,6211
+Investment banking & securities dealing,H,62,621,6211
+Securities brokerage,H,62,621,6211
+Traders & dealers (except for securities & commodities),H,62,621,6211
+Gas & oil lease & royalty brokers,H,62,621,6211
+Commodity contracts brokers and dealers,H,62,622,622
+Commodity contracts brokers & dealers,H,62,622,6221
+Commodity contracts dealing,H,62,622,6221
+Commodity contracts brokerage,H,62,622,6221
+Security and commodity exchanges,H,62,623,623
+Security & commodity exchanges,H,62,623,6231
+Securities & commodity exchanges,H,62,623,6231
+Services allied with the exchange of securities or commodities,H,62,628,628
+Investment advice,H,62,628,6282
+Portfolio management,H,62,628,6282
+Investment advice,H,62,628,6282
+"Serv allied with the exchange of securities or commodities, nec",H,62,628,6289
+Securities custodians & securities transfer agents,H,62,628,6289
+Oth services allied with the exchange of securities & commodities,H,62,628,6289
+Insurance carriers,H,63,63,63
+Life insurance,H,63,631,631
+Life insurance,H,63,631,6311
+Offices of direct life insurance carriers,H,63,631,6311
+Offices of life reinsurance carriers,H,63,631,6311
+Accident and health insurance and medical service plans,H,63,632,632
+Accident & health insurance,H,63,632,6321
+Offices of direct accident & disability income insurance carriers,H,63,632,6321
+Offices of direct health insurance carriers,H,63,632,6321
+Offices of accident & health reinsurance carriers,H,63,632,6321
+Hospital & medical service plans,H,63,632,6324
+Offices of hospital & medical service plans (direct),H,63,632,6324
+Offices of hospital & medical service plans (reinsurance),H,63,632,6324
+"Fire, marine, and casualty insurance",H,63,633,633
+"Fire, marine, & casualty insurance",H,63,633,6331
+"Offices of direct fire, marine, & casualty insurance carriers",H,63,633,6331
+"Offices of fire, marine, & casualty reinsurance carriers",H,63,633,6331
+Surety insurance,H,63,635,635
+Surety insurance,H,63,635,6351
+Offices of direct surety insurance carriers,H,63,635,6351
+Offices of surety reinsurance carriers,H,63,635,6351
+Title insurance,H,63,636,636
+Title insurance,H,63,636,6361
+Direct title insurance carriers,H,63,636,6361
+Offices of title reinsurance carriers,H,63,636,6361
+"Pension, health, and welfare funds",H,63,637,637
+"Pension, health, & welfare funds",H,63,637,6371
+"Third party administration of pension, health, & welfare funds",H,63,637,6371
+"Insurance carriers, n.e.c.",H,63,639,639
+"Insurance carriers, nec",H,63,639,6399
+All other direct insurance carriers,H,63,639,6399
+Offices of other reinsurance carriers,H,63,639,6399
+"Insurance agents, brokers, and services",H,64,64,64
+"Insurance agents, brokers, and services",H,64,641,641
+"Insurance agents, brokers, & services",H,64,641,6411
+Insurance agencies & brokerages,H,64,641,6411
+Claims adjusting,H,64,641,6411
+Third party administration of insurance,H,64,641,6411
+All other insurance related activities,H,64,641,6411
+Real estate,H,65,65,65
+Real estate operators (except developers) and lessors,H,65,651,651
+Operators of nonresidential buildings,H,65,651,6512
+Lessors of nonresidential buildings (except miniwarehouses),H,65,651,6512
+Lessors of professional & other office buildings,H,65,651,6512
+Lessors of manufacturing & industrial buildings,H,65,651,6512
+Lessors of shopping centers & retail stores,H,65,651,6512
+Lessors of other nonresidential buildings & facilities,H,65,651,6512
+Stadium & arena owners,H,65,651,6512
+Operators of apartment buildings,H,65,651,6513
+Lessors of apartment buildings,H,65,651,6513
+Operators of dwellings other than apartment buildings,H,65,651,6514
+Lessors of dwellings (except apartment buildings),H,65,651,6514
+Operators of residential mobile home sites,H,65,651,6515
+Lessors of manufactured (mobile) home sites,H,65,651,6515
+Lessors of railroad property,H,65,651,6517
+Lessors of railroad property,H,65,651,6517
+"Lessors of real property, nec",H,65,651,6519
+Lessors of other real estate property,H,65,651,6519
+Real estate agents and managers,H,65,653,653
+Real estate agents & managers,H,65,653,6531
+Offices of real estate agents & brokers,H,65,653,6531
+Offices of residential real estate agents & brokers,H,65,653,6531
+Offices of nonresidential real estate agents & brokers,H,65,653,6531
+Residential property managers,H,65,653,6531
+Nonresidential property managers,H,65,653,6531
+Offices of real estate appraisers,H,65,653,6531
+Other activities related to real estate,H,65,653,6531
+Cemetery management,H,65,653,6531
+Condominium or coop owners assn (engaged in property mgt),H,65,653,6531
+Title abstract offices,H,65,654,654
+Title abstract offices,H,65,654,6541
+Title abstract & settlement offices,H,65,654,6541
+Land subdividers and developers,H,65,655,655
+"Land subdividers & developers, except cemeteries",H,65,655,6552
+Land subdivision & land development,H,65,655,6552
+Cemetery subdividers & developers,H,65,655,6553
+Cemeteries & crematories,H,65,655,6553
+Cemetery & mausoleum operators,H,65,655,6553
+Animal cemetery operators,H,65,655,6553
+"Holding and other investment offices, except trusts",H,67,67,67
+Holding offices,H,67,671,671
+Offices of bank holding companies,H,67,671,6712
+Offices of bank holding companies,H,67,671,6712
+"Offices of holding companies, nec",H,67,671,6719
+Offices of other holding companies,H,67,671,6719
+Investment offices,H,67,672,672
+Trusts,H,67,673,673
+"Educational, religious, & charitable trusts",H,67,673,6732
+Grantmaking foundations,H,67,673,6732
+"Trusts, except educational, religious, & charitable",H,67,673,6733
+Mgt of trust investment portfolios (exc ed relig & charitable),H,67,673,6733
+"Other trust, fiduciary, & custody activities",H,67,673,6733
+Miscellaneous investing,H,67,679,679
+Oil royalty traders,H,67,679,6792
+Oil royalty traders investing on own account,H,67,679,6792
+Oil royalty companies,H,67,679,6792
+Patent owners & lessors,H,67,679,6794
+Patent owners & lessors,H,67,679,6794
+Real estate investment trusts,H,67,679,6798
+Real Estate Investment Trusts (REITs),H,67,679,6798
+Real Estate Investment Trusts (Equity & Hybrid),H,67,679,6798
+Real Estate Investment Trusts (Mortgage),H,67,679,6798
+"Investors, nec",H,67,679,6799
+Commodity contract trading company,H,67,679,6799
+Miscellaneous intermediation,H,67,679,6799
+Venture capital companies,H,67,679,6799
+All other investors,H,67,679,6799
+Commodity contract pool operators,H,67,679,6799
+Service industries,I,I,I,I
+"Hotels, rooming houses, camps, and other lodging places",I,70,70,70
+Hotels & motels,I,70,701,701
+Hotels (except casino hotels) & motels,I,70,701,7011
+Hotels (except casino hotels) with 25 guestrooms or more,I,70,701,7011
+Hotels with less than 25 guestrooms,I,70,701,7011
+Motels,I,70,701,7011
+Motor hotels,I,70,701,7011
+Casino hotels,I,70,701,7011
+Bed & breakfast inns,I,70,701,7011
+Bed & breakfast inns with 25 guestrooms or more,I,70,701,7011
+Bed & breakfast inns with less than 25 guestrooms,I,70,701,7011
+All other traveler accommodation,I,70,701,7011
+Rooming & boarding houses,I,70,702,702
+Rooming & boarding houses,I,70,702,7021
+Camps and recreational vehicle parks,I,70,703,703
+Sporting & recreational camps,I,70,703,7032
+Recreational & vacation camps (except campgrounds),I,70,703,7032
+Recreational vehicle parks & campsites,I,70,703,7033
+RV (recreational vehicle) parks & campgrounds,I,70,703,7033
+Personal services,I,72,72,72
+"Power laundries, family & commercial",I,72,721,721
+"Laundries, family & commercial",I,72,721,7211
+Garment pressing & agents for laundries & drycleaners,I,72,721,7212
+Garment pressing & agents for laundries,I,72,721,7212
+Linen supply,I,72,721,7213
+Linen supply (except diaper service),I,72,721,7213
+Coin-operated laundries & drycleaning,I,72,721,7215
+Coin-operated laundries & drycleaners,I,72,721,7215
+Coin-operated laundry routes,I,72,721,7215
+Coin-operated laundries & drycleaning stores,I,72,721,7215
+Drycleaning plants,I,72,721,7216
+Drycleaning plants,I,72,721,7216
+Carpet & upholstery cleaning services,I,72,721,7217
+Carpet & upholstery cleaning services,I,72,721,7217
+Industrial launderers,I,72,721,7218
+Industrial launderers,I,72,721,7218
+"Other laundry, cleaning & garment services",I,72,721,7219
+Garment repair & alteration services,I,72,721,7219
+All other laundry & garment services,I,72,721,7219
+Diaper service,I,72,721,7219
+"Photographic studios, portrait",I,72,722,722
+"Photographic studios, portrait",I,72,722,7221
+Beauty shops,I,72,723,723
+Beauty shops ,I,72,723,7231
+Beauty & cosmetology schools,I,72,723,7231
+Beauty shops,I,72,723,7231
+Nail salons,I,72,723,7231
+Barber shops  ,I,72,724,724
+Barber shops ,I,72,724,7241
+Barber colleges,I,72,724,7241
+Barber shops,I,72,724,7241
+Shoe repair shops & shoeshine parlors,I,72,725,725
+Shoe repair shops & shoeshine parlors,I,72,725,7251
+Funeral service & crematories,I,72,726,726
+Funeral homes & funeral services,I,72,726,7261
+Funeral homes,I,72,726,7261
+Other funeral services,I,72,726,7261
+Crematories,I,72,726,7261
+Miscellaneous personal services,I,72,729,729
+Tax return preparation services,I,72,729,7291
+"Miscellaneous personal services, n.e.c.",I,72,729,7299
+Formal wear rental,I,72,729,7299
+"Locker rental, except cold storage",I,72,729,7299
+Babysitting services,I,72,729,7299
+Diet & weight reducing services,I,72,729,7299
+Other personal care services,I,72,729,7299
+All other personal services,I,72,729,7299
+Dating services,I,72,729,7299
+All other miscellaneous personal services,I,72,729,7299
+Business Services,I,73,73,73
+Advertising Services,I,73,731,731
+Advertising agencies,I,73,731,7311
+Advertising agencies,I,73,731,7311
+Outdoor advertising services,I,73,731,7312
+Outdoor advertising services,I,73,731,7312
+"Radio, television, and publishers' advertising representatives",I,73,731,7313
+Media representatives,I,73,731,7313
+Radio & television advertising representatives,I,73,731,7313
+Publishers' advertising representatives,I,73,731,7313
+"Advertising, n.e.c.",I,73,731,7319
+Media buying services,I,73,731,7319
+Display advertising (except outdoor),I,73,731,7319
+Advertising material distribution services,I,73,731,7319
+All other advertising,I,73,731,7319
+Consumer Credit Reporting / Mercantile Services,I,73,732,732
+Adjustment & collection services,I,73,732,7322
+Collection agencies,I,73,732,7322
+Adjustment bureaus,I,73,732,7322
+Credit reporting services,I,73,732,7323
+Credit bureaus,I,73,732,7323
+Consumer credit reporting agencies,I,73,732,7323
+Mercantile reporting agencies,I,73,732,7323
+"Mailing, Reproduction & Commerical Art Services",I,73,733,733
+Direct mail advertising services,I,73,733,7331
+Database & directory publishers (pt),I,73,733,7331
+Direct mail advertising,I,73,733,7331
+Photocopying & duplicating services,I,73,733,7334
+Other business service centers (including copy shops),I,73,733,7334
+Commercial photography,I,73,733,7335
+Commercial photography (except medical photography),I,73,733,7335
+Commercial art & graphic design,I,73,733,7336
+Graphic design services,I,73,733,7336
+Graphic design services (except commercial art & medical artists),I,73,733,7336
+Commercial art,I,73,733,7336
+Secretarial & court reporting services,I,73,733,7338
+Document preparation services,I,73,733,7338
+Court reporting & stenotype services,I,73,733,7338
+Services to Dwellings & Other Buildings,I,73,734,734
+Disinfecting & pest control services,I,73,734,7341
+Exterminating & pest control services,I,73,734,7342
+Disinfecting services,I,73,734,7342
+"Building cleaning & maintenance services, n.e.c.",I,73,734,7349
+Other janitorial services,I,73,734,7349
+Miscellaneous Equipment Rental & Leasing,I,73,735,735
+Medical equipment rental & leasing,I,73,735,7351
+Home health equipment rental,I,73,735,7352
+Medical equipment rental & leasing (exc home health equipment),I,73,735,7352
+Heavy construction equipment rental & leasing,I,73,735,7353
+All other heavy construction (pt),I,73,735,7353
+Rental & leasing of heavy construction equip without operators,I,73,735,7353
+"Equipment rental & leasing, n.e.c.",I,73,735,7359
+Consumer electronics & appliances rental,I,73,735,7359
+Other consumer goods rental & leasing,I,73,735,7359
+General rental centers,I,73,735,7359
+Aircraft rental & leasing,I,73,735,7359
+Oilfield & well drilling equipment rental & leasing,I,73,735,7359
+Office machinery rental & leasing,I,73,735,7359
+Industrial equipment rental & leasing,I,73,735,7359
+Portable toilet rental,I,73,735,7359
+Personnel Supply Services,I,73,736,736
+Employment agencies,I,73,736,7361
+Executive placement services,I,73,736,7361
+Employment agencies (except executive placement services),I,73,736,7361
+Help supply services,I,73,736,7363
+Temporary help services,I,73,736,7363
+Employee leasing services,I,73,736,7363
+Computer Programming and Data Processing,I,73,737,737
+Computer programming services,I,73,737,7371
+Custom computer programming services,I,73,737,7371
+Software publishers,I,73,737,7372
+Software publishers,I,73,737,7372
+Computer systems integrators,I,73,737,7373
+Computer systems integrators,I,73,737,7373
+Data processing services,I,73,737,7374
+Data processing services,I,73,737,7374
+On-line information services,I,73,737,7375
+On-line information services,I,73,737,7375
+Computer facilities management services,I,73,737,7376
+Computer facilities management services,I,73,737,7376
+Computer rental & leasing,I,73,737,7377
+Computer rental & leasing,I,73,737,7377
+Computer maintenance & repair,I,73,737,7378
+Computer maintenance & repair,I,73,737,7378
+"Computer related services, n.e.c.",I,73,737,7379
+Software reproducing,I,73,737,7379
+Computer systems consultants (except systems integrators),I,73,737,7379
+Other computer related services,I,73,737,7379
+Computer consultants (except computer systems consultants),I,73,737,7379
+All other computer related services,I,73,737,7379
+Miscellaneous Business Services,I,73,738,738
+"Detective, guard, & armored car services",I,73,738,7381
+Investigation services,I,73,738,7381
+Security guards & patrol services,I,73,738,7381
+Armored car services,I,73,738,7381
+Security systems services,I,73,738,7382
+Security systems services (except locksmiths),I,73,738,7382
+News syndicates,I,73,738,7383
+News syndicates,I,73,738,7383
+Photofinishing laboratories,I,73,738,7384
+Photofinishing laboratories (except one-hour),I,73,738,7384
+One-hour photofinishing,I,73,738,7384
+"Business services, n.e.c.",I,73,738,7389
+Sound recording studios,I,73,738,7389
+Audio taping services,I,73,738,7389
+Credit card processing,I,73,738,7389
+All other legal services,I,73,738,7389
+Drafting services,I,73,738,7389
+Building inspection services,I,73,738,7389
+Map making services,I,73,738,7389
+Interior design services,I,73,738,7389
+Industrial design services,I,73,738,7389
+Other specialized design services,I,73,738,7389
+Other services related to advertising,I,73,738,7389
+Welcoming services,I,73,738,7389
+Sign painting & lettering shop,I,73,738,7389
+Translation & interpretation services,I,73,738,7389
+"All other professional, scientific, & technical services",I,73,738,7389
+Telephone answering services (except voice mailbox),I,73,738,7389
+Telemarketing bureaus,I,73,738,7389
+Private mail centers,I,73,738,7389
+Recovery & repossession services,I,73,738,7389
+All other business support services,I,73,738,7389
+Convention & visitors bureaus,I,73,738,7389
+Reservation systems:  hotels & restaurants,I,73,738,7389
+Swimming pool cleaning & maintenance,I,73,738,7389
+Packaging & labeling services,I,73,738,7389
+Convention & trade show organizers,I,73,738,7389
+All other support services,I,73,738,7389
+Trading stamp services,I,73,738,7389
+Water softening & conditioning services,I,73,738,7389
+Other miscellaneous support services,I,73,738,7389
+Agents & brokers for nonperforming artists,I,73,738,7389
+Bail bonding,I,73,738,7389
+"Automotive Rental And Leasing, Without Drivers",I,75,751,751
+"Truck rental services, without drivers",I,75,751,7513
+"Truck, utility trailer, & RV rental & leasing",I,75,751,7513
+Truck rental,I,75,751,7513
+Truck leasing,I,75,751,7513
+Passenger car rental,I,75,751,7514
+Passenger car rental,I,75,751,7514
+Passenger car leasing,I,75,751,7515
+Passenger car leasing,I,75,751,7515
+Utility trailer & recreational vehicle rental,I,75,751,7519
+Utility trailer & RV (recreational vehicle) rental & leasing,I,75,751,7519
+Automobile parking,I,75,752,752
+Parking lots & garages,I,75,752,7521
+Automotive repair shops,I,75,753,753
+"Top, body, & upholstery repair shops & paint shops",I,75,753,7532
+"Automotive body, paint, & interior repair & maintenance",I,75,753,7532
+Paint or body repair shops,I,75,753,7532
+Van conversion services,I,75,753,7532
+Upholstery & interior repair shops,I,75,753,7532
+Automotive exhaust system repair shops,I,75,753,7533
+Automotive exhaust system repair,I,75,753,7533
+Tire retreading & repair shops,I,75,753,7534
+Tire retreading,I,75,753,7534
+Tire repair shops,I,75,753,7534
+Automotive glass replacement shops,I,75,753,7536
+Automotive glass replacement shops,I,75,753,7536
+Automotive transmission repair shops,I,75,753,7537
+Automotive transmission repair,I,75,753,7537
+General automotive repair shops,I,75,753,7538
+General automotive repair,I,75,753,7538
+"Automotive repair shops, n.e.c.",I,75,753,7539
+Other automotive mechanical & electrical repair & maintenance,I,75,753,7539
+Carburetor repair shops,I,75,753,7539
+"Brake, front end, & wheel alignment",I,75,753,7539
+"Electrical repair shops, motor vehicle",I,75,753,7539
+Radiator repair,I,75,753,7539
+All other motor vehicle repair shops,I,75,753,7539
+"Automotive Services, Except Repair",I,75,754,754
+Carwashes,I,75,754,7542
+"Automotive services, except repair & carwashes",I,75,754,7549
+Motor vehicle towing,I,75,754,7549
+Automotive oil change & lubrication shops,I,75,754,7549
+All other motor vehicle services (except repair & carwashes),I,75,754,7549
+Electrical Repair Shops,I,76,762,762
+Radio & television repair shops,I,76,762,7622
+Consumer electronics repair & maintenance,I,76,762,7622
+Telecommunication equipment repair,I,76,762,7622
+Refrigeration & air-conditioning service & repair shops,I,76,762,7623
+Commercial refrigeration equipment repair,I,76,762,7623
+Refrigeration & AC service & repair shops (exc commercial),I,76,762,7623
+"Electrical & electronic repair shops,",I,76,762,7629
+"Business & office machine repair, electrical",I,76,762,7629
+Telephone set repair,I,76,762,7629
+"Electrical equipment repair & maintenance, incl medical equipment",I,76,762,7629
+"Consumer equip repair (exc computer, television, VCR, & stereo)",I,76,762,7629
+Electric appliance & washing machine repair,I,76,762,7629
+"Watch, clock, & jewelry repair",I,76,763,763
+"Watch, clock, & jewelry repair",I,76,763,7631
+Reupholstery & furniture repair,I,76,764,764
+Reupholstery & furniture repair,I,76,764,7641
+Miscellaneous Repair Shops And Related Services,I,76,769,769
+Welding repair,I,76,769,7692
+Armature rewinding shops,I,76,769,7694
+Motor & generator mfg (pt),I,76,769,7694
+Armature rewinding & repair shops,I,76,769,7694
+"Repair shops & related services, n.e.c.",I,76,769,7699
+Ship scaling,I,76,769,7699
+Locksmiths,I,76,769,7699
+Other services to buildings & dwellings,I,76,769,7699
+"Furnace, duct, chimney, & gutter cleaning",I,76,769,7699
+Drain cleaning,I,76,769,7699
+"Cesspool cleaning, sewer cleaning, & rodding",I,76,769,7699
+Typewriter repair,I,76,769,7699
+Dental/lab instrument/oth precision equip repair (exc typewriter),I,76,769,7699
+Industrial machines & equipment repair,I,76,769,7699
+Home & garden equipment repair & maintenance (exc consumer equip),I,76,769,7699
+Nonelectrical appliances & other nonelectronic equipment repair,I,76,769,7699
+"Leather goods, luggage, & pocketbook repair",I,76,769,7699
+All other repair & related services,I,76,769,7699
+Motion Picture Production And Allied Services,I,78,781,781
+Motion picture & video tape production,I,78,781,7812
+Motion picture production (except for television),I,78,781,7812
+Motion picture & video production for television,I,78,781,7812
+Services allied to motion picture production,I,78,781,7819
+"Prerecorded CD (except software), tape, & record reproducing (pt)",I,78,781,7819
+Teleproduction & other postproduction services,I,78,781,7819
+Services allied to motion picture production,I,78,781,7819
+Wardrobe rental,I,78,781,7819
+Motion picture equipment rental,I,78,781,7819
+Talent payment services,I,78,781,7819
+Casting bureaus,I,78,781,7819
+Independent motion picture production artists & technicians,I,78,781,7819
+Motion Picture Distribution And Allied Services,I,78,782,782
+Motion picture & video tape distribution,I,78,782,7822
+Prerecorded video tapes whsle,I,78,782,7822
+Motion picture & video distribution,I,78,782,7822
+Motion picture film exchanges,I,78,782,7822
+Film or tape distribution for television,I,78,782,7822
+Services allied to motion picture distribution,I,78,782,7829
+Services allied to film & video distribution,I,78,782,7829
+Motion picture theaters ,I,78,783,783
+Motion picture theaters (except drive-ins),I,78,783,7832
+Drive-in motion picture theaters,I,78,783,7833
+Drive-in motion picture theaters,I,78,783,7833
+Video tape rental,I,78,784,784
+Video tape & disk rental,I,78,784,7841
+Amusement and recreation services,I,79,79,79
+"Dance studios, schools, and halls",I,79,791,791
+"Dance studios, schools, & halls",I,79,791,7911
+Dance schools (including children's & professionals'),I,79,791,7911
+Dance studios & halls,I,79,791,7911
+"Theatrical producers (except motion picture) bands, orchestras, and entertainers",I,79,792,792
+Theatrical producers (exc movie) & misc theatrical services,I,79,792,7922
+Producers of taped radio programs,I,79,792,7922
+Theatrical equipment rental,I,79,792,7922
+Casting agencies,I,79,792,7922
+Theatrical ticket agencies,I,79,792,7922
+Theater companies & dinner theaters,I,79,792,7922
+Opera companies,I,79,792,7922
+Theater companies,I,79,792,7922
+Theater operators,I,79,792,7922
+"Promoters of performing arts, sports, & similar events w/o facil",I,79,792,7922
+Producers of radio & TV (except tape producers),I,79,792,7922
+Theatrical promoters,I,79,792,7922
+Theatrical agents,I,79,792,7922
+"Bands, orchestras, actors, oth entertainers & entertainment group",I,79,792,7929
+Dance companies,I,79,792,7929
+Musical groups & artists,I,79,792,7929
+Symphony orchestras & chamber music organizations,I,79,792,7929
+Other music groups & artists,I,79,792,7929
+Other performing arts companies (except circuses),I,79,792,7929
+Actors & actresses,I,79,792,7929
+Bowling centers,I,79,793,793
+Bowling centers,I,79,793,7933
+Commercial sports,I,79,794,794
+"Professional sports clubs, managers, and promoters",I,79,794,7941
+Sports teams & clubs,I,79,794,7941
+Football clubs,I,79,794,7941
+Baseball clubs,I,79,794,7941
+Other professional sports clubs,I,79,794,7941
+Stadium operators,I,79,794,7941
+Sports promoters,I,79,794,7941
+Sports agents,I,79,794,7941
+"Racing, including track operation",I,79,794,7948
+Racetracks,I,79,794,7948
+Dog racetrack operation,I,79,794,7948
+Auto racetrack operation,I,79,794,7948
+Horse racetrack operation,I,79,794,7948
+Racing (except racetrack operation),I,79,794,7948
+Miscellaneous amusement and recreation services,I,79,799,799
+Physical fitness facilities,I,79,799,7991
+"Gymnasiums, athletic clubs, & physical fitness centers",I,79,799,7991
+Public golf courses %,I,79,799,7992
+Public golf courses,I,79,799,7992
+Coin-operated amusement devices,I,79,799,7993
+Amusement arcades,I,79,799,7993
+Slot machine operators,I,79,799,7993
+Coin-operated amusement devices (except slot machine operation),I,79,799,7993
+Amusement parks,I,79,799,7996
+Amusement & theme parks,I,79,799,7996
+Waterparks,I,79,799,7996
+Amusement parks (except waterparks),I,79,799,7996
+Membership sports & recreation clubs,I,79,799,7997
+Membership golf clubs,I,79,799,7997
+Membership recreation clubs with facilities,I,79,799,7997
+Membership sports & recreation clubs without facilities,I,79,799,7997
+"Amusement & recreation services, n.e.c. %",I,79,799,7999
+Scenic railroads,I,79,799,7999
+Charter fishing & party fishing boats,I,79,799,7999
+Aerial tramways (scenic or sightseeing) & cable lifts,I,79,799,7999
+Recreational goods rental,I,79,799,7999
+Sports & recreation ticket agencies,I,79,799,7999
+Sports & recreation instruction,I,79,799,7999
+Circuses,I,79,799,7999
+Professional athletes,I,79,799,7999
+"Promoters of performing arts, sports, & similar events w/o facil",I,79,799,7999
+Carnivals (except traveling carnival companies),I,79,799,7999
+"Fairs (state, county, etc.)",I,79,799,7999
+Caverns & miscellaneous commercial parks,I,79,799,7999
+Casinos (except casino hotels),I,79,799,7999
+"Lottery, bingo, bookie, & other betting operation",I,79,799,7999
+Skiing facilities,I,79,799,7999
+Fitness & recreational sports centers,I,79,799,7999
+Nonmembership recreation facilities,I,79,799,7999
+Ice skating rinks,I,79,799,7999
+Roller skating rinks,I,79,799,7999
+All other amusement & recreation industries,I,79,799,7999
+Concession operators of amusement devices & rides,I,79,799,7999
+Miniature golf courses,I,79,799,7999
+All other miscellaneous amusement & recreation services,I,79,799,7999
+Health services,I,80,80,80
+Offices and clinics of doctors of medicine ,I,80,801,801
+Offices & clinics of doctors of medicine,I,80,801,8011
+Offices of doctors of medicine (except mental health specialists),I,80,801,8011
+"Offices of doctors of medicine, mental health specialists",I,80,801,8011
+HMO medical centers,I,80,801,8011
+Freestanding ambulatory surgical & emergency centers,I,80,801,8011
+Offices and clinics of dentists ,I,80,802,802
+Offices & clinics of dentists ,I,80,802,8021
+Offices of dentists,I,80,802,8021
+Offices & clinics of doctors of osteopathy,I,80,803,803
+Offices of doctors of osteopathy (exc mental health specialists),I,80,803,8031
+"Offices of doctors of osteopathy, mental health specialists",I,80,803,8031
+Offices And Clinics Of Other Health Practitioners,I,80,804,804
+Offices of chiropractors,I,80,804,8041
+Offices & clinics of optometrists,I,80,804,8042
+Offices of optometrists,I,80,804,8042
+Offices & clinics of podiatrists,I,80,804,8043
+Offices of podiatrists,I,80,804,8043
+"Offices & clinics of health practitioners, n.e.c.",I,80,804,8049
+Offices of mental health practitioners (except physicians),I,80,804,8049
+"Offices of physical, occup, & speech therapists & audiologists",I,80,804,8049
+Speech therapists & audiologists,I,80,804,8049
+Physical & occupational therapists,I,80,804,8049
+Offices of all other miscellaneous health practitioners,I,80,804,8049
+Nursing and personal care facilities,I,80,805,805
+Skilled Nursing Care Facilities,I,80,805,8051
+Intermediate Care Facilities,I,80,805,8052
+"Nursing and Personal Care Facilities, Not Elsewhere Classified",I,80,805,8053
+Hospitals,I,80,806,806
+General medical & surgical hospitals,I,80,806,8062
+General medical & surgical hospitals (except government),I,80,806,8062
+Psychiatric hospitals,I,80,806,8063
+Psychiatric hospitals (except government),I,80,806,8063
+"Specialty hospitals, except psychiatric",I,80,806,8069
+Children's hospitals (except government),I,80,806,8069
+Substance abuse hospitals (except government),I,80,806,8069
+"Specialty (exc psychiatric & abuse, except government) hospitals",I,80,806,8069
+Medical & Dental laboratories,I,80,807,807
+Medical laboratories,I,80,807,8071
+Diagnostic imaging centers,I,80,807,8071
+Dental laboratories,I,80,807,8072
+Dental laboratories,I,80,807,8072
+Home health care services,I,80,808,808
+Home health care services,I,80,808,8082
+Home health care services,I,80,808,8082
+"Miscellaneous health and allied services, not elsewhere classified",I,80,809,809
+Kidney dialysis centers,I,80,809,8092
+Kidney dialysis centers,I,80,809,8092
+"Specialty outpatient facilities, n.e.c.",I,80,809,8093
+Family planning centers (except childbirth preparation),I,80,809,8093
+Outpatient mental health & substance abuse centers,I,80,809,8093
+All other outpatient care centers,I,80,809,8093
+"Health & allied services, n.e.c. %",I,80,809,8099
+Medical artists,I,80,809,8099
+Medical photography,I,80,809,8099
+Childbirth preparation classes,I,80,809,8099
+Blood & organ banks,I,80,809,8099
+All other miscellaneous ambulatory health care services,I,80,809,8099
+Legal services,I,81,81,81
+Legal services,I,81,811,811
+Legal services,I,81,811,8111
+Offices of lawyers (except legal aid societies),I,81,811,8111
+Educational services,I,82,82,82
+Elementary & Secondary Schools,I,82,821,821
+Elementary & Secondary Schools,I,82,821,8211
+"Colleges, Universities, Professional Schools",I,82,822,822
+"Colleges, Universities, Professional Schools",I,82,822,8221
+Junior Colleges and Technical Institutes,I,82,822,8222
+Libraries ,I,82,823,823
+Libraries ,I,82,823,8231
+Libraries & archives,I,82,823,8231
+Vocational schools,I,82,824,824
+Data processing schools,I,82,824,8243
+Computer training,I,82,824,8243
+Computer repair training,I,82,824,8243
+Business & secretarial schools,I,82,824,8244
+Business & secretarial schools,I,82,824,8244
+"Vocational schools, n.e.c.",I,82,824,8249
+Aviation schools (except flying instruction),I,82,824,8249
+Apprenticeship training,I,82,824,8249
+Other trade & technical schools,I,82,824,8249
+Other tech & trade schools (exc computer repair & truck driving),I,82,824,8249
+Truck driving schools,I,82,824,8249
+"Schools and educational services, not elsewhere classified",I,82,829,829
+"Schools & educational services, n.e.c.",I,82,829,8299
+Professional & management development training,I,82,829,8299
+Flying instruction,I,82,829,8299
+"Art, drama, & music schools",I,82,829,8299
+Language schools,I,82,829,8299
+Exam preparation & tutoring,I,82,829,8299
+Automobile driving schools,I,82,829,8299
+All other miscellaneous schools & instruction,I,82,829,8299
+Educational support serv (exc test development & evaluation serv),I,82,829,8299
+Social services,I,83,83,83
+Individual and family social services,I,83,832,832
+Individual & family social services,I,83,832,8322
+Child & youth services (exc scouting & related youth devop org),I,83,832,8322
+Services for the elderly & persons with disabilities,I,83,832,8322
+Other individual & family services,I,83,832,8322
+Community food services,I,83,832,8322
+Temporary shelters,I,83,832,8322
+Other community housing services,I,83,832,8322
+Emergency & other relief services,I,83,832,8322
+Job training and vocational rehabilitation services,I,83,833,833
+Job training & vocational rehabilitation services,I,83,833,8331
+Vocational rehabilitation services,I,83,833,8331
+Child daycare services,I,83,835,835
+Child daycare services,I,83,835,8351
+Child day care services (except babysitting services),I,83,835,8351
+Residential care,I,83,836,836
+Residential care,I,83,836,8361
+Residential mental health & substance abuse facilities,I,83,836,8361
+Homes for the elderly,I,83,836,8361
+Other residential care facilities,I,83,836,8361
+"Social services, not elsewhere classified ",I,83,839,839
+"Social services, not elsewhere classified",I,83,839,8399
+"Museums, art galleries, and botanical and zoological gardens",I,84,84,84
+Museums and art galleries,I,84,841,841
+Museums & art galleries,I,84,841,8412
+Museums,I,84,841,8412
+Historical sites,I,84,841,8412
+Arboreta and botanical or zoological gardens,I,84,842,842
+Arboreta & botanical or zoological gardens,I,84,842,8422
+Zoos & botanical gardens,I,84,842,8422
+Nature parks & reserves,I,84,842,8422
+Membership organizations,I,86,86,86
+Business Associations,I,86,861,861
+Business Associations,I,86,861,8611
+Professional Membership Organizations,I,86,862,862
+Professional Membership Organizations,I,86,862,8621
+Labor Unions And Similar Labor Organizations,I,86,863,863
+Labor Unions And Similar Labor Organizations,I,86,863,8631
+"Civic, Social, And Fraternal Associations",I,86,864,864
+"Civic, Social, And Fraternal Associations",I,86,864,8641
+Political Organizations,I,86,865,865
+Political Organizations,I,86,865,8651
+Religious Organizations,I,86,866,866
+Religious Organizations,I,86,866,8661
+"Membership organizations, not elsewhere classified",I,86,869,869
+"Membership organizations, n.e.c.",I,86,869,8699
+Automobile clubs,I,86,869,8699
+"Engineering, accounting, research, management, and related services",I,87,87,87
+"Engineering, Architectural, Surveying Service",I,87,871,871
+Engineering services,I,87,871,8711
+Architectural services,I,87,871,8712
+Architectural services,I,87,871,8712
+Surveying services,I,87,871,8713
+Geophysical surveying & mapping services (pt),I,87,871,8713
+Surveying services,I,87,871,8713
+"Accounting, auditing, & bookkeeping services",I,87,872,872
+Offices of certified public accountants,I,87,872,8721
+Payroll services (except talent payment services),I,87,872,8721
+Other accounting services,I,87,872,8721
+"Research, development, and testing services (except noncommercial research organizations)",I,87,873,873
+Commercial physical & biological research,I,87,873,8731
+"R&D in the physical, engineering, & life sciences",I,87,873,8731
+Commercial R&D in the physical & engineering sciences,I,87,873,8731
+Commercial R&D in the life sciences,I,87,873,8731
+"Commercial economic, sociological, & educational research ",I,87,873,8732
+Commercial R&D in the social sciences & humanities,I,87,873,8732
+Marketing research & public opinion polling,I,87,873,8732
+Testing laboratories,I,87,873,8734
+Testing laboratories,I,87,873,8734
+Management and public relations services,I,87,874,874
+Management services,I,87,874,8741
+Single-family housing construction (pt),I,87,874,8741
+Multifamily housing construction (pt),I,87,874,8741
+Mfg & industrial building construction (pt),I,87,874,8741
+Commercial & institutional building construction (pt),I,87,874,8741
+Highway & street construction (pt),I,87,874,8741
+Bridge & tunnel construction (pt),I,87,874,8741
+"Water, sewer, & pipeline construction (pt)",I,87,874,8741
+Power & communication transmission line construction (pt),I,87,874,8741
+Industrial nonbuilding structure construction (pt),I,87,874,8741
+All other heavy construction (pt),I,87,874,8741
+Office administrative services,I,87,874,8741
+Management consulting services,I,87,874,8742
+Administrative management & general management consulting service,I,87,874,8742
+Human resources & personnel management consulting,I,87,874,8742
+Marketing consulting services,I,87,874,8742
+"Process, physical distribution, & logistics consulting services",I,87,874,8742
+Public relations services ,I,87,874,8743
+Public relations agencies,I,87,874,8743
+Facilities support management services,I,87,874,8744
+Facilities support services,I,87,874,8744
+"Business consulting services, n.e.c. ",I,87,874,8748
+All other management consulting services,I,87,874,8748
+Economic and related consulting services,I,87,874,8748
+Economic or industrial planning or development organization,I,87,874,8748
+Educational test development & evaluation services,I,87,874,8748
+Private Households,I,88,88,88
+Private Households,I,88,881,881
+Private Households,I,88,881,8811
+"Miscellaneous Services, Not Classified Elsewhere",I,89,899,899
+Record production,I,89,899,8999
+Integrated record production/distribution,I,89,899,8999
+Music publishing (except sheet music & music book publishing),I,89,899,8999
+All other information services,I,89,899,8999
+Actuarial consulting,I,89,899,8999
+Environmental consulting services,I,89,899,8999
+Scientific & related cons serv (exc environmental & actuarial),I,89,899,8999
+"Authors, composers, & other arts-related services",I,89,899,8999
+Public Administration,J,J,J,J
+"Executive, Legislative, and General Government except Finance",J,91,91,91
+"Executive, Offices",J,91,911,911
+Executive Offices,J,91,911,9111
+Legislative Bodies,J,91,912,912
+Legislative Bodies,J,91,912,9121
+Executive and Legislative Bodies Combined,J,91,913,913
+Executive and Legislative Bodies Combined,J,91,913,9131
+General Gov't - Not Elsewhere Classified,J,91,919,919
+General Gov't - Not Elsewhere Classified,J,91,919,9199
+"Justice, Public Order and Safety",J,92,92,92
+Courts,J,92,921,921
+Courts,J,92,921,9211
+Public Order and Safety,J,92,922,922
+Police Protection,J,92,922,9221
+Legal Counsel and Prosecution,J,92,922,9222
+Correctional Institutions,J,92,922,9223
+Fire Protection,J,92,922,9224
+Public Order and Safety - Not Elsewhere Classified,J,92,922,9229
+"Public Finance, Taxation, Monetary Policy",J,93,93,93
+"Public Finance, Taxation, And Monetary Policy",J,93,931,931
+"Public Finance, Taxation, And Monetary Policy",J,93,931,9311
+Administration of Human Resource Programs,J,94,94,94
+Administration Of Educational Programs,J,94,941,941
+Administration Of Educational Programs,J,94,941,9411
+Administration Of Public Health Programs,J,94,943,943
+Administration Of Public Health Programs,J,94,943,9431
+"Administration Of Social, Human Resource",J,94,944,944
+"Administration Of Social, Human Resource",J,94,944,9441
+Administration Of Veteran's Affairs except Health Insurance,J,94,945,945
+Administration Of Veteran's Affairs except Health Insurance,J,94,945,9451
+Administration of Environmental Quality and Housing Programs,J,95,95,95
+Administration Of Environmental Quality,J,95,951,951
+Air and Water Resource and Solid Waste Management,J,95,951,9511
+"Land, Mineral, Wildlife, and Forest Conservation",J,95,951,9512
+Administration Of Housing And Urban Programs,J,95,953,953
+Administration of Housing Programs,J,95,953,9531
+Administration of Urban Planning and Community and Rural Development,J,95,953,9532
+Administration of Economic Programs,J,96,96,96
+Administration Of General Economic Programs,J,96,961,961
+Administration Of General Economic Programs,J,96,961,9611
+Regulation And Administration Of Transportation,J,96,962,962
+Regulation And Administration Of Transportation,J,96,962,9621
+"Regulation and Administration of Communications, Electric, Gas, and Other Utilities",J,96,963,963
+"Regulation and Administration of Communications, Electric, Gas, and Other Utilities",J,96,963,9631
+Regulation of Agricultural Marketing and Commodities,J,96,964,964
+Regulation of Agricultural Marketing and Commodities,J,96,964,9641
+"Regulation, Licensing, and Inspection of Miscellaneous Commercial Sectors",J,96,965,965
+"Regulation, Licensing, and Inspection of Miscellaneous Commercial Sectors",J,96,965,9651
+Space Research And Technology,J,96,966,966
+Space Research And Technology,J,96,966,9661
+National Security and International Affairs,J,97,97,97
+National Security,J,97,971,971
+National Security,J,97,971,9711
+International Affairs,J,97,972,972
+International Affairs,J,97,972,9721
+Non-Classifiable Establishments,J,99,99,99
+Nonclassifiable Establishments,J,99,999,999
+Nonclassifiable Establishments,J,99,999,9999
