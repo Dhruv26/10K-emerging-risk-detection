@@ -1,6 +1,7 @@
 import os
 import re
 from datetime import datetime
+from pathlib import Path
 from unicodedata import normalize
 
 from bs4 import BeautifulSoup
@@ -10,15 +11,20 @@ from config import Config
 
 
 class ReportInfo:
-    def __init__(self, cik, start_date, end_date, filing_type, filename):
+    def __init__(self, cik: int, start_date: datetime, end_date: datetime,
+                 filing_type: str, filename: str):
         self.cik = cik
         self.start_date = start_date
         self.end_date = end_date
         self.filing_type = filing_type
         self.filename = filename
 
-    def get_file_name(self):
+    def get_file_name(self) -> str:
         return f'{self.start_date.date()}_{self.end_date.date()}_' \
+               f'{self.filename}'
+
+    def get_document_id(self) -> str:
+        return f'{self.cik}_{self.start_date.date()}_{self.end_date.date()}_' \
                f'{self.filename}'
 
     def _keys(self):
@@ -40,15 +46,24 @@ class ReportInfo:
 
     @classmethod
     def from_zip_filename(cls, filename):
-        def _date_parser(date_str):
-            return datetime.strptime(date_str, '%Y-%m-%d')
-
         cik, start_date, end_date, filing_type, filename = filename.split('_')
         return cls(int(cik), _date_parser(start_date), _date_parser(end_date),
                    filing_type, filename)
 
 
-def extract_risk_section_from_report(raw_10k):
+def _date_parser(date_str: str) -> datetime:
+    return datetime.strptime(date_str, '%Y-%m-%d')
+
+
+def report_info_from_risk_path(risk_file: Path) -> ReportInfo:
+    cik = int(risk_file.parent.name)
+    file_name = risk_file.name
+    start_date, end_date, filename = file_name.split('_')
+    return ReportInfo(cik, _date_parser(start_date), _date_parser(end_date),
+                      '10-K', filename)
+
+
+def extract_risk_section_from_report(raw_10k: str) -> str:
     """
     Extracts risk section from 10K SEC reports.
 
