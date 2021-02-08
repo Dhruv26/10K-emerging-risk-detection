@@ -43,3 +43,7 @@ def get_risk_filenames_for_ciks(ciks: Iterable[int] = all_ciks) -> List[Path]:
         if files:
             filenames.extend(files)
     return filenames
+
+
+def create_dir_if_not_exists(path: str):
+    Path(path).mkdir(parents=True, exist_ok=True)
