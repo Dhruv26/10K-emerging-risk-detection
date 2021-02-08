@@ -17,14 +17,15 @@ all_ciks = _get_immediate_subdirectories(Config.risk_dir())
 
 def get_company_industry_mapping() -> pd.DataFrame:
     csv_stream = resource_stream(
-        'preprocessing', os.path.join('resources', 'cik_industry.csv')
+        'risk_detection.analysis', os.path.join('static', 'cik_industry.csv')
     )
     return pd.read_csv(csv_stream)
 
 
 def get_sik_industry_name_mapping() -> pd.DataFrame:
     csv_stream = resource_stream(
-        'preprocessing', os.path.join('resources', 'sic_industry_name.csv')
+        'risk_detection.analysis',
+        os.path.join('static', 'sic_industry_name.csv')
     )
     return pd.read_csv(csv_stream)
 

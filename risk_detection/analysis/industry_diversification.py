@@ -3,9 +3,12 @@ import os
 from top2vec import Top2Vec
 
 from config import Config
-from report_parser import report_info_from_risk_path
-from utils import (get_company_industry_mapping, get_sik_industry_name_mapping,
-                   get_risk_filenames)
+from risk_detection.preprocessing.report_parser import (
+    report_info_from_risk_path
+)
+from risk_detection.utils import (get_company_industry_mapping,
+                                  get_sik_industry_name_mapping,
+                                  get_risk_filenames)
 
 
 def _get_noun_phrases(txt):

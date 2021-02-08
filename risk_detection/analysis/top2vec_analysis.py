@@ -6,8 +6,10 @@ from tqdm import tqdm
 
 from config import Config
 from industry_groupings import get_industry_groups, group_by_sic_division
-from report_parser import report_info_from_risk_path
-from utils import get_risk_filenames
+from risk_detection.preprocessing.report_parser import (
+    report_info_from_risk_path
+)
+from risk_detection.utils import get_risk_filenames
 
 
 def get_corpus():

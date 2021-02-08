@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='10K-emerging-risk-detection',
     version='0.1.0',
-    packages=find_packages(include=['preprocessing']),
+    packages=find_packages(include=('risk_detection',)),
     install_requires=[
         'beautifulsoup4==4.9.3',
         'lxml==4.6.1',

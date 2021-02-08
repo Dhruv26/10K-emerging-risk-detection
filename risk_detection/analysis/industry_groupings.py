@@ -4,9 +4,12 @@ from typing import List, Sequence
 from nltk.tokenize import word_tokenize
 from top2vec import Top2Vec
 
-from report_parser import report_info_from_risk_path
-from utils import (get_risk_filenames_for_ciks, get_company_industry_mapping,
-                   get_sik_industry_name_mapping)
+from risk_detection.preprocessing.report_parser import (
+    report_info_from_risk_path
+)
+from risk_detection.utils import (get_risk_filenames_for_ciks,
+                                  get_company_industry_mapping,
+                                  get_sik_industry_name_mapping)
 
 
 class IndustryGroup:
