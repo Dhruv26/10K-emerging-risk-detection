@@ -43,14 +43,11 @@ def _run_industry_wise():
     for industry_group in tqdm(industry_groups):
         if len(industry_group.ciks) < 20:
             continue
-        try:
-            model = industry_group.create_topic()
-            model_path = os.path.join(Config.top2vec_models_dir(),
-                                      'sic_group_industry_wise',
-                                      f'{industry_group.sic}_model')
-            model.save(model_path)
-        except:
-            pass
+        model = industry_group.create_topic()
+        model_path = os.path.join(Config.top2vec_models_dir(),
+                                  'sic_group_industry_wise',
+                                  f'{industry_group.sic}_model')
+        model.save(model_path)
 
 
 if __name__ == '__main__':

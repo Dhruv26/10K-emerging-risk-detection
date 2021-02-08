@@ -4,6 +4,7 @@ from typing import List, Sequence
 from nltk.tokenize import word_tokenize
 from top2vec import Top2Vec
 
+from report_parser import report_info_from_risk_path
 from utils import (get_risk_filenames_for_ciks, get_company_industry_mapping,
                    get_sik_industry_name_mapping)
 
@@ -23,7 +24,8 @@ class IndustryGroup:
         for risk_filename in self.filenames:
             docu = risk_filename.read_text()
             if len(word_tokenize(docu)) > 100:
-                corpus[risk_filename] = docu
+                report_info = report_info_from_risk_path(risk_filename)
+                corpus[report_info.get_document_id()] = docu
         return corpus
 
     def create_topic(self):
