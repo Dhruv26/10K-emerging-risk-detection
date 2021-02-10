@@ -1,19 +1,21 @@
 import os
+from typing import Dict, Sequence
 
 import numpy as np
 import pandas as pd
 from finbert.finbert import predict as _predict
-from pkg_resources import resource_stream
 from pytorch_pretrained_bert import BertForSequenceClassification
+from tqdm import tqdm
 
 from config import Config
+from risk_detection.preprocessing.report_parser import (
+    report_info_from_risk_path
+)
+from risk_detection.utils import get_word_sentiment_df, get_risk_filenames
 
 
 def _get_pos_neg_token_sets():
-    pos_neg_df = pd.read_csv(resource_stream(
-        'preprocessing',
-        os.path.join('resources', 'LoughranMcDonald_MasterDictionary_2018.csv')
-    ))
+    pos_neg_df = get_word_sentiment_df()
     positive = pos_neg_df.loc[pos_neg_df['Positive'] != 0,
                               'Word'].str.lower().unique()
     negative = pos_neg_df.loc[
@@ -63,7 +65,7 @@ class _TokenSentimentAnalysis:
             return 0
 
     @staticmethod
-    def get_score(terms):
+    def get_score(terms: Sequence[str]) -> Dict[str, float]:
         """
         Get score for a list of terms.
 
@@ -87,7 +89,7 @@ class _TokenSentimentAnalysis:
         }
 
 
-def get_token_sentiment(token):
+def get_token_sentiment(token: str) -> Dict[str, float]:
     return _TokenSentimentAnalysis.get_score(token)
 
 
@@ -97,7 +99,7 @@ _model = BertForSequenceClassification.from_pretrained(
 )
 
 
-def get_sentiment(text):
+def get_sentiment(text: str) -> pd.DataFrame:
     """
     Predicts the sentiment of each sentence in text. Relies BERT
     on the model produced by https://github.com/ProsusAI/finBERT.
@@ -108,3 +110,19 @@ def get_sentiment(text):
         text along with info about it's sentiment.
     """
     return _predict(text, _model)
+
+
+if __name__ == '__main__':
+    base_dir = Config.risk_sentiment_dir()
+    risk_files = get_risk_filenames()
+
+    for risk_file in tqdm(risk_files):
+        risk_section = risk_file.read_text()
+        sentiment_df = get_sentiment(risk_section)
+
+        report_info = report_info_from_risk_path(risk_file)
+        sentiment_filename = os.path.join(
+            base_dir, str(report_info.cik),
+            f'{report_info.get_file_name()}.pickle'
+        )
+        sentiment_df.to_pickle(path=sentiment_filename)

@@ -54,7 +54,7 @@ if __name__ == '__main__':
         rake_keywords = keyword_extractor.extract_using_rake(text)
 
         base_filename = report_info.get_file_name()
-        with open(base_filename + '_bert', 'w+') as bert_keywords_file:
+        with open(base_filename + '_bert.txt', 'w+') as bert_keywords_file:
             bert_keywords_file.writelines(bert_keywords)
-        with open(base_filename + '_rake', 'w+') as rake_keywords_file:
+        with open(base_filename + '_rake.txt', 'w+') as rake_keywords_file:
             rake_keywords_file.writelines(rake_keywords)

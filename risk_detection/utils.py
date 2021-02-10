@@ -47,3 +47,11 @@ def get_risk_filenames_for_ciks(ciks: Iterable[int] = all_ciks) -> List[Path]:
 
 def create_dir_if_not_exists(path: str):
     Path(path).mkdir(parents=True, exist_ok=True)
+
+
+def get_word_sentiment_df() -> pd.DataFrame:
+    csv_stream = resource_stream(
+        'risk_detection.analysis',
+        os.path.join('static', 'LoughranMcDonald_MasterDictionary_2018.csv')
+    )
+    return pd.read_csv(csv_stream)

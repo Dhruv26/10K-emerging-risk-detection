@@ -21,6 +21,10 @@ class Config:
         return os.path.join(Config.data_dir(), 'risk_section')
 
     @staticmethod
+    def risk_sentiment_dir():
+        return os.path.join(Config.data_dir(), 'risk_section_sentiment')
+
+    @staticmethod
     def log_dir():
         return os.getenv(
             'LOG_PATH', os.path.join(Config._project_path, 'logs')
