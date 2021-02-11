@@ -45,6 +45,11 @@ def get_risk_filenames_for_ciks(ciks: Iterable[int] = all_ciks) -> List[Path]:
     return filenames
 
 
+def get_risk_section_sentiment_files() -> List[Path]:
+    risk_sentiment_files = Path(Config.risk_sentiment_dir()).rglob('*.pickle')
+    return list(risk_sentiment_files)
+
+
 def create_dir_if_not_exists(path: str):
     Path(path).mkdir(parents=True, exist_ok=True)
 

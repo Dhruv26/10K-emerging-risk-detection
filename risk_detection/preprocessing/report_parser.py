@@ -11,6 +11,8 @@ from config import Config
 
 
 class ReportInfo:
+    DEFAULT_FILING_TYPE = '10-K'
+
     def __init__(self, cik: int, start_date: datetime, end_date: datetime,
                  filing_type: str, filename: str):
         self.cik = cik
@@ -49,6 +51,12 @@ class ReportInfo:
         cik, start_date, end_date, filing_type, filename = filename.split('_')
         return cls(int(cik), _date_parser(start_date), _date_parser(end_date),
                    filing_type, filename)
+
+    @classmethod
+    def from_doc_id(cls, doc_id: str):
+        cik, start_date, end_date, filename = doc_id.split('_', maxsplit=4)
+        return cls(int(cik), _date_parser(start_date), _date_parser(end_date),
+                   cls.DEFAULT_FILING_TYPE, filename)
 
 
 def _date_parser(date_str: str) -> datetime:

@@ -19,6 +19,7 @@ setup(
         'tqdm==4.52.0',
         'keybert==0.1.3',
         'rake-nltk==1.0.4',
+        'gensim==3.8.3',
         'spacy==2.2.4',
         'nltk==3.5',
         'finBert @ git+https://github.com/Dhruv26/finBERT.git@22dcc9e7417b04b30db49ef773110d50a600b936',

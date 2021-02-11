@@ -1,16 +1,19 @@
-import os
-from typing import Dict, Sequence
 import logging
+import os
+from collections import Counter, namedtuple
+from functools import partial
+from typing import Callable, Dict, Sequence
 
 import numpy as np
 import pandas as pd
 from finbert.finbert import predict as _predict
+from gensim.utils import simple_preprocess
 from pytorch_pretrained_bert import BertForSequenceClassification
 from tqdm import tqdm
 
 from config import Config
 from risk_detection.preprocessing.report_parser import (
-    report_info_from_risk_path
+    report_info_from_risk_path, ReportInfo
 )
 from risk_detection.utils import (
     get_word_sentiment_df, get_risk_filenames, create_dir_if_not_exists,
@@ -18,6 +21,9 @@ from risk_detection.utils import (
 )
 
 logging.getLogger().setLevel(logging.ERROR)
+
+sentiment = namedtuple('SentimentWordCount', ['pos', 'neut', 'neg'])
+DEFAULT_TOKENIZER = partial(simple_preprocess, deacc=True)
 
 
 def _get_pos_neg_token_sets():
@@ -99,6 +105,101 @@ def get_token_sentiment(token: str) -> Dict[str, float]:
     return _TokenSentimentAnalysis.get_score(token)
 
 
+class Weights:
+    pos = 5
+    neut = -1
+    neg = -10
+
+
+class ContextualizedWordSentiment:
+    """
+    Finds the sentiment for tokens based on their occurrences
+    in documents.
+    """
+    report_infos: Sequence[ReportInfo]
+    pos: Dict[str, float]
+    neut: Dict[str, float]
+    neg: Dict[str, float]
+
+    def __init__(self, report_infos: Sequence[ReportInfo],
+                 sentiment_word_count: sentiment):
+        self.report_infos = report_infos
+        self.pos = sentiment_word_count.pos
+        self.neut = sentiment_word_count.neut
+        self.neg = sentiment_word_count.neg
+
+    def get_sentiment_for_words(self,
+                                words: Sequence[str]) -> Dict[str, float]:
+        res = dict()
+        for word in words:
+            num_pos = self.pos[word]
+            num_neut = self.neut[word]
+            num_neg = self.neg[word]
+            self._validate_word_occurrences(num_neg, num_neut, num_pos, word)
+            total_occurrences = sum((num_pos, num_neut, num_neg))
+            # TODO: Look into the weighting scheme
+            res[word] = (((num_pos * Weights.pos) +
+                          (num_neut * Weights.neut) +
+                          (num_neg * Weights.neg)) / total_occurrences)
+
+        return res
+
+    @staticmethod
+    def _validate_word_occurrences(num_neg, num_neut, num_pos, word):
+        if sum((num_pos, num_neut, num_neg)) == 0:
+            raise ValueError(f'Word: {word} not in vocabulary.')
+
+
+class SentimentFilesProcessor:
+    def __init__(self, report_infos: Sequence[ReportInfo],
+                 tokenizer: Callable[[str], Sequence[str]]):
+        self.report_sentiments = (SentimentFilesProcessor
+                                  ._get_sentiment_files(report_infos))
+        self.tokenizer = tokenizer
+
+    def process(self) -> sentiment:
+        pos = Counter()
+        neut = Counter()
+        neg = Counter()
+
+        mapping = {'positive': pos, 'neutral': neut, 'negative': neg}
+
+        def process_row(row):
+            word_count = self._get_word_count(row.sentence)
+            mapping[row.prediction] += word_count
+            return word_count
+
+        for report_info, sentiment_df in self.report_sentiments.items():
+            sentiment_df.apply(process_row, axis=1)
+
+        return sentiment(pos, neut, neg)
+
+    def _get_word_count(self, sentence) -> Dict[str, int]:
+        return Counter(self.tokenizer(doc=sentence))
+
+    @staticmethod
+    def _get_sentiment_files(report_infos: Sequence[ReportInfo]) \
+            -> Dict[ReportInfo, pd.DataFrame]:
+        base_dir = Config.risk_sentiment_dir()
+        sentiment_dict = dict()
+        for report_info in report_infos:
+            file_name = get_file_name_without_ext(report_info.get_file_name())
+            sentiment_file = os.path.join(
+                base_dir, str(report_info.cik), f'{file_name}.pickle'
+            )
+            sentiment_dict[report_info] = pd.read_pickle(sentiment_file)
+        return sentiment_dict
+
+
+def create_sentiment_analyser(
+        report_infos: Sequence[ReportInfo],
+        tokenizer: Callable[[str], Sequence[str]] = DEFAULT_TOKENIZER
+) -> ContextualizedWordSentiment:
+    file_processor = SentimentFilesProcessor(report_infos, tokenizer)
+    sentiment_word_count = file_processor.process()
+    return ContextualizedWordSentiment(report_infos, sentiment_word_count)
+
+
 _model_path = Config.finBERT_model_dir()
 _model = BertForSequenceClassification.from_pretrained(
     _model_path, num_labels=3, cache_dir=True
@@ -118,7 +219,7 @@ def get_sentiment(text: str) -> pd.DataFrame:
     return _predict(text, _model)
 
 
-if __name__ == '__main__':
+def write_doc_sentiment_files():
     base_dir = Config.risk_sentiment_dir()
     create_dir_if_not_exists(base_dir)
 
@@ -134,3 +235,7 @@ if __name__ == '__main__':
         sentiment_filename = os.path.join(file_path, f'{filename}.pickle')
 
         sentiment_df.to_pickle(path=sentiment_filename)
+
+
+if __name__ == '__main__':
+    write_doc_sentiment_files()
