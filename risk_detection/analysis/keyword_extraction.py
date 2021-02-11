@@ -11,7 +11,9 @@ from config import Config
 from risk_detection.preprocessing.report_parser import (
     report_info_from_risk_path
 )
-from risk_detection.utils import get_risk_filenames, create_dir_if_not_exists
+from risk_detection.utils import (
+    get_risk_filenames, create_dir_if_not_exists, get_file_name_without_ext
+)
 
 
 class KeywordExtractor:
@@ -38,23 +40,31 @@ class KeywordExtractor:
 
 
 if __name__ == '__main__':
-    keywords_dir = os.path.join(Config.models_dir(), 'keywords')
+    keywords_dir = Config.keywords_dir()
     create_dir_if_not_exists(keywords_dir)
     print(f'Writing found keywords to {keywords_dir}')
 
-    keyword_extractor = KeywordExtractor(min_length=1, max_length=3)
+    keyword_extractor = KeywordExtractor(min_length=1, max_length=3,
+                                         num_keywords=50)
 
     for risk_file_path in tqdm(get_risk_filenames()):
         report_info = report_info_from_risk_path(risk_file_path)
         cik_dir = os.path.join(keywords_dir, str(report_info.cik))
         create_dir_if_not_exists(cik_dir)
+        base_filename = os.path.join(
+            cik_dir, get_file_name_without_ext(report_info.get_file_name())
+        )
 
-        text = risk_file_path.read_text()
-        bert_keywords = keyword_extractor.extract_using_bert(text)
+        try:
+            text = risk_file_path.read_text(encoding='utf-8')
+        except UnicodeDecodeError:
+            continue
+
         rake_keywords = keyword_extractor.extract_using_rake(text)
+        with open(base_filename + '_rake.txt', 'w+',
+                  encoding='utf-8') as rake_keywords_file:
+            rake_keywords_file.write('\n'.join(rake_keywords))
 
-        base_filename = report_info.get_file_name()
-        with open(base_filename + '_bert.txt', 'w+') as bert_keywords_file:
-            bert_keywords_file.writelines(bert_keywords)
-        with open(base_filename + '_rake.txt', 'w+') as rake_keywords_file:
-            rake_keywords_file.writelines(rake_keywords)
+        # bert_keywords = keyword_extractor.extract_using_bert(text)
+        # with open(base_filename + '_bert.txt', 'w+') as bert_keywords_file:
+        #     bert_keywords_file.write('\n'.join(bert_keywords))

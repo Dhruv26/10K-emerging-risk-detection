@@ -49,6 +49,10 @@ def create_dir_if_not_exists(path: str):
     Path(path).mkdir(parents=True, exist_ok=True)
 
 
+def get_file_name_without_ext(path: str) -> str:
+    return os.path.splitext(path)[0]
+
+
 def get_word_sentiment_df() -> pd.DataFrame:
     csv_stream = resource_stream(
         'risk_detection.analysis',

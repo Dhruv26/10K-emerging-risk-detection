@@ -1,5 +1,6 @@
 import os
 from typing import Dict, Sequence
+import logging
 
 import numpy as np
 import pandas as pd
@@ -11,7 +12,12 @@ from config import Config
 from risk_detection.preprocessing.report_parser import (
     report_info_from_risk_path
 )
-from risk_detection.utils import get_word_sentiment_df, get_risk_filenames
+from risk_detection.utils import (
+    get_word_sentiment_df, get_risk_filenames, create_dir_if_not_exists,
+    get_file_name_without_ext
+)
+
+logging.getLogger().setLevel(logging.ERROR)
 
 
 def _get_pos_neg_token_sets():
@@ -114,15 +120,17 @@ def get_sentiment(text: str) -> pd.DataFrame:
 
 if __name__ == '__main__':
     base_dir = Config.risk_sentiment_dir()
-    risk_files = get_risk_filenames()
+    create_dir_if_not_exists(base_dir)
 
-    for risk_file in tqdm(risk_files):
-        risk_section = risk_file.read_text()
+    for risk_file in tqdm(get_risk_filenames()):
+        risk_section = risk_file.read_text(encoding='utf-8')
         sentiment_df = get_sentiment(risk_section)
 
         report_info = report_info_from_risk_path(risk_file)
-        sentiment_filename = os.path.join(
-            base_dir, str(report_info.cik),
-            f'{report_info.get_file_name()}.pickle'
-        )
+        file_path = os.path.join(base_dir, str(report_info.cik))
+        create_dir_if_not_exists(file_path)
+
+        filename = get_file_name_without_ext(report_info.get_file_name())
+        sentiment_filename = os.path.join(file_path, f'{filename}.pickle')
+
         sentiment_df.to_pickle(path=sentiment_filename)

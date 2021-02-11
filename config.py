@@ -21,10 +21,6 @@ class Config:
         return os.path.join(Config.data_dir(), 'risk_section')
 
     @staticmethod
-    def risk_sentiment_dir():
-        return os.path.join(Config.data_dir(), 'risk_section_sentiment')
-
-    @staticmethod
     def log_dir():
         return os.getenv(
             'LOG_PATH', os.path.join(Config._project_path, 'logs')
@@ -37,6 +33,14 @@ class Config:
     @staticmethod
     def top2vec_models_dir():
         return os.path.join(Config.models_dir(), 'top2vec_models')
+
+    @staticmethod
+    def keywords_dir():
+        return os.path.join(Config.models_dir(), 'keywords')
+
+    @staticmethod
+    def risk_sentiment_dir():
+        return os.path.join(Config.models_dir(), 'risk_section_sentiment')
 
     @staticmethod
     def finBERT_model_dir():
