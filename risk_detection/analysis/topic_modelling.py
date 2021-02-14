@@ -6,7 +6,7 @@ from top2vec import Top2Vec
 from tqdm import tqdm
 
 from config import Config
-from industry_groupings import get_industry_groups, group_by_sic_division
+from industry.groupings import IndustryGroupCreator
 from risk_detection.preprocessing.report_parser import (
     report_info_from_risk_path, ReportInfo
 )
@@ -80,7 +80,7 @@ def _run_all():
 
 
 def _run_industry_wise():
-    industry_groups = group_by_sic_division()
+    industry_groups = IndustryGroupCreator.create_by_sic_division()
     for industry_group in tqdm(industry_groups):
         if len(industry_group.ciks) < 20:
             continue
@@ -92,8 +92,8 @@ def _run_industry_wise():
 
 
 if __name__ == '__main__':
-    _run_all()
-    # _run_industry_wise()
+    # _run_all()
+    _run_industry_wise()
     """
     def _get_noun_phrases(text):    pass
     model_path = os.path.join(Config.top2vec_models_dir(),

@@ -16,7 +16,7 @@ def _get_noun_phrases(txt):
 
 
 model_path = os.path.join(Config.top2vec_models_dir(),
-                          'top2vec_model_deep_with_doc_ids')
+                          'top2vec_model_with_doc_ids')
 model = Top2Vec.load(model_path)
 
 cik_sic_df = get_company_industry_mapping()
