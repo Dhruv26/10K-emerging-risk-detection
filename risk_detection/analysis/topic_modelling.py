@@ -46,8 +46,11 @@ class Topic:
 
         :return: List of negative terms in the topic
         """
-        # TODO: Implement
-        pass
+        sentiment = (self.sentiment_analyser
+                     .get_sentiment_for_words(self.topic_words))
+        return [word
+                for word, sentiment_score in sentiment.items()
+                if sentiment_score < 0]
 
 
 def get_corpus():
@@ -93,23 +96,21 @@ def _run_industry_wise():
 
 if __name__ == '__main__':
     # _run_all()
-    _run_industry_wise()
-    """
+    # _run_industry_wise()
+
     def _get_noun_phrases(text):    pass
     model_path = os.path.join(Config.top2vec_models_dir(),
                               'top2vec_model_with_doc_ids')
     model = Top2Vec.load(model_path)
-    doc_ids = model.search_documents_by_topic(300,
-                                              num_docs=model.topic_sizes[300],
-                                              return_documents=False)
-    for topic_size, topic_num in model.get_topic_sizes():
-        import pdb; pdb.set_trace()
-    
-    # TODO: Change to above
-    risk_sentiment_files = get_risk_section_sentiment_files()
-    topic = Topic([], [], 1, [
-        report_info_from_risk_path(x).get_document_id()
-        for x in risk_sentiment_files[:10]
-    ])
-    topic.get_negative_terms()
-    """
+    print('Creating topics.')
+    for topic_size, topic_num in zip(*model.get_topic_sizes()):
+        if topic_num < 200:
+            continue
+        _, doc_ids = model.search_documents_by_topic(
+            topic_num, num_docs=topic_size, return_documents=False
+        )
+        topic_words = model.topic_words[topic_num]
+        word_scores = model.topic_word_scores[topic_num]
+        topic = Topic(topic_words, word_scores, topic_num, doc_ids)
+        neg_words = topic.get_negative_terms()
+        a = 1

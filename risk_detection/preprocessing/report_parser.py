@@ -66,7 +66,7 @@ def _date_parser(date_str: str) -> datetime:
 def report_info_from_risk_path(risk_file: Path) -> ReportInfo:
     cik = int(risk_file.parent.name)
     file_name = risk_file.name
-    start_date, end_date, filename = file_name.split('_')
+    start_date, end_date, filename = file_name.split('_', maxsplit=2)
     return ReportInfo(cik, _date_parser(start_date), _date_parser(end_date),
                       '10-K', filename)
 

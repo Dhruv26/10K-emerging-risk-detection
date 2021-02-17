@@ -23,6 +23,7 @@ setup(
         'spacy==2.2.4',
         'nltk==3.5',
         'finBert @ git+https://github.com/Dhruv26/finBERT.git@22dcc9e7417b04b30db49ef773110d50a600b936',
+        'pke @ git+https://github.com/boudinfl/pke.git@aa7df17214252b6bab2f1988eba89fdce8050818',
     ],
     setup_requires=['pytest-runner', 'flake8'],
     include_package_date=True,

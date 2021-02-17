@@ -39,9 +39,25 @@ class Config:
         return os.path.join(Config.models_dir(), 'keywords')
 
     @staticmethod
+    def rake_keywords_dir():
+        return os.path.join(Config.keywords_dir(), 'rake')
+
+    @staticmethod
+    def text_rank_keywords_dir():
+        return os.path.join(Config.keywords_dir(), 'text_rank')
+
+    @staticmethod
     def risk_sentiment_dir():
         return os.path.join(Config.models_dir(), 'risk_section_sentiment')
 
     @staticmethod
     def finBERT_model_dir():
         return os.path.join(Config.models_dir(), 'finBERT_model')
+
+    @staticmethod
+    def cache_dir():
+        return os.path.join(Config._default_data_path, '.cache')
+
+    @staticmethod
+    def spacy_model():
+        return os.getenv('SPACY_MODEL', 'en_core_web_md')

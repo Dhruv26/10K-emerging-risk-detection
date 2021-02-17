@@ -19,11 +19,12 @@ from risk_detection.utils import (
     get_word_sentiment_df, get_risk_filenames, create_dir_if_not_exists,
     get_file_name_without_ext
 )
+from risk_detection.analysis.doc_processor import RiskSectionCleaner
 
 logging.getLogger().setLevel(logging.ERROR)
 
 sentiment = namedtuple('SentimentWordCount', ['pos', 'neut', 'neg'])
-DEFAULT_TOKENIZER = partial(simple_preprocess, deacc=True)
+DEFAULT_TOKENIZER = RiskSectionCleaner().simple_tokenize
 
 
 def _get_pos_neg_token_sets():
@@ -106,9 +107,9 @@ def get_token_sentiment(token: str) -> Dict[str, float]:
 
 
 class Weights:
-    pos = 5
+    pos = 20
     neut = -1
-    neg = -10
+    neg = -3
 
 
 class ContextualizedWordSentiment:
@@ -135,13 +136,17 @@ class ContextualizedWordSentiment:
             num_pos = self.pos[word]
             num_neut = self.neut[word]
             num_neg = self.neg[word]
-            self._validate_word_occurrences(num_neg, num_neut, num_pos, word)
+            # self._validate_word_occurrences(num_neg, num_neut, num_pos, word)
             total_occurrences = sum((num_pos, num_neut, num_neg))
+            if not total_occurrences:
+                res[word] = 0
+                continue
             # TODO: Look into the weighting scheme
             res[word] = (((num_pos * Weights.pos) +
                           (num_neut * Weights.neut) +
                           (num_neg * Weights.neg)) / total_occurrences)
 
+        # import pdb; pdb.set_trace()
         return res
 
     @staticmethod
@@ -175,7 +180,7 @@ class SentimentFilesProcessor:
         return sentiment(pos, neut, neg)
 
     def _get_word_count(self, sentence) -> Dict[str, int]:
-        return Counter(self.tokenizer(doc=sentence))
+        return Counter(self.tokenizer(sentence))
 
     @staticmethod
     def _get_sentiment_files(report_infos: Sequence[ReportInfo]) \
