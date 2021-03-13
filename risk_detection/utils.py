@@ -1,4 +1,5 @@
 import os
+from itertools import islice
 from pathlib import Path
 from typing import List, Iterable, Tuple
 
@@ -8,11 +9,11 @@ from pkg_resources import resource_stream
 from config import Config
 
 
-def _get_immediate_subdirectories(dire) -> Tuple[str]:
+def get_immediate_subdirectories(dire) -> Tuple[str]:
     return tuple(f.name for f in os.scandir(dire) if f.is_dir())
 
 
-all_ciks = _get_immediate_subdirectories(Config.risk_dir())
+all_ciks = get_immediate_subdirectories(Config.risk_dir())
 
 
 def get_company_industry_mapping() -> pd.DataFrame:
@@ -64,3 +65,18 @@ def get_word_sentiment_df() -> pd.DataFrame:
         os.path.join('static', 'LoughranMcDonald_MasterDictionary_2018.csv')
     )
     return pd.read_csv(csv_stream)
+
+
+def window(seq, n=2):
+    """
+    Returns a sliding window (of width n) over data from the iterable
+       s -> (s0,s1,...s[n-1]), (s1,s2,...,sn), ...
+    https://stackoverflow.com/questions/6822725/rolling-or-sliding-window-iterator
+    """
+    it = iter(seq)
+    result = tuple(islice(it, n))
+    if len(result) == n:
+        yield result
+    for elem in it:
+        result = result[1:] + (elem,)
+        yield result
