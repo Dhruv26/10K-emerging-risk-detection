@@ -35,8 +35,6 @@ def cache_tokens(dir_name):
             file_path = os.path.join(cache_dir, f'{hashh}.pickle')
             try:
                 # Get from cache
-                # TODO: Remove exception
-                raise FileNotFoundError('')
                 with open(file_path, 'rb') as f:
                     return pickle.load(f)
             except FileNotFoundError:

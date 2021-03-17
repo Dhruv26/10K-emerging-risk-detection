@@ -3,9 +3,9 @@ import os
 import re
 import string
 from datetime import datetime
-from pathlib import Path
-from typing import Dict, List, Tuple
 from functools import lru_cache
+from pathlib import Path
+from typing import Dict, List
 
 import pandas as pd
 from nltk.corpus import stopwords
@@ -14,6 +14,7 @@ from rake_nltk.rake import Rake
 from tqdm import tqdm
 
 from config import Config
+from risk_detection.analysis.clustering import cluster
 from risk_detection.preprocessing.report_parser import (
     report_info_from_risk_path, ReportInfo
 )
@@ -69,6 +70,12 @@ class Keywords:
 
     def get_negative_keywords(self) -> List[str]:
         return list(self.neg_keywords.keys())
+
+    def cluster(self) -> Dict[int, List[str]]:
+        return cluster(self.keywords)
+
+    def cluster_neg(self) -> Dict[int, List[str]]:
+        return cluster(list(self.neg_keywords.keys()))
 
     @staticmethod
     def _load_sentiment_file(report_info: ReportInfo) -> pd.DataFrame:
