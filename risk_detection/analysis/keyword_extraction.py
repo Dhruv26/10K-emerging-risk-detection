@@ -2,6 +2,7 @@ import logging
 import os
 import re
 import string
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
@@ -105,31 +106,40 @@ class Keywords:
         return neg_keywords
 
 
+def _write_keywords_for_risk_file(risk_file_path):
+    keywords_dir = Config.text_rank_keywords_dir()
+    report_info = report_info_from_risk_path(risk_file_path)
+    cik_dir = os.path.join(keywords_dir, str(report_info.cik))
+    create_dir_if_not_exists(cik_dir)
+
+    base_filename = os.path.join(
+        cik_dir, get_file_name_without_ext(report_info.get_file_name())
+    )
+
+    try:
+        text = risk_file_path.read_text(encoding='utf-8')
+    except UnicodeDecodeError:
+        return
+
+    keyword_extractor = KeywordExtractor(min_length=1, max_length=3,
+                                         num_keywords=100)
+    tr_keywords = keyword_extractor.extract_using_text_rank(text)
+    with open(base_filename, 'w+', encoding='utf-8') as keywords_file:
+        keywords_file.write('\n'.join(tr_keywords))
+
+
 def write_keywords():
     keywords_dir = Config.text_rank_keywords_dir()
     create_dir_if_not_exists(keywords_dir)
     print(f'Writing found keywords to {keywords_dir}')
 
-    keyword_extractor = KeywordExtractor(min_length=1, max_length=3,
-                                         num_keywords=100)
+    risk_files = get_risk_filenames()
+    with ProcessPoolExecutor(max_workers=5) as executor:
+        tasks = [executor.submit(_write_keywords_for_risk_file, risk_file)
+                 for risk_file in risk_files]
 
-    for risk_file_path in tqdm(get_risk_filenames()):
-        report_info = report_info_from_risk_path(risk_file_path)
-        cik_dir = os.path.join(keywords_dir, str(report_info.cik))
-        create_dir_if_not_exists(cik_dir)
-
-        base_filename = os.path.join(
-            cik_dir, get_file_name_without_ext(report_info.get_file_name())
-        )
-
-        try:
-            text = risk_file_path.read_text(encoding='utf-8')
-        except UnicodeDecodeError:
-            continue
-
-        tr_keywords = keyword_extractor.extract_using_text_rank(text)
-        with open(base_filename, 'w+', encoding='utf-8') as keywords_file:
-            keywords_file.write('\n'.join(tr_keywords))
+        for task in tqdm(as_completed(tasks), total=len(tasks)):
+            pass
 
 
 @lru_cache
@@ -188,4 +198,5 @@ def get_neg_keywords():
 
 
 if __name__ == '__main__':
-    get_neg_keywords()
+    # get_neg_keywords()
+    write_keywords()
