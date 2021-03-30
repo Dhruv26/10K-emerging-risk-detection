@@ -19,7 +19,7 @@ import pandas as pd
 from wordcloud import WordCloud, STOPWORDS
 
 from wordcloud_generator import create_wordcloud
-from risk_detection.analysis.keyword_extraction import get_keywords_for, get_keywords
+from risk_detection.analysis.keyword_extraction import get_keywords_for, generate_keywords
 from risk_detection.preprocessing.report_parser import (
     report_info_from_risk_path, ReportInfo
 )
@@ -155,7 +155,7 @@ app.layout = html.Div(children=[NAVBAR, BODY])
 @app.callback(Output('image_wc', 'src'), [Input('year', 'value')])
 def plot_wordcloud(doc_id):
     keyword_path = keyword_file_lookup[ReportInfo.from_doc_id(doc_id)]
-    keywords = get_keywords(keyword_path)
+    keywords = get_keywords_for(keyword_path)
     return create_wordcloud(keywords.keywords)
 
 
@@ -166,7 +166,7 @@ def plot_wordcloud(doc_id):
 @app.callback(Output('keywords', 'options'), Input('year', 'value'))
 def set_neg_keywords_options(doc_id):
     keyword_path = keyword_file_lookup[ReportInfo.from_doc_id(doc_id)]
-    keywords = get_keywords(keyword_path)
+    keywords = get_keywords_for(keyword_path)
     return [{'label': key, 'value': key}
             for key in keywords.get_negative_keywords()]
 
@@ -181,7 +181,7 @@ def set_neg_keywords_value(options):
               [Input('year', 'value'), Input('keywords', 'value')])
 def populate_sentences_df(doc_id, keyword):
     keyword_path = keyword_file_lookup[ReportInfo.from_doc_id(doc_id)]
-    keywords = get_keywords(keyword_path)
+    keywords = get_keywords_for(keyword_path)
 
     try:
         sentence_df = keywords.neg_keywords[keyword]

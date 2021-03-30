@@ -6,13 +6,15 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict, List, Tuple
 
 import pandas as pd
 from nltk.corpus import stopwords
 from pke.unsupervised import TextRank
 from rake_nltk.rake import Rake
 from tqdm import tqdm
+from nltk.tokenize import word_tokenize
+from nltk import pos_tag
 
 from config import Config
 from risk_detection.analysis.clustering import cluster
@@ -72,10 +74,10 @@ class Keywords:
     def get_negative_keywords(self) -> List[str]:
         return list(self.neg_keywords.keys())
 
-    def cluster(self) -> Dict[int, List[str]]:
+    def cluster(self) -> Tuple[Dict[str, int], Dict[int, List[str]]]:
         return cluster(self.keywords)
 
-    def cluster_neg(self) -> Dict[int, List[str]]:
+    def cluster_neg(self) -> Tuple[Dict[str, int], Dict[int, List[str]]]:
         return cluster(list(self.neg_keywords.keys()))
 
     @staticmethod
@@ -124,7 +126,7 @@ def _write_keywords_for_risk_file(risk_file_path):
     keyword_extractor = KeywordExtractor(min_length=1, max_length=3,
                                          num_keywords=100)
     tr_keywords = keyword_extractor.extract_using_text_rank(text)
-    with open(base_filename, 'w+', encoding='utf-8') as keywords_file:
+    with open(base_filename + '.txt', 'w+', encoding='utf-8') as keywords_file:
         keywords_file.write('\n'.join(tr_keywords))
 
 
@@ -134,7 +136,7 @@ def write_keywords():
     print(f'Writing found keywords to {keywords_dir}')
 
     risk_files = get_risk_filenames()
-    with ProcessPoolExecutor(max_workers=5) as executor:
+    with ProcessPoolExecutor(max_workers=4) as executor:
         tasks = [executor.submit(_write_keywords_for_risk_file, risk_file)
                  for risk_file in risk_files]
 
@@ -142,15 +144,14 @@ def write_keywords():
             pass
 
 
-@lru_cache
 def get_keywords_for(keyword_path: Path) -> Keywords:
     keywords = keyword_path.read_text().split('\n')
     report_info = report_info_from_risk_path(keyword_path)
     return Keywords(keywords, report_info)
 
 
-@lru_cache
-def get_keywords(keyword_path: Path) -> Keywords:
+@lru_cache(maxsize=128)
+def generate_keywords(keyword_path: Path) -> Keywords:
     report_info = report_info_from_risk_path(keyword_path)
     risk_file_name = os.path.join(Config.risk_dir(), str(report_info.cik),
                                   report_info.get_file_name())
@@ -197,6 +198,72 @@ def get_neg_keywords():
     return keys
 
 
+def clean_keyword(keyword):
+    tokens_to_remove = {'other', 'others', 'such', 'certain'}
+
+    without_puncts = keyword.translate(
+        str.maketrans('', '', string.punctuation)
+    ).strip()
+    tokens = word_tokenize(without_puncts)
+    tags = pos_tag(tokens)
+    first_word, first_tag = tags[0]
+    last_word, last_tag = tags[-1]
+
+    if first_tag == 'JJ' and first_word in tokens_to_remove:
+        tags = tags[1:]
+    if last_tag == 'JJ' and last_word in tokens_to_remove:
+        tags = tags[:-1]
+
+    return ' '.join(tk for tk, _ in tags) if tags else ''
+
+
+def simple_clean_keyword(keyword):
+    tokens_to_remove = {'other', 'others', 'such', 'certain'}
+
+    without_puncts = keyword.translate(
+        str.maketrans('', '', string.punctuation)).strip()
+    if not without_puncts:
+        return ''
+
+    tokens = word_tokenize(without_puncts)
+    first_word = tokens[0]
+    last_word = tokens[-1]
+
+    if first_word in tokens_to_remove:
+        tokens = tokens[1:]
+    if last_word in tokens_to_remove:
+        tokens = tokens[:-1]
+
+    return ' '.join(tokens) if tokens else ''
+
+
+def get_all_keywords() -> Dict[ReportInfo, Keywords]:
+    keywords_dir = Path(Config.text_rank_keywords_dir())
+    keywords = dict()
+    for keyword_file in tqdm(list(keywords_dir.rglob('*.txt'))[:100]):
+        report_info = report_info_from_risk_path(keyword_file)
+        with open(keyword_file, 'r', encoding='utf-8') as key_f:
+            keys = key_f.read()
+
+        if not keys:
+            continue
+
+        cleaned = list()
+        #filter(lambda k: k, map(simple_clean_keyword, keys.split('\n')))
+        for k in keys.split('\n'):
+            cl = simple_clean_keyword(k)
+            if cl:
+                cleaned.append(cl)
+
+        keywords[report_info] = Keywords(cleaned, report_info)
+
+    return keywords
+
+
 if __name__ == '__main__':
     # get_neg_keywords()
     write_keywords()
+    # path = Path(
+    #     r'C:\machine_learning\10K-emerging-risk-detection\data\risk_section\12927\2007-12-31_2008-02-15_0001193125-08-032328.txt')
+    # key = get_keywords(path)
+    # print(key.cluster())
