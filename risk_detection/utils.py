@@ -56,7 +56,7 @@ def create_dir_if_not_exists(path: str):
 
 
 def get_file_name_without_ext(path: str) -> str:
-    return os.path.splitext(path)[0]
+    return os.path.splitext(os.path.basename(path))[0]
 
 
 def get_word_sentiment_df() -> pd.DataFrame:

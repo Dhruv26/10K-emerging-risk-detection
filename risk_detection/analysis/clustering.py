@@ -1,15 +1,18 @@
 import os
 import pickle
-from collections import defaultdict
+from collections import defaultdict, Counter
+from glob import glob
 from itertools import chain, groupby
 from typing import Dict, List, Tuple
 
+import fuzzywuzzy
 import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.cluster import AgglomerativeClustering
 
 from config import Config
-from risk_detection.utils import create_dir_if_not_exists
+from risk_detection.utils import (create_dir_if_not_exists,
+                                  get_file_name_without_ext, window)
 
 embedder = SentenceTransformer('stsb-roberta-base')
 
@@ -33,7 +36,35 @@ def cluster(corpus: List[str]) -> Tuple[Dict[str, int], Dict[int, List[str]]]:
     return dict(zip(corpus, labels)), clustered_sentences
 
 
-if __name__ == '__main__':
+def find_cluster_matches(word_prev_cluster, prev_clusters, word_cluster,
+                         curr_clusters):
+    matches = dict()
+
+    for cluster_num, cluster_words in curr_clusters.items():
+        prev_cluster_nums = list()
+        for word in cluster_words:
+            words = fuzzywuzzy.process.extract(word, word_prev_cluster.keys(),
+                                               limit=5)
+            prev_cluster_nums.extend([word_prev_cluster[w[0]] for w in words])
+
+        counts = Counter(prev_cluster_nums)
+        # Check if we have a perfect match
+        for prev_cluster_num, _ in counts.most_common():
+            if set(cluster_words) == set(prev_clusters[prev_cluster_num]):
+                matches[cluster_num] = prev_cluster_num
+                continue
+
+        prev_closest_cluster_num = counts.most_common()[0][0]
+        common_words = set(cluster_words).intersection(
+            set(prev_clusters[prev_closest_cluster_num]))
+        if len(common_words) >= (min(len(cluster_words), len(
+                prev_clusters[prev_closest_cluster_num])) // 2):
+            matches[cluster_num] = prev_closest_cluster_num
+
+    return matches
+
+
+def write_yearly_keyword_clusters():
     import risk_detection.analysis.keyword_extraction
     keywords = risk_detection.analysis.keyword_extraction.get_all_keywords()
 
@@ -56,3 +87,33 @@ if __name__ == '__main__':
                         protocol=pickle.HIGHEST_PROTOCOL)
 
         # keyword_clusters_by_year[year] = (cluster_lookup, keyword_clusters)
+
+
+def write_yearly_cluster_matches():
+    def get_file_year(file_name):
+        return int(get_file_name_without_ext(file_name))
+
+    base_dir = os.path.join(Config.keywords_dir(), 'yearly_matches')
+    create_dir_if_not_exists(base_dir)
+
+    cluster_files = glob(
+        os.path.join(Config.keywords_dir(), 'yearly_clusters', '*.pickle')
+    )
+    for prev_file_n, curr_file_n in window(sorted(cluster_files,
+                                                  key=get_file_year)):
+        with open(prev_file_n, 'rb') as prev_file:
+            word_prev_cluster, prev_clusters = pickle.load(prev_file)
+        with open(curr_file_n, 'rb') as curr_file:
+            word_cluster, curr_clusters = pickle.load(curr_file)
+
+        matches = find_cluster_matches(word_prev_cluster, prev_clusters,
+                                       word_cluster, curr_clusters)
+        matches_file_name = os.path.join(
+            base_dir, f'matches_{get_file_year(curr_file_n)}.pickle'
+        )
+        with open(matches_file_name, 'wb') as matches_file:
+            pickle.dump(matches, matches_file)
+
+
+if __name__ == '__main__':
+    write_yearly_cluster_matches()

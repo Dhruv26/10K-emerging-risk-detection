@@ -240,7 +240,7 @@ def simple_clean_keyword(keyword):
 def get_all_keywords() -> Dict[ReportInfo, Keywords]:
     keywords_dir = Path(Config.text_rank_keywords_dir())
     keywords = dict()
-    for keyword_file in tqdm(list(keywords_dir.rglob('*.txt'))[:100]):
+    for keyword_file in tqdm(list(keywords_dir.rglob('*.txt'))):
         report_info = report_info_from_risk_path(keyword_file)
         with open(keyword_file, 'r', encoding='utf-8') as key_f:
             keys = key_f.read()
