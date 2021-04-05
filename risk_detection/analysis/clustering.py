@@ -6,8 +6,10 @@ from itertools import chain, groupby
 from typing import Dict, List, Tuple
 
 import fuzzywuzzy
+from fuzzywuzzy import process
 import numpy as np
 from sentence_transformers import SentenceTransformer
+import sentence_transformers.util
 from sklearn.cluster import AgglomerativeClustering
 
 from config import Config
@@ -43,8 +45,7 @@ def find_cluster_matches(word_prev_cluster, prev_clusters, word_cluster,
     for cluster_num, cluster_words in curr_clusters.items():
         prev_cluster_nums = list()
         for word in cluster_words:
-            words = fuzzywuzzy.process.extract(word, word_prev_cluster.keys(),
-                                               limit=5)
+            words = process.extract(word, word_prev_cluster.keys(), limit=5)
             prev_cluster_nums.extend([word_prev_cluster[w[0]] for w in words])
 
         counts = Counter(prev_cluster_nums)
@@ -59,6 +60,48 @@ def find_cluster_matches(word_prev_cluster, prev_clusters, word_cluster,
             set(prev_clusters[prev_closest_cluster_num]))
         if len(common_words) >= (min(len(cluster_words), len(
                 prev_clusters[prev_closest_cluster_num])) // 2):
+            matches[cluster_num] = prev_closest_cluster_num
+
+    return matches
+
+
+def find_cluster_matches_semantic(word_prev_cluster, prev_clusters,
+                                  word_cluster, curr_clusters):
+    matches = dict()
+
+    prev_corpus = list(word_prev_cluster.keys())
+    curr_corpus = list(word_cluster.keys())
+    curr_corpus_lookup = {k: v for v, k in enumerate(curr_corpus)}
+
+    prev_emb = embedder.encode(prev_corpus)
+    curr_emb = embedder.encode(curr_corpus)
+    semantic_matches = sentence_transformers.util.semantic_search(
+        curr_emb, prev_emb, top_k=5
+    )
+
+    for cluster_num, cluster_words in curr_clusters.items():
+        prev_cluster_nums = list()
+        for word in cluster_words:
+            matches_word_indices = semantic_matches[curr_corpus_lookup[word]]
+            prev_cluster_nums.extend(
+                [word_prev_cluster[prev_corpus[w['corpus_id']]] for w in
+                 matches_word_indices])
+
+        counts = Counter(prev_cluster_nums)
+        # Check if we have a perfect match
+        for prev_cluster_num, _ in counts.most_common():
+            if set(cluster_words) == set(prev_clusters[prev_cluster_num]):
+                matches[cluster_num] = prev_cluster_num
+                continue
+
+        prev_closest_cluster_num = counts.most_common()[0][0]
+        common_words = set(cluster_words).intersection(
+            set(prev_clusters[prev_closest_cluster_num]))
+        if len(common_words) >= (
+                min(len(cluster_words),
+                    len(prev_clusters[prev_closest_cluster_num])
+                    ) // 4
+        ):
             matches[cluster_num] = prev_closest_cluster_num
 
     return matches
@@ -101,13 +144,16 @@ def write_yearly_cluster_matches():
     )
     for prev_file_n, curr_file_n in window(sorted(cluster_files,
                                                   key=get_file_year)):
+        print(f'Starting for {get_file_year(prev_file_n)}-{get_file_year(curr_file_n)}')
         with open(prev_file_n, 'rb') as prev_file:
             word_prev_cluster, prev_clusters = pickle.load(prev_file)
         with open(curr_file_n, 'rb') as curr_file:
             word_cluster, curr_clusters = pickle.load(curr_file)
 
-        matches = find_cluster_matches(word_prev_cluster, prev_clusters,
-                                       word_cluster, curr_clusters)
+        matches = find_cluster_matches_semantic(
+            word_prev_cluster, prev_clusters,
+            word_cluster, curr_clusters
+        )
         matches_file_name = os.path.join(
             base_dir, f'matches_{get_file_year(curr_file_n)}.pickle'
         )
