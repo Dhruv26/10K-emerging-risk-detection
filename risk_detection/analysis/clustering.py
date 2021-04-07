@@ -5,11 +5,10 @@ from glob import glob
 from itertools import chain, groupby
 from typing import Dict, List, Tuple
 
-import fuzzywuzzy
-from fuzzywuzzy import process
 import numpy as np
-from sentence_transformers import SentenceTransformer
 import sentence_transformers.util
+from fuzzywuzzy import process
+from sentence_transformers import SentenceTransformer
 from sklearn.cluster import AgglomerativeClustering
 
 from config import Config
@@ -100,7 +99,7 @@ def find_cluster_matches_semantic(word_prev_cluster, prev_clusters,
         if len(common_words) >= (
                 min(len(cluster_words),
                     len(prev_clusters[prev_closest_cluster_num])
-                    ) // 4
+                    ) // 2
         ):
             matches[cluster_num] = prev_closest_cluster_num
 
@@ -161,5 +160,47 @@ def write_yearly_cluster_matches():
             pickle.dump(matches, matches_file)
 
 
+def find_new_clusters(cik, print_matched=False, print_unmatched=True):
+    import risk_detection.analysis.keyword_extraction
+    keywords = risk_detection.analysis.keyword_extraction.get_keywords(cik)
+    sorted_keywords = sorted(keywords,
+                             key=lambda keys: keys.report_info.start_date)
+    for prev_keywords, curr_keywords in window(sorted_keywords):
+        print(f'-------{curr_keywords.report_info.start_date}-------')
+        word_prev_cluster, prev_clusters = prev_keywords.cluster()
+        word_cluster, curr_clusters = curr_keywords.cluster()
+
+        matches = find_cluster_matches_semantic(
+            word_prev_cluster, prev_clusters, word_cluster, curr_clusters
+        )
+        if print_matched:
+            for curr_cl, prev_cl in matches.items():
+                print(f'{curr_clusters[curr_cl]} --> {prev_clusters[prev_cl]}')
+        unmatched_clusters = curr_clusters.keys() - matches.keys()
+        if print_unmatched:
+            for curr_cl in unmatched_clusters:
+                print(f'{curr_clusters[curr_cl]}')
+
+
 if __name__ == '__main__':
-    write_yearly_cluster_matches()
+    """
+    1750 -> Aar Corp is primarily in the business of aircraft & parts.
+    """
+    # find_new_clusters(1750)
+    """
+    3116 -> Akorn Inc is primarily in the business of pharmaceutical 
+    preparations. Akorn manufactures ophthalmology and dermatology products 
+    as well as injectables.
+    """
+    # find_new_clusters(3116) ### Healthcare
+    """ 
+    2488 -> Advanced Micro Devices Inc is primarily in the business of 
+    semiconductors & related devices.
+    """
+    # find_new_clusters(2488)
+    """
+    28917 -> Dillard's Inc is primarily in the business of retail-department 
+    stores. Dillard's Inc is an American fashion apparel, cosmetics and home 
+    furnishings retailer.
+    """
+    find_new_clusters(28917)

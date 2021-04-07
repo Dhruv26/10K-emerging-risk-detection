@@ -21,7 +21,7 @@ _base_cache_dir = os.path.join(Config.cache_dir(), 'tokens')
 
 def cache_tokens(dir_name):
     """
-    Caches tokens created for a document.
+    Caches tokens created for a document. WARNING: work in progress....
 
     :param dir_name: Directory to cache data to
     """
@@ -31,6 +31,8 @@ def cache_tokens(dir_name):
 
         @wraps(func)
         def wrapper(obj, text):
+            ## TODO: Hashing fails as python produces different hashes for
+            ## the same text over different runs
             hashh = hashlib.sha256(text.encode('utf-8')).hexdigest()
             file_path = os.path.join(cache_dir, f'{hashh}.pickle')
             try:
@@ -40,8 +42,8 @@ def cache_tokens(dir_name):
             except FileNotFoundError:
                 # Cache result
                 result = func(obj, text)
-                # with open(file_path, 'wb') as f:
-                #     pickle.dump(result, f, protocol=pickle.HIGHEST_PROTOCOL)
+                with open(file_path, 'wb') as f:
+                    pickle.dump(result, f, protocol=pickle.HIGHEST_PROTOCOL)
                 return result
 
         return wrapper
@@ -50,15 +52,14 @@ def cache_tokens(dir_name):
 
 class RiskSectionCleaner:
     def __init__(self, drop_stops: bool = True, lemmatize: bool = True):
-        # TODO: See caching behaviour
         self.drop_stops = drop_stops
         self.lemmatize = lemmatize
 
-    @cache_tokens(dir_name='simple_tokens')
+    # @cache_tokens(dir_name='simple_tokens')
     def simple_tokenize(self, doc_text: str) -> List[str]:
         return simple_preprocess(strip_tags(doc_text), deacc=True)
 
-    @cache_tokens(dir_name='noun_phrase_tokens')
+    # @cache_tokens(dir_name='noun_phrase_tokens')
     def tokenize(self, doc_text: str) -> List[str]:
         tokens = []
 

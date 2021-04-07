@@ -1,3 +1,4 @@
+import glob
 import logging
 import os
 import re
@@ -6,15 +7,15 @@ from concurrent.futures import ProcessPoolExecutor, as_completed
 from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Union
 
 import pandas as pd
+from nltk import pos_tag
 from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
 from pke.unsupervised import TextRank
 from rake_nltk.rake import Rake
 from tqdm import tqdm
-from nltk.tokenize import word_tokenize
-from nltk import pos_tag
 
 from config import Config
 from risk_detection.analysis.clustering import cluster
@@ -237,32 +238,57 @@ def simple_clean_keyword(keyword):
     return ' '.join(tokens) if tokens else ''
 
 
+def _keywords_from_file(keyword_file: Union[str, Path]) -> Keywords:
+    if isinstance(keyword_file, str):
+        keyword_file = Path(keyword_file)
+
+    with open(keyword_file, 'r', encoding='utf-8') as key_f:
+        keys = key_f.read()
+
+    if not keys:
+        raise ValueError(f'No keywords found for {keyword_file}')
+
+    cleaned = list()
+    # filter(lambda k: k, map(simple_clean_keyword, keys.split('\n')))
+    for k in keys.split('\n'):
+        cl = simple_clean_keyword(k)
+        if cl:
+            cleaned.append(cl)
+
+    report_info = report_info_from_risk_path(keyword_file)
+    return Keywords(cleaned, report_info)
+
+
 def get_all_keywords() -> Dict[ReportInfo, Keywords]:
     keywords_dir = Path(Config.text_rank_keywords_dir())
     keywords = dict()
     for keyword_file in tqdm(list(keywords_dir.rglob('*.txt'))):
-        report_info = report_info_from_risk_path(keyword_file)
-        with open(keyword_file, 'r', encoding='utf-8') as key_f:
-            keys = key_f.read()
-
-        if not keys:
+        try:
+            keys = _keywords_from_file(keyword_file)
+            keywords[keys.report_info] = keys
+        except ValueError:
             continue
 
-        cleaned = list()
-        #filter(lambda k: k, map(simple_clean_keyword, keys.split('\n')))
-        for k in keys.split('\n'):
-            cl = simple_clean_keyword(k)
-            if cl:
-                cleaned.append(cl)
+    return keywords
 
-        keywords[report_info] = Keywords(cleaned, report_info)
+
+def get_keywords(cik: Union[int, str]) -> List[Keywords]:
+    path = os.path.join(Config.text_rank_keywords_dir(), str(cik))
+    keywords = list()
+
+    for keyword_file in glob.glob(os.path.join(path, '*.txt')):
+        try:
+            keywords.append(_keywords_from_file(keyword_file))
+        except ValueError:
+            continue
 
     return keywords
 
 
 if __name__ == '__main__':
+    get_keywords(1750)
     # get_neg_keywords()
-    write_keywords()
+    # write_keywords()
     # path = Path(
     #     r'C:\machine_learning\10K-emerging-risk-detection\data\risk_section\12927\2007-12-31_2008-02-15_0001193125-08-032328.txt')
     # key = get_keywords(path)

@@ -1,4 +1,5 @@
 import os
+from collections import defaultdict
 from typing import Sequence, List
 
 from nltk.tokenize import word_tokenize
@@ -7,15 +8,15 @@ from tqdm import tqdm
 
 from config import Config
 from industry.groupings import IndustryGroupCreator
-from risk_detection.preprocessing.report_parser import (
-    report_info_from_risk_path, ReportInfo
-)
+from risk_detection.analysis.doc_processor import RiskSectionCleaner
 from risk_detection.analysis.sentiment_analysis import (
     create_sentiment_analyser, ContextualizedWordSentiment
 )
-from risk_detection.analysis.doc_processor import RiskSectionCleaner
+from risk_detection.preprocessing.report_parser import (
+    report_info_from_risk_path, ReportInfo
+)
 from risk_detection.utils import (
-    get_risk_filenames, get_risk_section_sentiment_files
+    get_risk_filenames, create_dir_if_not_exists
 )
 
 
@@ -58,8 +59,8 @@ def get_corpus():
     risk_files = get_risk_filenames()
 
     corpus = dict()
-    for risk_file in tqdm(risk_files):
-        docu = risk_file.read_text()
+    for risk_file in tqdm(risk_files[:200]):
+        docu = risk_file.read_text(encoding='utf-8')
         if len(word_tokenize(docu)) > 100:
             report_info = report_info_from_risk_path(risk_file)
             corpus[report_info.get_document_id()] = docu
@@ -67,7 +68,10 @@ def get_corpus():
     return corpus
 
 
-def _run_all():
+def run_all():
+    """
+    Creates a topic model for the entire corpus and saves it to disk.
+    """
     print(f'Reading files from {Config.risk_dir()}')
     corpus = get_corpus()
     print(f'Read {len(corpus)} files.')
@@ -82,7 +86,7 @@ def _run_all():
     print(f'Saved model to {model_path}')
 
 
-def _run_industry_wise():
+def run_industry_wise():
     industry_groups = IndustryGroupCreator.create_by_sic_division()
     for industry_group in tqdm(industry_groups):
         if len(industry_group.ciks) < 20:
@@ -94,11 +98,33 @@ def _run_industry_wise():
         model.save(model_path)
 
 
-if __name__ == '__main__':
-    # _run_all()
-    # _run_industry_wise()
+def run_yearly():
+    """
+    Creates yearly topic models and saves it to disk.
+    """
+    print(f'Reading files from {Config.risk_dir()}')
+    corpus = get_corpus()
+    yearly_doc_ids = defaultdict(list)
+    for k in corpus.keys():
+        yearly_doc_ids[ReportInfo.from_doc_id(k).start_date.year].append(k)
+    print(f'Read {len(corpus)} files.')
 
-    def _get_noun_phrases(text):    pass
+    base_dir = os.path.join(Config.top2vec_models_dir(), 'yearly_models')
+    create_dir_if_not_exists(base_dir)
+    print(f'Storing yearly models to {base_dir}.')
+
+    for year, doc_ids in tqdm(yearly_doc_ids.items(),
+                              total=len(yearly_doc_ids)):
+        yearly_corpus = [corpus[d] for d in doc_ids]
+        model = Top2Vec(documents=yearly_corpus, document_ids=doc_ids,
+                        tokenizer=RiskSectionCleaner(), keep_documents=False,
+                        speed='learn', workers=24)
+        model.save(os.path.join(base_dir, f'{year}_topics'))
+
+
+def _test_topics():
+    def _get_noun_phrases(text):
+        pass
     model_path = os.path.join(Config.top2vec_models_dir(),
                               'top2vec_model_with_doc_ids')
     model = Top2Vec.load(model_path)
@@ -114,3 +140,9 @@ if __name__ == '__main__':
         topic = Topic(topic_words, word_scores, topic_num, doc_ids)
         neg_words = topic.get_negative_terms()
         a = 1
+
+
+if __name__ == '__main__':
+    # run_all()
+    # run_industry_wise()
+    run_yearly()

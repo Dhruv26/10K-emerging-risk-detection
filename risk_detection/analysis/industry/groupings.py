@@ -1,15 +1,23 @@
+import itertools
+import os
+import pickle
+from collections import defaultdict
 from pathlib import Path
-from typing import List, Optional, Sequence
+from typing import List, Optional, Sequence, Dict, Tuple
 
 from nltk.tokenize import word_tokenize
 from top2vec import Top2Vec
 
+from config import Config
+from risk_detection.analysis.clustering import cluster
+from risk_detection.analysis.keyword_extraction import Keywords, get_keywords
 from risk_detection.preprocessing.report_parser import (
     report_info_from_risk_path
 )
-from risk_detection.utils import (get_risk_filenames_for_ciks,
-                                  get_company_industry_mapping,
-                                  get_sik_industry_name_mapping)
+from risk_detection.utils import (
+    get_risk_filenames_for_ciks, get_company_industry_mapping,
+    get_sik_industry_name_mapping, create_dir_if_not_exists
+)
 
 
 class IndustryGroup:
@@ -46,6 +54,25 @@ class IndustryGroup:
         doc_ids, docs = list(zip(*corpus.items()))
         return Top2Vec(docs, document_ids=doc_ids,
                        speed='deep-learn', workers=16)
+
+    def _organize_keywords_by_year(self) -> Dict[int, Keywords]:
+        keywords = defaultdict(list)
+        for cik in self.cik_codes:
+            for key in get_keywords(cik):
+                keywords[key.report_info.start_date.year].append(key)
+        return keywords
+
+    def cluster_keywords(self) -> Dict[int, Tuple]:
+        yearly_clusters = dict()
+
+        keywords = self._organize_keywords_by_year()
+        for year, keys in keywords.items():
+            all_keys = list(set(itertools.chain.from_iterable([
+                k.keywords for k in keys
+            ])))
+            yearly_clusters[year] = cluster(all_keys)
+
+        return yearly_clusters
 
     def __repr__(self):
         return f'Group: {self.sic_grp_name}, CIKs: {len(self.cik_codes)}'
@@ -89,4 +116,15 @@ class IndustryGroupCreator:
 
 
 if __name__ == '__main__':
-    IndustryGroupCreator.create_by_sic_char_length()
+    base_dir = os.path.join(Config.keywords_dir(), 'industry_groups',
+                            'sic_groups')
+    create_dir_if_not_exists(base_dir)
+
+    groups = IndustryGroupCreator.create_by_sic_division()
+    for group in groups:
+        industry_yearly_clusters = group.cluster_keywords()
+        if industry_yearly_clusters:
+            with open(os.path.join(base_dir, f'{group.sic_category}.pickle'),
+                      'wb') as f:
+                pickle.dump(industry_yearly_clusters, f,
+                            protocol=pickle.HIGHEST_PROTOCOL)
