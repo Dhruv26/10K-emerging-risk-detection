@@ -59,7 +59,7 @@ def get_corpus():
     risk_files = get_risk_filenames()
 
     corpus = dict()
-    for risk_file in tqdm(risk_files[:200]):
+    for risk_file in tqdm(risk_files):
         docu = risk_file.read_text(encoding='utf-8')
         if len(word_tokenize(docu)) > 100:
             report_info = report_info_from_risk_path(risk_file)
