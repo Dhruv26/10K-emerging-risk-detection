@@ -72,6 +72,9 @@ class Keywords:
         sentiment_df = self._load_sentiment_file(self.report_info)
         self.neg_keywords = self._get_negative_keywords(keywords, sentiment_df)
 
+    def get_keywords(self) -> List[str]:
+        return self.keywords
+
     def get_negative_keywords(self) -> List[str]:
         return list(self.neg_keywords.keys())
 
@@ -101,9 +104,7 @@ class Keywords:
                 sentiment_df['sentence'].str.contains(re.escape(keyword),
                                                       case=False)
             ]
-            if (occurrences.sentiment_score < 0).any():
-                # if not (occurrences.prediction == 'negative').any():
-                #     import pdb; pdb.set_trace()
+            if (occurrences.prediction != 'positive').any():
                 neg_keywords[keyword] = occurrences
 
         return neg_keywords
@@ -146,9 +147,7 @@ def write_keywords():
 
 
 def get_keywords_for(keyword_path: Path) -> Keywords:
-    keywords = keyword_path.read_text().split('\n')
-    report_info = report_info_from_risk_path(keyword_path)
-    return Keywords(keywords, report_info)
+    return keywords_from_file(keyword_path)
 
 
 @lru_cache(maxsize=128)
@@ -161,42 +160,6 @@ def generate_keywords(keyword_path: Path) -> Keywords:
 
     extractor = KeywordExtractor(num_keywords=100)
     return Keywords(extractor.extract_using_text_rank(text), report_info)
-
-
-def get_neg_keywords():
-    def _date_parser(date_str: str) -> datetime:
-        return datetime.strptime(date_str, '%Y-%m-%d')
-
-    def from_keyword_path(pth):
-        cik = int(pth.parent.name)
-        file_name = pth.name
-        s_dt, e_dt, f_name, rest = file_name.split('_')
-        return ReportInfo(cik, _date_parser(s_dt),
-                          _date_parser(e_dt),
-                          '10-K', f'{f_name}.txt')
-
-    path = Path(
-        r'C:\machine_learning\10K-emerging-risk-detection\models\keywords\text_rank\1001614')
-    keys = {}
-    for doc_id in path.glob('*.txt'):
-        with open(os.path.join(path, doc_id), 'r', encoding='utf-8') as f:
-            keywords = [k.strip() for k in f]
-
-        report_info = report_info_from_risk_path(doc_id)
-        keywords_obj = Keywords(keywords, report_info)
-        keys[report_info] = keywords_obj
-
-    emerged_risks = dict()
-    sorted_keys = sorted(keys.keys(), key=lambda info: info.start_date)
-    for prev, curr in window(sorted_keys):
-        prev_keywords = keys[prev]
-        curr_keywords = keys[curr]
-        prev_neg = set(prev_keywords.get_negative_keywords())
-        curr_neg = set(curr_keywords.get_negative_keywords())
-        time_period = (prev.start_date, curr.start_date)
-        emerged_risks[time_period] = curr_neg.difference(prev_neg)
-
-    return keys
 
 
 def clean_keyword(keyword):
@@ -238,7 +201,28 @@ def simple_clean_keyword(keyword):
     return ' '.join(tokens) if tokens else ''
 
 
-def _keywords_from_file(keyword_file: Union[str, Path]) -> Keywords:
+def keywords_from_file(keyword_file: Union[str, Path]) -> Keywords:
+    if isinstance(keyword_file, str):
+        keyword_file = Path(keyword_file)
+
+    with open(keyword_file, 'r', encoding='utf-8') as key_f:
+        keys = key_f.read()
+
+    if not keys:
+        raise ValueError(f'No keywords found for {keyword_file}')
+
+    cleaned = set()
+    # filter(lambda k: k, map(simple_clean_keyword, keys.split('\n')))
+    for k in keys.split('\n'):
+        cl = simple_clean_keyword(k)
+        if cl:
+            cleaned.add(cl)
+
+    report_info = report_info_from_risk_path(keyword_file)
+    return Keywords(sorted(list(cleaned)), report_info)
+
+
+def rake_keywords_from_file(keyword_file: Union[str, Path]) -> Keywords:
     if isinstance(keyword_file, str):
         keyword_file = Path(keyword_file)
 
@@ -249,14 +233,16 @@ def _keywords_from_file(keyword_file: Union[str, Path]) -> Keywords:
         raise ValueError(f'No keywords found for {keyword_file}')
 
     cleaned = list()
-    # filter(lambda k: k, map(simple_clean_keyword, keys.split('\n')))
     for k in keys.split('\n'):
         cl = simple_clean_keyword(k)
         if cl:
             cleaned.append(cl)
 
-    report_info = report_info_from_risk_path(keyword_file)
-    return Keywords(cleaned, report_info)
+    st, end, filename, _ = keyword_file.name.split('_', maxsplit=4)
+    actual_file = Path(os.path.join(keyword_file.parent,
+                                    '_'.join((st, end, filename))))
+    report_info = report_info_from_risk_path(actual_file)
+    return Keywords(sorted(cleaned), report_info)
 
 
 def get_all_keywords() -> Dict[ReportInfo, Keywords]:
@@ -264,7 +250,7 @@ def get_all_keywords() -> Dict[ReportInfo, Keywords]:
     keywords = dict()
     for keyword_file in tqdm(list(keywords_dir.rglob('*.txt'))):
         try:
-            keys = _keywords_from_file(keyword_file)
+            keys = keywords_from_file(keyword_file)
             keywords[keys.report_info] = keys
         except ValueError:
             continue
@@ -278,7 +264,7 @@ def get_keywords(cik: Union[int, str]) -> List[Keywords]:
 
     for keyword_file in glob.glob(os.path.join(path, '*.txt')):
         try:
-            keywords.append(_keywords_from_file(keyword_file))
+            keywords.append(keywords_from_file(keyword_file))
         except ValueError:
             continue
 

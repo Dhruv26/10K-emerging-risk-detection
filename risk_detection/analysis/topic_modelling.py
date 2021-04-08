@@ -116,10 +116,14 @@ def run_yearly():
     for year, doc_ids in tqdm(yearly_doc_ids.items(),
                               total=len(yearly_doc_ids)):
         yearly_corpus = [corpus[d] for d in doc_ids]
-        model = Top2Vec(documents=yearly_corpus, document_ids=doc_ids,
-                        tokenizer=RiskSectionCleaner(), keep_documents=False,
-                        speed='learn', workers=24)
-        model.save(os.path.join(base_dir, f'{year}_topics'))
+        try:
+            model = Top2Vec(documents=yearly_corpus, document_ids=doc_ids,
+                            tokenizer=RiskSectionCleaner(), keep_documents=False,
+                            speed='learn', workers=24)
+            model.save(os.path.join(base_dir, f'{year}_topics'))
+        except:
+            print(f'Could not create topic model for year: {year}')
+            continue
 
 
 def _test_topics():

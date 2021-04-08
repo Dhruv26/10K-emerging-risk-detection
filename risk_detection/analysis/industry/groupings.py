@@ -121,10 +121,13 @@ if __name__ == '__main__':
     create_dir_if_not_exists(base_dir)
 
     groups = IndustryGroupCreator.create_by_sic_division()
+    print('Created industry groups.')
     for group in groups:
+        print(f'Creating clusters for SIC division {group.sic_category}')
         industry_yearly_clusters = group.cluster_keywords()
         if industry_yearly_clusters:
             with open(os.path.join(base_dir, f'{group.sic_category}.pickle'),
                       'wb') as f:
                 pickle.dump(industry_yearly_clusters, f,
                             protocol=pickle.HIGHEST_PROTOCOL)
+            print(f'Saved clusters for SIC division {group.sic_category}')

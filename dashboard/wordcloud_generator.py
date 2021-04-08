@@ -30,7 +30,7 @@ def create_wordcloud(words: Sequence[str]):
     )
     wc.generate_from_frequencies(Counter(words))
 
-    fig = plt.figure(figsize=[8, 8])
+    fig = plt.figure(figsize=[20, 12])
     ax = plt.imshow(wc.recolor(), interpolation="bilinear")
     plt.axis("off")
     return fig_to_uri(fig, bbox_inches="tight")
