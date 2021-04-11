@@ -166,7 +166,7 @@ def find_new_clusters(cik, print_matched=False, print_unmatched=True):
     sorted_keywords = sorted(keywords,
                              key=lambda keys: keys.report_info.start_date)
     for prev_keywords, curr_keywords in window(sorted_keywords):
-        print(f'-------{curr_keywords.report_info.start_date}-------')
+        print(f'-------{curr_keywords.report_info.start_date.year}-------')
         word_prev_cluster, prev_clusters = prev_keywords.cluster()
         word_cluster, curr_clusters = curr_keywords.cluster()
 
@@ -180,6 +180,59 @@ def find_new_clusters(cik, print_matched=False, print_unmatched=True):
         if print_unmatched:
             for curr_cl in unmatched_clusters:
                 print(f'{curr_clusters[curr_cl]}')
+
+
+def read_yearly_cluster(year):
+    filename = os.path.join(Config.keywords_dir(), 'yearly_clusters',
+                            f'{year}.pickle')
+    with open(filename, 'rb') as f:
+        return pickle.load(f)
+
+
+def analyze_yearly_clusters(print_matched=False, print_unmatched=True):
+    keywords_dir = os.path.join(Config.keywords_dir(), 'yearly_clusters')
+    matches_template = os.path.join(Config.keywords_dir(), 'yearly_matches',
+                                    'matches_{}.pickle')
+
+    yearly_filenames = glob(os.path.join(keywords_dir, '*.pickle'))
+
+    num_clusters = list()
+    num_words_in_clusters = list()
+    num_matches = list()
+
+    sorted_filenames = sorted(yearly_filenames,
+                              key=lambda k: int(get_file_name_without_ext(k)))
+    for prev, curr in window(sorted_filenames):
+        if print_matched or print_unmatched:
+            print(f'-------{get_file_name_without_ext(curr)}-------')
+        with open(prev, 'rb') as f:
+            prev_word_cl, prev_clusters = pickle.load(f)
+        with open(curr, 'rb') as f:
+            curr_word_cl, curr_clusters = pickle.load(f)
+
+        num_clusters.append(len(curr_clusters))
+        num_words_in_clusters.extend([len(v) for v in curr_clusters.values()])
+        matches_filename = matches_template.format(
+            get_file_name_without_ext(curr)
+        )
+        with open(matches_filename, 'rb') as matches_file:
+            matches = pickle.load(matches_file)
+        num_matches.append(len(matches))
+
+        if print_matched:
+            for curr_cl, prev_cl in matches.items():
+                print(f'{curr_clusters[curr_cl]} --> {prev_clusters[prev_cl]}')
+        unmatched_clusters = curr_clusters.keys() - matches.keys()
+        if print_unmatched:
+            for curr_cl in unmatched_clusters:
+                print(f'{curr_clusters[curr_cl]}')
+
+    print(f'Average Number of Yearly Clusters: '
+          f'{sum(num_clusters) / len(num_clusters)}')
+    print(f'Average Number of Words in Yearly Clusters: '
+          f'{sum(num_words_in_clusters) / len(num_words_in_clusters)}')
+    print(f'Average number of Yearly Matches Found: '
+          f'{sum(num_matches) / len(num_matches)}')
 
 
 if __name__ == '__main__':
@@ -203,4 +256,5 @@ if __name__ == '__main__':
     stores. Dillard's Inc is an American fashion apparel, cosmetics and home 
     furnishings retailer.
     """
-    find_new_clusters(28917)
+    # find_new_clusters(28917)
+    analyze_yearly_clusters(False, False)

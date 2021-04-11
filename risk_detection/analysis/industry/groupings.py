@@ -10,6 +10,7 @@ from top2vec import Top2Vec
 
 from config import Config
 from risk_detection.analysis.clustering import cluster
+from risk_detection.analysis.doc_processor import RiskSectionCleaner
 from risk_detection.analysis.keyword_extraction import Keywords, get_keywords
 from risk_detection.preprocessing.report_parser import (
     report_info_from_risk_path
@@ -52,8 +53,8 @@ class IndustryGroup:
     def create_topic(self):
         corpus = self.get_corpus()
         doc_ids, docs = list(zip(*corpus.items()))
-        return Top2Vec(docs, document_ids=doc_ids,
-                       speed='deep-learn', workers=16)
+        return Top2Vec(docs, document_ids=doc_ids, speed='learn',
+                       tokenizer=RiskSectionCleaner(), workers=16)
 
     def _organize_keywords_by_year(self) -> Dict[int, Keywords]:
         keywords = defaultdict(list)
