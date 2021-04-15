@@ -3,7 +3,7 @@ import pickle
 from collections import defaultdict, Counter
 from glob import glob
 from itertools import chain, groupby
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Sequence
 
 import numpy as np
 import sentence_transformers.util
@@ -189,7 +189,8 @@ def read_yearly_cluster(year):
         return pickle.load(f)
 
 
-def analyze_yearly_clusters(print_matched=False, print_unmatched=True):
+def analyze_yearly_clusters(print_matched=False,
+                            print_unmatched=True) -> Dict[int, Sequence[int]]:
     keywords_dir = os.path.join(Config.keywords_dir(), 'yearly_clusters')
     matches_template = os.path.join(Config.keywords_dir(), 'yearly_matches',
                                     'matches_{}.pickle')
@@ -200,6 +201,7 @@ def analyze_yearly_clusters(print_matched=False, print_unmatched=True):
     num_words_in_clusters = list()
     num_matches = list()
 
+    new_clusters = dict()
     sorted_filenames = sorted(yearly_filenames,
                               key=lambda k: int(get_file_name_without_ext(k)))
     for prev, curr in window(sorted_filenames):
@@ -227,12 +229,19 @@ def analyze_yearly_clusters(print_matched=False, print_unmatched=True):
             for curr_cl in unmatched_clusters:
                 print(f'{curr_clusters[curr_cl]}')
 
+        new_clusters[int(get_file_name_without_ext(curr))] = (
+            unmatched_clusters,
+            [curr_clusters[cl_num] for cl_num in unmatched_clusters]
+        )
+
     print(f'Average Number of Yearly Clusters: '
           f'{sum(num_clusters) / len(num_clusters)}')
     print(f'Average Number of Words in Yearly Clusters: '
           f'{sum(num_words_in_clusters) / len(num_words_in_clusters)}')
     print(f'Average number of Yearly Matches Found: '
           f'{sum(num_matches) / len(num_matches)}')
+
+    return new_clusters
 
 
 if __name__ == '__main__':
