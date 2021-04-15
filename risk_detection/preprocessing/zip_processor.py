@@ -52,7 +52,7 @@ def process_zipfile(zipfile_path, report_file, output_dir):
     file_dir, filename = os.path.split(report_file)
     report_info = ReportInfo.from_zip_filename(filename)
     try:
-        risk_section = extract_risk_section_from_report(report)
+        risk_section = extract_risk_section_from_report(report, report_info)
         _write_risk_section_to_file(report_info, risk_section, output_dir)
         _LOGGER.info(
             f'Extracted risk section for {report_file}'

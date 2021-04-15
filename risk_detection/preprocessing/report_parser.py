@@ -1,11 +1,15 @@
 import os
 import re
 from datetime import datetime
+from io import BytesIO
 from pathlib import Path
+from typing import List
 from unicodedata import normalize
 
+import pandas as pd
 from bs4 import BeautifulSoup
 from html2text import HTML2Text
+from pkg_resources import resource_string
 
 from config import Config
 
@@ -58,6 +62,12 @@ class ReportInfo:
         return cls(int(cik), _date_parser(start_date), _date_parser(end_date),
                    cls.DEFAULT_FILING_TYPE, filename)
 
+    @classmethod
+    def from_risk_factors_file(cls, row):
+        return cls(row['cik'], row['periodofreport'].to_pydatetime(),
+                   row['filingdate'].to_pydatetime(), row['documenttype'],
+                   row['documentlinktext'])
+
 
 def _date_parser(date_str: str) -> datetime:
     return datetime.strptime(date_str, '%Y-%m-%d')
@@ -71,11 +81,36 @@ def report_info_from_risk_path(risk_file: Path) -> ReportInfo:
                       '10-K', filename)
 
 
-def extract_risk_section_from_report(raw_10k: str) -> str:
+def _read_risk_start_end_data():
+    risk_start_end_csv = resource_string(
+        'preprocessing', os.path.join('static', 'RiskFactors_StartEnd.csv')
+    )
+    date_cols = ['periodofreport', 'filingdate']
+    cols = [
+        'cik', 'documenttype', 'periodofreport', 'filingdate',
+        'documentlinktext', 'sectionstart', 'sectionend'
+    ]
+    df = pd.read_csv(BytesIO(risk_start_end_csv), usecols=cols,
+                     parse_dates=date_cols)
+    df['documentlinktext'] = df['documentlinktext'].str.split('/').str[-1]
+    df['report_file_info'] = df.apply(ReportInfo.from_risk_factors_file,
+                                      axis=1)
+    return (df.drop(['cik', 'documenttype', 'periodofreport', 'filingdate',
+                     'documentlinktext'], axis=1)
+            .set_index('report_file_info')
+            .to_dict(orient='index'))
+
+
+_risk_start_end_dict = _read_risk_start_end_data()
+
+
+def extract_risk_section_from_report(raw_10k: str,
+                                     report_info: ReportInfo) -> str:
     """
     Extracts risk section from 10K SEC reports.
 
     :param raw_10k: The raw 10K report
+    :param report_info: Report Information
     :return: Extracted risk section
     :raises: RiskSectionNotFound error if it cannot
              find the risk section in the report
@@ -88,7 +123,12 @@ def extract_risk_section_from_report(raw_10k: str) -> str:
     report_text = handler.handle(raw_report)
     report_text_parts = report_text.splitlines()
 
-    rf_section = _find_risk_factors_section(report_text_parts)
+    try:
+        rf_section = _find_risk_factors_section(report_text_parts)
+    except RiskSectionNotFound:
+        # Look for risk section start end in metadata dataframe
+        rf_section = _find_in_metadata_file(report_info, report_text_parts)
+
     return ' '.join(rf_section)
 
 
@@ -114,6 +154,36 @@ def _find_risk_factors_section(report_text_parts):
                 re.match('item1ariskfactors', line_clean, re.I)):
             start_found = True
         elif re.match('item1bUnresolvedStaffComments', line_clean, re.I):
+            end_found = True
+            break
+        elif start_found and line_clean and not line_clean.isdigit():
+            rf_section.append(_restore_windows_1252_characters(
+                normalize("NFKD", line)
+            ))
+
+    if not start_found or not end_found or not len(rf_section):
+        raise RiskSectionNotFound(
+            f'Item 1A found: {start_found}, Item 1B found: {end_found}, '
+            f'Text found between them: {len(rf_section) != 0}'
+        )
+    return rf_section
+
+
+def _find_in_metadata_file(report_info: ReportInfo,
+                           report_text_parts: List[str]) -> str:
+    pattern = re.compile(r'[\W_]+|(Table of Contents)')
+    start_end_dict = _risk_start_end_dict[report_info]
+    section_start = pattern.sub('', start_end_dict['sectionstart'])
+    section_end = pattern.sub('', start_end_dict['sectionend'])
+
+    start_found = end_found = False
+    rf_section = list()
+    for idx, line in enumerate(report_text_parts):
+        line_clean = pattern.sub('', line)
+        if (not start_found and
+                re.match(section_start, line_clean, re.I)):
+            start_found = True
+        elif re.match(section_end, line_clean, re.I):
             end_found = True
             break
         elif start_found and line_clean and not line_clean.isdigit():
@@ -169,12 +239,12 @@ if __name__ == '__main__':
 
     import glob
     aapl_files = glob.glob(os.path.join(Config.data_dir(), 'aapl', '*.txt'))
-    for aapl_file in [r'data\aapl\0001193125-08-224958.txt']:
+    for aapl_file in aapl_files:
         try:
             print(f'Parsing {aapl_file}.')
             with open(aapl_file, 'r', encoding='utf-8') as f:
                 doc = f.read()
-            ex = extract_risk_section_from_report(doc)
+            ex = extract_risk_section_from_report(doc, None)
             _write_risk_section(aapl_file, ex)
         except UnicodeDecodeError as e:
             print(f'Cannot open file {aapl_file}. {e}')
