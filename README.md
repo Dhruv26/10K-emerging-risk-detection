@@ -1,10 +1,7 @@
 # Emerging Risk Detection
 Company annual financial reports are a very useful source of information about the company's **performance**, **opportunities** and **risks** in the industries. Considering the amount of data contained in every report and large number of reports from different companies available, there is a strong motivation to automate processing of this information, therefore gaining more insights into the current state of industries.
 
-This project is aimed to create an automated method that is able to  
-identify emerging risks faced by multiple businesses and industries,  
-and the trends of those risks.  
-The research focuses on **topic modelling**, **keyword extraction**, **sentiment analysis** and **clustering** in *annual financial reports*.  
+This project is aimed to create an automated method that is able to identify emerging risks faced by multiple businesses and industries, and the trends of those risks. The research focuses on **topic modelling**, **keyword extraction**, **sentiment analysis** and **clustering** in *annual financial reports*.  
 It compares the performance of the following methods when it comes to identifying emerging risks and clustering them:-
 - topic modelling
 - keyword extraction, supplemented with sentiment analysis and clustering
